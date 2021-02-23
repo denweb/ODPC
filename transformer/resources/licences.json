@@ -1,0 +1,717 @@
+{
+"licenses": [
+{
+"id": "0BSD",
+"title": "BSD Zero Clause License",
+"url": "http://landley.net/toybox/license.html",
+"mappings":""
+},
+{
+"id": "AAL",
+"title": "Attribution Assurance License",
+"url": "http://www.opensource.org/licenses/attribution",
+"mappings":""
+},
+{
+"id": "ABSTYLES",
+"title": "Abstyles License",
+"url": "http://www.opensource.org/licenses/attribution",
+"mappings":""
+},
+{
+"id": "Adobe-2006",
+"title": "Adobe Systems Incorporated Source Code License Agreement",
+"url": "https://fedoraproject.org/wiki/Licensing/AdobeLicense",
+"mappings":""
+},
+{
+"id": "ADOBE-GLYPH",
+"title": "Adobe Glyph List License",
+"url": "https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph",
+"mappings":""
+},
+{
+"id": "ADSL",
+"title": "Amazon Digital Services License",
+"url": "https://fedoraproject.org/wiki/Licensing/AmazonDigitalServicesLicense",
+"mappings":""
+},
+{
+"id": "AFL-1.1",
+"title": "Academic Free License v1.1",
+"url": "http://opensource.linux-mirror.org/licenses/afl-1.1.txt",
+"mappings":""
+},
+{
+"id": "AFL-1.2",
+"title": "Academic Free License v1.2",
+"url": "http://opensource.linux-mirror.org/licenses/afl-1.2.txt",
+"mappings":""
+},
+{
+"id": "AFL-1.2",
+"title": "Academic Free License v1.2",
+"url": "http://opensource.linux-mirror.org/licenses/afl-1.2.txt",
+"mappings":""
+},
+{
+"id": "AFL-2.0",
+"title": "Academic Free License v2.0",
+"url": "http://opensource.linux-mirror.org/licenses/afl-2.0.txt",
+"mappings":""
+},
+{
+"id": "AFL-2.1",
+"title": "Academic Free License v2.1",
+"url": "http://opensource.linux-mirror.org/licenses/afl-2.1.txt",
+"mappings":""
+},
+{
+"id": "AFL-3.0",
+"title": "Academic Free License v3.0",
+"url": "http://www.opensource.org/licenses/afl-3.0",
+"mappings":""
+},
+{
+"id": "AFMPARSE",
+"title": "Afmparse License",
+"url": "https://fedoraproject.org/wiki/Licensing/Afmparse",
+"mappings":""
+},
+{
+"id": "AGPL-1.0",
+"title": "Affero General Public License v1.0",
+"url": "http://www.affero.org/oagpl.html",
+"mappings":""
+},
+{
+"id": "AGPL-3.0-only",
+"title": "GNU Affero General Public License v3.0 only",
+"url": "http://www.opensource.org/licenses/AGPL-3.0",
+"mappings":""
+},
+{
+"id": "AGPL-3.0-or-later",
+"title": "GNU Affero General Public License v3.0 or later",
+"url": "http://www.opensource.org/licenses/AGPL-3.0",
+"mappings":""
+},
+{
+"id": "ALADDIN",
+"title": "Aladdin Free Public License",
+"url": "http://pages.cs.wisc.edu/~ghost/doc/AFPL/6.01/Public.htm",
+"mappings":""
+},
+{
+"id": "AMDPLPA",
+"title": "AMD's plpa_map.c License",
+"url": "https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License",
+"mappings":""
+},
+{
+"id": "AML",
+"title": "Apple MIT License",
+"url": "https://fedoraproject.org/wiki/Licensing/Apple_MIT_License",
+"mappings":""
+},
+{
+"id": "AMPAS",
+"title": "Academy of Motion Picture Arts and Sciences BSD",
+"url": "https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD",
+"mappings":""
+},
+{
+"id": "ANTLR-PD",
+"title": "ANTLR Software Rights Notice",
+"url": "http://www.antlr2.org/license.html",
+"mappings":""
+},
+{
+"id": "APACHE-1.0",
+"title": "Apache License 1.0",
+"url": "http://www.apache.org/licenses/LICENSE-1.0",
+"mappings":""
+},
+{
+"id": "APACHE-1.1",
+"title": "Apache License 1.1",
+"url": "http://apache.org/licenses/LICENSE-1.1",
+"mappings":""
+},
+{
+"id": "APACHE-2.0",
+"title": "Apache License 2.0",
+"url": "http://www.apache.org/licenses/LICENSE-2.0",
+"mappings":""
+},
+{
+"id": "APAFML",
+"title": "Adobe Postscript AFM License",
+"url": "https://fedoraproject.org/wiki/Licensing/AdobePostscriptAFM",
+"mappings":""
+},
+{
+"id": "APL-1.0",
+"title": "Adaptive Public License 1.0",
+"url": "http://www.opensource.org/licenses/APL-1.0",
+"mappings":""
+},
+{
+"id": "APSL-1.0",
+"title": "Apple Public Source License 1.0",
+"url": "https://fedoraproject.org/wiki/Licensing/Apple_Public_Source_License_1.0",
+"mappings":""
+},
+{
+"id": "APSL-1.1",
+"title": "Apple Public Source License 1.1",
+"url": "http://www.opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE_LICENSE",
+"mappings":""
+},
+{
+"id": "APSL-1.2",
+"title": "Apple Public Source License 1.2",
+"url": "http://www.samurajdata.se/opensource/mirror/licenses/apsl.php",
+"mappings":""
+},
+{
+"id": "APSL-2.0",
+"title": "Apple Public Source License 2.0",
+"url": "http://www.opensource.apple.com/license/apsl/",
+"mappings":""
+},
+{
+"id": "ARTISTIC-1.0-cl8",
+"title": "Artistic License 1.0 w/clause 8",
+"url": "http://opensource.org/licenses/Artistic-1.0",
+"mappings":""
+},
+{
+"id": "ARTISTIC-1.0-PERL",
+"title": "Artistic License 1.0 (Perl)",
+"url": "http://dev.perl.org/licenses/artistic.html",
+"mappings":""
+},
+{
+"id": "ARTISTIC-1.0",
+"title": "Artistic License 1.0",
+"url": "http://opensource.org/licenses/Artistic-1.0",
+"mappings":""
+},
+{
+"id": "ARTISTIC-2.0",
+"title": "Artistic License 2.0",
+"url": "http://www.opensource.org/licenses/artistic-license-2.0",
+"mappings":""
+},
+{
+"id": "ARTISTIC-2.0",
+"title": "Artistic License 2.0",
+"url": "http://www.opensource.org/licenses/artistic-license-2.0",
+"mappings":""
+},
+{
+"id": "BAHYPH",
+"title": "Bahyph License",
+"url": "https://fedoraproject.org/wiki/Licensing/Bahyph",
+"mappings":""
+},
+{
+"id": "BARR",
+"title": "Barr License",
+"url": "https://fedoraproject.org/wiki/Licensing/Barr",
+"mappings":""
+},
+{
+"id": "BEERWARE",
+"title": "Beerware License",
+"url": "https://fedoraproject.org/wiki/Licensing/Beerware",
+"mappings":""
+},
+{
+"id": "BEERWARE",
+"title": "Beerware License",
+"url": "https://fedoraproject.org/wiki/Licensing/Beerware",
+"mappings":""
+},
+{
+"id": "BITTORRENT-1.0",
+"title": "BitTorrent Open Source License v1.0",
+"url": "http://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/licenses/BitTorrent?r1=1.1&r2=1.1.1.1&diff_format=s",
+"mappings":""
+},
+{
+"id": "BITTORRENT-1.1",
+"title": "BitTorrent Open Source License v1.1",
+"url": "http://directory.fsf.org/wiki/License:BitTorrentOSL1.1",
+"mappings":""
+},
+{
+"id": "BORCEUX",
+"title": "Borceux license",
+"url": "https://fedoraproject.org/wiki/Licensing/Borceux",
+"mappings":""
+},
+{
+"id": "BSD-1-CLAUSE",
+"title": "BSD 1-Clause License",
+"url": "https://svnweb.freebsd.org/base/head/include/ifaddrs.h?revision=326823",
+"mappings":""
+},
+{
+"id": "BSD-2-CLAUSE-FREEBSD",
+"title": "BSD 2-Clause FreeBSD License",
+"url": "http://www.freebsd.org/copyright/freebsd-license.html",
+"mappings":""
+},
+{
+"id": "BSD-2-CLAUSE-NETBSD",
+"title": "BSD 2-Clause NetBSD License",
+"url": "http://www.netbsd.org/about/redistribution.html#default",
+"mappings":""
+},
+{
+"id": "BSD-2-CLAUSE-PATENT",
+"title": "BSD-2-Clause Plus Patent License",
+"url": "https://opensource.org/licenses/BSDplusPatent",
+"mappings":""
+},
+{
+"id": "BSD-2-CLAUSE",
+"title": "BSD 2-Clause Simplified License",
+"url": "http://www.opensource.org/licenses/BSD-2-Clause",
+"mappings":""
+},
+{
+"id": "BSD-3-CLAUSE-ATTRIBUTION",
+"title": "BSD with attribution",
+"url": "https://fedoraproject.org/wiki/Licensing/BSD_with_Attribution",
+"mappings":""
+},
+{
+"id": "BSD-3-CLAUSE-CLEAR",
+"title": "BSD 3-Clause Clear License",
+"url": "http://labs.metacarta.com/license-explanation.html#license",
+"mappings":""
+},
+{
+"id": "BSD-3-CLAUSE-LBNL",
+"title": "Lawrence Berkeley National Labs BSD variant license",
+"url": "https://fedoraproject.org/wiki/Licensing/LBNLBSD",
+"mappings":""
+},
+{
+"id": "BSD-3-CLAUSE-NO-NUCLEAR-LICENSE-2014",
+"title": "BSD 3-Clause No Nuclear License 2014",
+"url": "https://java.net/projects/javaeetutorial/pages/BerkeleyLicense",
+"mappings":""
+},
+{
+"id": "BSD-3-CLAUSE-NO-NUCLEAR-WARRENTY",
+"title": "BSD 3-Clause No Nuclear Warranty",
+"url": "https://jogamp.org/git/?p=gluegen.git;a=blob_plain;f=LICENSE.txt",
+"mappings":""
+},
+{
+"id": "BSD-3-CLAUSE",
+"title": "BSD 3-Clause New or Revised License",
+"url": "http://www.opensource.org/licenses/BSD-3-Clause",
+"mappings":""
+},
+{
+"id": "BSD-4-CLAUSE-UC",
+"title": "BSD-4-Clause (University of California-Specific)",
+"url": "http://www.freebsd.org/copyright/license.html",
+"mappings":""
+},
+{
+"id": "BSD-4-CLAUSE",
+"title": "BSD 4-Clause Original or Old License",
+"url": "http://directory.fsf.org/wiki/License:BSD_4Clause",
+"mappings":""
+},
+{
+"id": "BSD-PROTECTION",
+"title": "BSD Protection License",
+"url": "https://fedoraproject.org/wiki/Licensing/BSD_Protection_License",
+"mappings":""
+},
+{
+"id": "BSD-SOURCE-CODE",
+"title": "BSD Source Code Attribution",
+"url": "https://github.com/robbiehanson/CocoaHTTPServer/blob/master/LICENSE.txt",
+"mappings":""
+},
+{
+"id": "BSL-1.0",
+"title": "Boost Software License 1.0",
+"url": "http://www.boost.org/LICENSE_1_0.txt",
+"mappings":""
+},
+{
+"id": "BZIP2-1.0.5",
+"title": "bzip2 and libbzip2 License v1.0.5",
+"url": "http://bzip.org/1.0.5/bzip2-manual-1.0.5.html",
+"mappings":""
+},
+{
+"id": "BZIP2-1.0.6",
+"title": "bzip2 and libbzip2 License v1.0.6",
+"url": "https://github.com/asimonov-im/bzip2/blob/master/LICENSE",
+"mappings":""
+},
+{
+"id": "CALDERA",
+"title": "Caldera License",
+"url": "http://www.lemis.com/grog/UNIX/ancient-source-all.pdf",
+"mappings":""
+},
+{
+"id": "CATOSL-1.1",
+"title": "Computer Associates Trusted Open Source License 1.1",
+"url": "http://opensource.org/licenses/CATOSL-1.1",
+"mappings":""
+},
+{
+"id": "CC-BY-1.0",
+"title": "Creative Commons Attribution 1.0",
+"url": "http://creativecommons.org/licenses/by/1.0/legalcode",
+"mappings":"cc-by,CC-BY,cc-by,CC-BY-1.0,Creative Commons Attribution 1.0,http://dcat-ap.de/def/licenses/cc-by"
+},
+{
+"id": "CC-BY-2.0",
+"title": "Creative Commons Attribution 2.0",
+"url": "http://creativecommons.org/licenses/by/2.0/legalcode",
+"mappings":"CC-BY 2.5 IT,CC-BY-2.0,Creative Commons Attribution 2.0"
+},
+{
+"id": "CC-BY-2.5",
+"title": "Creative Commons Attribution 2.5",
+"url": "http://creativecommons.org/licenses/by/2.5/legalcode",
+"mappings":"CC-BY-2.5,cc-by-2.5,Creative Commons Attribution 2.5 Australia"
+},
+{
+"id": "CC-BY-3.0",
+"title": "Creative Commons Attribution 3.0",
+"url": "http://creativecommons.org/licenses/by/3.0/legalcode",
+"mappings":"CC-BY3.0AT,cc-by3,CC-BY 3.0 IT,CC-BY-3.0,cc-by3,CC-BY3.0AT,Creative Commons Attribution 3.0 Australia,Creative Commons Attribution 4.0,http://dcat-ap.de/def/licenses/cc-by-de/3_0"
+},
+{
+"id": "CC-BY-4.0",
+"title": "Creative Commons Attribution 4.0",
+"url": "http://creativecommons.org/licenses/by/4.0/legalcode",
+"mappings":"Creative Commons Attribution (CC-BY 4.0),CC-BY 4.0,cc-by-4-fi,CC-BY 4.0,CC-BY 4.0,cc-by-4-fi,cc-by-4.0,CC-BY-4.0,http://dcat-ap.de/def/licenses/cc-by/4_0"
+},
+{
+"id": "CC-BY-NC-1.0",
+"title": "Creative Commons Attribution Non Commercial 1.0",
+"url": "http://creativecommons.org/licenses/by-nc/1.0/legalcode",
+"mappings":"cc-nc,CC-BY-NC,cc-by-nc,CC-BY-NC-1.0,cc-nc,http://dcat-ap.de/def/licenses/cc-nc"
+},
+{
+"id": "CC-BY-NC-2.0",
+"title": "Creative Commons Attribution Non Commercial 2.0",
+"url": "http://creativecommons.org/licenses/by-nc/2.0/legalcode",
+"mappings":""
+},
+{
+"id": "CC-BY-NC-2.5",
+"title": "Creative Commons Attribution Non Commercial 2.5",
+"url": "http://creativecommons.org/licenses/by-nc/2.5/legalcode",
+"mappings":""
+},
+{
+"id": "CC-BY-NC-3.0",
+"title": "Creative Commons Attribution Non Commercial 3.0",
+"url": "http://creativecommons.org/licenses/by-nc/3.0/legalcode",
+"mappings":"CC-BY-NC-3.0"
+},
+{
+"id": "CC-BY-NC-4.0",
+"title": "Creative Commons Attribution Non Commercial 4.0",
+"url": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+"mappings":"CC-BY-NC-4.0"
+},
+{
+"id": "CC-BY-NC-ND-1.0",
+"title": "Creative Commons Attribution Non Commercial No Derivatives 1.0",
+"url": "http://creativecommons.org/licenses/by-nd-nc/1.0/legalcode",
+"mappings":"CC-BY-NC-ND,cc-by-nc-nd,CC-BY-NC-ND-1.0"
+},
+{
+"id": "CC-BY-NC-ND-2.0",
+"title": "Creative Commons Attribution Non Commercial No Derivatives 2.0",
+"url": "http://creativecommons.org/licenses/by-nc-nd/2.0/legalcode",
+"mappings":""
+},
+{
+"id": "CC-BY-NC-ND-2.5",
+"title": "Creative Commons Attribution Non Commercial No Derivatives 2.5",
+"url": "http://creativecommons.org/licenses/by-nc-nd/2.5/legalcode",
+"mappings":""
+},
+{
+"id": "CC-BY-NC-ND-3.0",
+"title": "Creative Commons Attribution Non Commercial No Derivatives 3.0",
+"url": "http://creativecommons.org/licenses/by-nc-nd/3.0/legalcode",
+"mappings":"CC-BY-NC-ND-3.0"
+},
+{
+"id": "CC-BY-NC-ND-4.0",
+"title": "Creative Commons Attribution Non Commercial No Derivatives 4.0",
+"url": "http://creativecommons.org/licenses/by-nc-nd/4.0/legalcode",
+"mappings":"Creative Commons Attribution Non-Commercial No Derivatives (CC-BY-NC-ND 4.0)"
+},
+{
+"id": "CC-BY-NC-SA-1.0",
+"title": "Creative Commons Attribution Non Commercial Share Alike 1.0",
+"url": "http://creativecommons.org/licenses/by-nc-sa/1.0/legalcode",
+"mappings":"cc-by-nc-sa,CC-BY-NC-SA"
+},
+{
+"id": "CC-BY-NC-SA-2.0",
+"title": "Creative Commons Attribution Non Commercial Share Alike 2.0",
+"url": "http://creativecommons.org/licenses/by-nc-sa/2.0/legalcode",
+"mappings":""
+},
+{
+"id": "CC-BY-NC-SA-2.5",
+"title": "Creative Commons Attribution Non Commercial Share Alike 2.5",
+"url": "http://creativecommons.org/licenses/by-nc-sa/2.5/legalcode",
+"mappings":""
+},
+{
+"id": "CC-BY-NC-SA-3.0",
+"title": "Creative Commons Attribution Non Commercial Share Alike 3.0",
+"url": "http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode",
+"mappings":""
+},
+{
+"id": "CC-BY-NC-SA-4.0",
+"title": "Creative Commons Attribution Non Commercial Share Alike 4.0",
+"url": "http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
+"mappings":"Creative Commons Attribution Share-Alike (CC-BY-SA 4.0),cc-by-sa,CC BY-NC-SA 4.0,CC-BY-NC-SA-4.0"
+},
+{
+"id": "CC-BY-ND-1.0",
+"title": "Creative Commons Attribution No Derivatives 1.0",
+"url": "http://creativecommons.org/licenses/by-nd/1.0/legalcode",
+"mappings":"CC-BY-ND,cc-by-nd,CC-BY-ND-1.0"
+},
+{
+"id": "CC-BY-ND-2.0",
+"title": "Creative Commons Attribution No Derivatives 2.0",
+"url": "https://creativecommons.org/licenses/by-nd/2.0/legalcode",
+"mappings":""
+},
+{
+"id": "CC-BY-ND-2.5",
+"title": "Creative Commons Attribution No Derivatives 2.5",
+"url": "http://creativecommons.org/licenses/by-nd/2.5/legalcode",
+"mappings":""
+},
+{
+"id": "CC-BY-ND-3.0",
+"title": "Creative Commons Attribution No Derivatives 3.0",
+"url": "http://creativecommons.org/licenses/by-nd/3.0/legalcode",
+"mappings":"CC-BY-ND-3.0"
+},
+{
+"id": "CC-BY-ND-4.0",
+"title": "Creative Commons Attribution No Derivatives 4.0",
+"url": "http://creativecommons.org/licenses/by-nd/4.0/legalcode",
+"mappings":"CC-BY-ND-4.0,cc-by-nd-4.0,http://dcat-ap.de/def/licenses/cc-by-nd/4_0"
+},
+{
+"id": "CC-BY-SA-1.0",
+"title": "Creative Commons Attribution Share Alike 1.0",
+"url": "http://creativecommons.org/licenses/by-sa/1.0/legalcode",
+"mappings":"CC-BY-SA,cc-by-sa,http://dcat-ap.de/def/licenses/cc-by-sa"
+},
+{
+"id": "CC-BY-SA-2.0",
+"title": "Creative Commons Attribution Share Alike 2.0",
+"url": "http://creativecommons.org/licenses/by-sa/2.0/legalcode",
+"mappings":""
+},
+{
+"id": "CC-BY-SA-2.5",
+"title": "Creative Commons Attribution Share Alike 2.5",
+"url": "http://creativecommons.org/licenses/by-sa/2.5/legalcode",
+"mappings":""
+},
+{
+"id": "CC-BY-SA-3.0",
+"title": "Creative Commons Attribution Share Alike 3.0",
+"url": "http://creativecommons.org/licenses/by-sa/3.0/legalcode",
+"mappings":"CC-BY-SA-3.0"
+},
+{
+"id": "CC-BY-SA-4.0",
+"title": "Creative Commons Attribution Share Alike 4.0",
+"url": "http://creativecommons.org/licenses/by-sa/4.0/legalcode",
+"mappings":"CC-BY-SA 4.0,CC-BY-SA 4.0,CC-BY-SA-4.0"
+},
+{
+"id": "CC0-1.0",
+"title": "Creative Commons Zero v1.0 Universal",
+"url": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+"mappings":"cc-zero,cc-0,CC0 1.0,CC0-1.0,CC Zero,cc-0,CC-ZERO,cc-zero,CC0 1.0,CC0-1.0,http://dcat-ap.de/def/licenses/cc-zero"
+},
+{
+"id": "CDDL-1.0",
+"title": "Common Development and Distribution License 1.0",
+"url": "http://www.opensource.org/licenses/cddl1",
+"mappings":""
+},
+{
+"id": "CDDL-1.1",
+"title": "Common Development and Distribution License 1.1",
+"url": "https://javaee.github.io/glassfish/LICENSE",
+"mappings":""
+},
+{
+"id": "CDLA-PERMISSIVE-1.0",
+"title": "Community Data License Agreement Permissive 1.0",
+"url": "https://cdla.io/permissive-1-0",
+"mappings":""
+},
+{
+"id": "CDLA-SHARING-1.0",
+"title": "Community Data License Agreement Sharing 1.0",
+"url": "https://cdla.io/sharing-1-0",
+"mappings":""
+},
+{
+"id": "CECILL-1.0",
+"title": "CeCILL Free Software License Agreement v1.0",
+"url": "http://www.cecill.info/licences/Licence_CeCILL_V1-fr.html",
+"mappings":""
+},
+{
+"id": "CECILL-1.1",
+"title": "CeCILL Free Software License Agreement v1.1",
+"url": "http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html",
+"mappings":""
+},
+{
+"id": "CECILL-2.0",
+"title": "CeCILL Free Software License Agreement v2.0",
+"url": "http://www.cecill.info/licences/Licence_CeCILL_V2-en.html",
+"mappings":""
+},
+{
+"id": "CECILL-2.1",
+"title": "CeCILL Free Software License Agreement v2.1",
+"url": "http://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html",
+"mappings":""
+},
+{
+"id": "CECILL-B",
+"title": "CeCILL-B Free Software License Agreement",
+"url": "http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html",
+"mappings":""
+},
+{
+"id": "CECILL-C",
+"title": "CeCILL-C Free Software License Agreement",
+"url": "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html",
+"mappings":""
+},
+{
+"id": "OGL 2.0",
+"title": "Open Government License v2.0",
+"url": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/",
+"mappings":"OGL 2.0,uk-ogl3,is-ogl,OGL 2.0,uk-ogl,uk-ogl3"
+},
+ {
+"id": "OGL 3.0",
+"title": "Open Government License v3.0",
+"url": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+"mappings":"OGL 3.0,uk-ogl3,is-ogl,OGL 3.0,uk-ogl,uk-ogl3"
+},
+{
+"id": "FR-LO",
+"title": "licence ouverte open-licence",
+"url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence",
+"mappings":"FR-LO,FR-LO,fr-lo"
+},
+{
+"id": "LICENCES_GRATIS-OPEN-DATA-LICENTIE1.2",
+"title": "Open data bij de Vlaamse overheid",
+"url": "https://overheid.vlaanderen.be/sites/default/files/documenten/ict-egov/licences_gratis-open-data-licentie1.2.html",
+"mappings":"Vlaamse Open Data Licentie"
+},
+{
+"id": "IODL v2.0",
+"title": "Italian Open Data License v2.0",
+"url": "https://www.dati.gov.it/content/italian-open-data-license-v20",
+"mappings":"IODL 2.0,IODL 1.0,IODL 2.0,IODL v2.0,IODL1,IODL2"
+},
+{
+"id": "CC0 AND PDM",
+"title": "The public domain (CC0 and PDM)",
+"url": "https://creativecommons.nl/publiek-domein/",
+"mappings":"publiek-domein,CC0 AND PDM,http://dcat-ap.de/def/licenses/cc-pdm/1_0,pdm"
+},
+{
+"id": "DL-DE-BY 1.0",
+"title": "Data licence Germany - attribution - Version 1.0",
+"url": "https://www.govdata.de/dl-de/by-1-0",
+"mappings":"dl-de-by-1.0,http://dcat-ap.de/def/licenses/dl-by-de/1_0"
+},
+{
+"id": "DL-DE-BY 2.0",
+"title": "Data licence Germany - attribution - Version 2.0",
+"url": "https://www.govdata.de/dl-de/by-2-0",
+"mappings":"dl-de-by-2.0,dl-de/by-2-0,http://dcat-ap.de/def/licenses/dl-by-de/2_0"
+},
+{
+"id": "DL-DE-BY-NC 1.0",
+"title": "Data licence Germany - attribution - non-commercial - Version 1.0",
+"url": "https://www.govdata.de/dl-de/by-nc-1-0",
+"mappings":"dl-de-by-nc-1.0,http://dcat-ap.de/def/licenses/dl-by-nc-de/1_0"
+},
+{
+"id": "DL-DE-ZERO 2.0",
+"title": "Data licence Germany - Zero - Version 2.0",
+"url": "https://www.govdata.de/dl-de/zero-2-0",
+"mappings":"dl-de-zero-2.0,http://dcat-ap.de/def/licenses/dl-zero-de/2_0"
+},
+{
+"id": "ODC-ODBL",
+"title": "Open Database License (ODbL) v1.0",
+"url": "https://opendatacommons.org/licenses/odbl/1.0/",
+"mappings":"ODC-ODbL,ODC-BY,http://dcat-ap.de/def/licenses/od-bl,ODbL-1.0,odc-by,ODC-BY-1.0,ODC-ODBL,odc-odbl"
+},
+{
+"id": "LICENCE-OUVERTE",
+"title": "Etalab Open License",
+"url": "https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Open_Licence.pdf",
+"mappings":"Etalab Open License"
+},
+{
+"id": "OPENDATADK",
+"title": "Open Data DK",
+"url": "http://www.opendata.dk/",
+"mappings":"opendatadk,aarhus-license"
+},
+{
+"id": "STATBEL",
+"title": "Statbel Open Data License",
+"url": "https://statbel.fgov.be/en/open-data",
+"mappings":"Statbel Open Data License"
+},
+{
+"id": "GEONUTZV-DE",
+"title": "Spatial Data of the Federation Germany",
+"url": "http://www.geodatenzentrum.de/docpdf/geonutzv_eng.pdf",
+"mappings":"geonutz-be-2013-10-01,geonutzv-de-2013-03-19,geonutzv-de-2013-03-22,http://dcat-ap.de/def/licenses/geonutz/20130319,http://dcat-ap.de/def/licenses/geoNutz/20131001"
+},
+{
+"id": "GFDL",
+"title": "GNU Free Documentation License",
+"url": "http://www.gnu.org/licenses/fdl.html",
+"mappings":"gfdl"
+}
+]}

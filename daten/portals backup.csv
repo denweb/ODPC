@@ -1,0 +1,439 @@
+url,Organisationen,code
+services2.arcgis.com,"['Open.NRW', 'Köln']",200
+ww.wesel.de,['Open.NRW'],error
+opengeodata.nrw.de,['Open.NRW'],200
+wesel.de,"['Open.NRW', 'Wesel']",200
+aachen.de,"['Open.NRW', 'Aachen']",200
+netz-duesseldorf.de,['Open.NRW'],200
+gis.menden.de,['Open.NRW'],200
+gisdata.krzn.de,['Open.NRW'],200
+new-poi.chargecloud.de,['Open.NRW'],404
+bonnorange.de,['Open.NRW'],404
+geoportal.duisburg.de,['Open.NRW'],200
+github.com,"['Open.NRW', 'Berlin Open Data', 'Moers']",200
+offenedaten-wuppertal.de,"['Open.NRW', 'Wuppertal']",200
+opendata.gelsenkirchen.de,"['Open.NRW', 'Gelsenkirchen']",200
+daten.wuppertal.de,['Open.NRW'],200
+offenedaten.kdvz-frechen.de,"['Open.NRW', 'Jülich', 'Kerpen', 'Linnich', 'Heimbach', 'Brühl', 'Merzenich', 'Elsdorf', 'Bad Münstereifel', 'Bedburg', 'Vettweiß', 'Bergheim', 'Wesseling']",200
+opendata.dormagen.de,['Open.NRW'],200
+soest.de,['Open.NRW'],200
+opendata.duesseldorf.de,"['Open.NRW', 'Düsseldorf']",200
+opendata-duisburg.de,['Open.NRW'],200
+stellenmarkt.nrw.de,['Open.NRW'],200
+vergabe.stadt-koeln.de,"['Open.NRW', 'Köln']",200
+hystreet.com,['Open.NRW'],200
+kreis-wesel.de,['Open.NRW'],200
+musenkuss-duesseldorf.de,['Open.NRW'],200
+standardsicherung.schulministerium.nrw.de,['Open.NRW'],200
+landesdatenbank.nrw.de,['Open.NRW'],200
+gis-rest.nrw.de,['Open.NRW'],200
+api.nextbike.net,"['Open.NRW', 'Köln']",200
+vhs-koeln.de,"['Open.NRW', 'Köln']",200
+wahlergebnisse.nrw.de,['Open.NRW'],200
+integrationsberichte.nrw.de,['Open.NRW'],200
+opendata.dortmund.de,['Open.NRW'],200
+opendata.meerbusch.de,"['Open.NRW', 'Meerbusch']",200
+buergerinfo.moers.de,"['Open.NRW', 'Moers']",200
+open.nrw,['Open.NRW'],200
+swb-konzern.de,['Open.NRW'],200
+stadtplan.bonn.de,['Open.NRW'],200
+lib.bonn.de,['Open.NRW'],200
+wms.nrw.de,"['Open.NRW', 'Kreis Viersen']",200
+duisburgkontor.de,['Open.NRW'],200
+mbwsv.nrw.de,['Open.NRW'],error
+lzg.nrw.de,['Open.NRW'],200
+kleve.de,"['Open.NRW', 'Kleve']",200
+opendata.rhein-kreis-neuss.de,['Open.NRW'],200
+mpanrw.de,['Open.NRW'],200
+cwapi.cambio-carsharing.com,['Open.NRW'],403
+anliegen.bonn.de,['Open.NRW'],200
+overpass-api.de,['Open.NRW'],200
+gis.hochsauerlandkreis.de,['Open.NRW'],200
+wahlen.bonn.de,['Open.NRW'],200
+bonn.jetzt,['Open.NRW'],200
+lia.nrw.de,['Open.NRW'],200
+s423565088.online.de,"['Open.NRW', 'Kreis Viersen']",403
+duisburg.de,['Open.NRW'],200
+offenedaten.kreis-kleve.de,"['Open.NRW', 'Kreis Kleve']",200
+moerserwetter.de,"['Open.NRW', 'Moers']",error
+bonn.de,['Open.NRW'],200
+geodaten1.aachen.de,"['Open.NRW', 'Aachen']",200
+vrsinfo.de,['Open.NRW'],200
+wachtendonk.de,"['Open.NRW', 'Wachtendonk']",200
+musenkuss-koeln.de,"['Open.NRW', 'Köln']",200
+ogdcockpit.bonn.de,['Open.NRW'],200
+offenedaten.moers.de,"['Open.NRW', 'Moers']",200
+alkisservices.krzn.de,"['Open.NRW', 'Kreis Viersen']",403
+awbkoeln.de,"['Open.NRW', 'Köln']",200
+krefeld.de,"['Open.NRW', 'Krefeld']",200
+geoportal.wuppertal.de:80,['Open.NRW'],200
+alt.wahlergebnisse.nrw.de,['Open.NRW'],200
+kis.kreis-viersen.de,['Open.NRW'],200
+buergerhaushalt.stadt-koeln.de,"['Open.NRW', 'Köln']",200
+bonn.sitzung-online.de,['Open.NRW'],200
+bra.nrw.de,['Open.NRW'],200
+haushalt.fm.nrw.de,['Open.NRW'],200
+offenesdatenportal.de,"['Open.NRW', 'Kreis Kleve', 'Kreis Viersen', 'Moers', 'Kreis Wesel', 'Krefeld', 'Bottrop', 'Kleve']",200
+wcs.nrw.de,['Open.NRW'],200
+sevas.nrw.de,['Open.NRW'],200
+bielefeld01.de,['Open.NRW'],200
+geoportal-niederrhein.de,"['Open.NRW', 'Kreis Kleve', 'Kreis Viersen', 'Moers', 'Kreis Wesel', 'Krefeld']",200
+geoportal.kreis-euskirchen.de,['Open.NRW'],200
+geodaten.aachen.de,"['Open.NRW', 'Aachen']",200
+gars.nrw.de,['Open.NRW'],200
+geoservices.krzn.de,['Open.NRW'],200
+stadt-koeln.de,"['Open.NRW', 'Köln']",200
+lanuv.nrw.de,['Open.NRW'],200
+.bonn.de,['Open.NRW'],error
+opendata.hochsauerlandkreis.de,['Open.NRW'],200
+daten.vergabe.nrw.de,['Open.NRW'],404
+opendata.kreis-viersen.de,['Open.NRW'],200
+moers.de,"['Open.NRW', 'Moers']",200
+conterra.de,['Open.NRW'],200
+offenedaten-koeln.de,"['Open.NRW', 'Köln']",200
+bsis.aachen.de,"['Open.NRW', 'Aachen']",200
+radverkehrsnetz.nrw.de,['Open.NRW'],200
+schulministerium.nrw.de,['Open.NRW'],200
+sozialberichte.nrw.de,['Open.NRW'],200
+ig.nrw.de,['Open.NRW'],200
+leitliniendialog.stadt-koeln.de,"['Open.NRW', 'Köln']",error
+Jahresbericht2016.pdf,['Open.NRW'],error
+data.geoportal-wesel.de,"['Open.NRW', 'Wesel']",403
+achtet-auf-bruehl.de,"['Open.NRW', 'Brühl']",200
+wahlen.stadt-koeln.de,"['Open.NRW', 'Köln']",200
+dds.bonn.de:9090,['Open.NRW'],404
+ris.schwalmtal.de,['Open.NRW'],200
+wfs.nrw.de,['Open.NRW'],200
+vhs-bonn.de,['Open.NRW'],200
+offenedaten.aachen.de,"['Open.NRW', 'Aachen']",200
+finanzdaten.ikvs.de,"['Open.NRW', 'Aachen']",200
+geodata.o-sp.de,"['Open.NRW', 'Meerbusch']",403
+polizei.nrw,['Open.NRW'],200
+vmp-rheinland.de,['Open.NRW'],200
+gis.iserlohn.de,['Open.NRW'],200
+kinderbonn.de,['Open.NRW'],error
+databox.bonn.de,['Open.NRW'],200
+the-locator.eu,"['Open.NRW', 'Aachen']",200
+efre.nrw.de,['Open.NRW'],200
+geoportal.kreis-guetersloh.de,['Open.NRW'],200
+geoserver.hochsauerlandkreis.de,['Open.NRW'],200
+data.webservice-kvb.koeln,['Open.NRW'],error
+opendata.bonn.de,"['Open.NRW', 'Bonn']",200
+gis.kreis-soest.de,['Open.NRW'],200
+goch.de,['Open.NRW'],200
+download.vrsinfo.de,"['Open.NRW', 'Köln']",200
+bcp-bonn.de,['Open.NRW'],200
+geoportal.stadt-koeln.de,"['Open.NRW', 'Köln']",error
+download.moers.de,"['Open.NRW', 'Moers']",200
+gdi2.maerkischer-kreis.de,['Open.NRW'],500
+sags-uns.stadt-koeln.de,"['Open.NRW', 'Köln']",200
+wahlen.kdvz-frechen.de,"['Open.NRW', 'Jülich', 'Kerpen', 'Linnich', 'Heimbach', 'Brühl', 'Merzenich', 'Elsdorf', 'Bad Münstereifel', 'Bedburg', 'Vettweiß', 'Bergheim', 'Wesseling']",200
+babeauf.nt.fh-koeln.de,"['Open.NRW', 'Köln']",404
+bonn-macht-mit.de,['Open.NRW'],200
+api.freifunk-niersufer.de,"['Open.NRW', 'Moers']",error
+geldern.de,"['Open.NRW', 'Geldern']",200
+leipzig.de,"['Freistaat Sachsen', 'Leipzig']",200
+statistik.leipzig.de,"['Freistaat Sachsen', 'Leipzig']",200
+list.smwa.sachsen.de,['Freistaat Sachsen'],200
+stadtplan.leipzig.de,"['Freistaat Sachsen', 'Leipzig']",200
+geodaten.sachsen.de,['Freistaat Sachsen'],200
+geodownload.sachsen.de,['Freistaat Sachsen'],200
+landesvermessung.sachsen.de,['Freistaat Sachsen'],200
+vvo-online.de,['Freistaat Sachsen'],200
+gdi-sbv.list.smwa.sachsen.de,['Freistaat Sachsen'],error
+opendata.leipzig.de,"['Freistaat Sachsen', 'Leipzig']",200
+efa.vvo-online.de:8080,['Freistaat Sachsen'],400
+geocloud.landesvermessung.sachsen.de,['Freistaat Sachsen'],200
+wms.leipzig.de,"['Freistaat Sachsen', 'Leipzig']",200
+geodienste.sachsen.de,['Freistaat Sachsen'],403
+adressen.leipzig.de,"['Freistaat Sachsen', 'Leipzig']",200
+statistik.sachsen.de,['Freistaat Sachsen'],403
+lds.sachsen.de,['Freistaat Sachsen'],200
+laermkartierung1.eisenbahn-bundesamt.de,['mCLOUD'],200
+mauttabelle.de,"['mCLOUD', 'Bundesministerium des Innern']",200
+earlydike.de,['mCLOUD'],403
+registry.gdi-de.org,['mCLOUD'],200
+data.deutschebahn.com,['mCLOUD'],200
+data-run.info,['mCLOUD'],200
+maps.dwd.de,['mCLOUD'],200
+geoportal.bafg.de,['mCLOUD'],200
+mdi-dienste.baw.de,['mCLOUD'],403
+opendata.dwd.de,['mCLOUD'],200
+cdc.dwd.de,['mCLOUD'],200
+kba.de,"['mCLOUD', 'Bundesministerium des Innern']",200
+eba.bund.de,['mCLOUD'],200
+service.mdm-portal.de,['mCLOUD'],200
+datarun.s3.amazonaws.com,['mCLOUD'],200
+portal-tideelbe.de,['mCLOUD'],200
+portalnok.de,['mCLOUD'],200
+bfu-web.de,"['mCLOUD', 'Bundesministerium des Innern']",200
+bmvi.de,"['mCLOUD', 'Bundesministerium des Innern']",200
+mdm-portal.de,['mCLOUD'],403
+pegelonline.wsv.de,"['mCLOUD', 'Bundesministerium des Innern', 'ITZ-Bund']",200
+bast.de,['mCLOUD'],200
+developer.deutschebahn.com,['mCLOUD'],200
+dwd.de,['mCLOUD'],403
+arcgis.com,['mCLOUD'],200
+gdws.wsv.bund.de,['mCLOUD'],200
+download-data.deutschebahn.com,['mCLOUD'],403
+info.data-run.info,['mCLOUD'],200
+geoseaportal.de,"['mCLOUD', 'Bundesministerium des Innern']",200
+bag.bund.de,"['mCLOUD', 'Bundesministerium des Innern']",200
+atlas.dlz-it.de,['mCLOUD'],403
+atlas.wsv.bund.de,['mCLOUD'],403
+wsv.de,"['mCLOUD', 'Apps4Deutschland']",200
+geoportal.rlp.de,"['Open-Government-Data-Portal Rheinland-Pfalz', 'Rheinland-Pfalz', 'Boppard', 'Hof', 'Simmern', 'Zweibrücken', 'Trier', 'Verbandsgemeinde Cochem', 'Verbandsgemeinde Altenkirchen (Westerwald)', 'Mainz', 'Verbandsgemeinde Hamm (Sieg)', 'Verbandsgemeinde Vallendar', 'Verbandsgemeinde Kirchberg (Hunsrück)', 'Koblenz', 'Verbandsgemeinde Dierdorf', 'Andernach', 'Bad Dürkheim', 'Verbandsgemeinde Sankt Goar-Oberwesel', 'Frankenthal (Pfalz)', 'Verbandsgemeinde Kastellaun', 'Verbandsgemeinde Gerolstein', 'Verbandsgemeinde Emmelshausen', 'Verbandsgemeinde Mendig', 'Verbandsgemeinde Selters (Westerwald)', 'Verbandsgemeinde Rheinböllen']",200
+verkehr.rlp.de,"['Urbar', 'Rheinland-Pfalz', 'Boppard', 'Pfalzfeld', 'Hof', 'Schifferstadt', 'Verbandsgemeinde Bad Breisig', 'Weselberg', 'Hornbach', 'Kausen', 'Spangdahlem', 'Hönningen', 'Rheinbreitbach', 'Dudenhofen', 'Verbandsgemeinde Heidesheim am Rhein', 'Mainz', 'Wawern', 'Rhens', 'Sprendlingen', 'Saulheim', 'Roxheim', 'Verbandsgemeinde Höhr-Grenzhausen', 'Rückweiler', 'Verbandsgemeinde Kirchberg (Hunsrück)', 'Farschweiler', 'Worms', 'Echternacherbrück', 'Büchel', 'Alzey', 'Verbandsgemeinde Konz', 'Nierstein', 'Barbelroth', 'Niederfischbach', 'Verbandsgemeinde Dierdorf', 'Kaiserslautern', 'Neuwied', 'Klein-Winternheim', 'Sinzig', 'Verbandsgemeinde Edenkoben', 'Verbandsgemeinde Dannstadt-Schauernheim', 'Mutterstadt', 'Wattenheim', 'Plaidt', 'Sessenhausen', 'Mayschoß', 'Verbandsgemeinde Birkenfeld', 'Alsdorf', 'Hochspeyer', 'Verbandsgemeinde Nieder-Olm', 'Lahnstein', 'Speyer', 'Germersheim', 'Kottenheim', 'Waldesch', 'Thür', 'Verbandsgemeinde Emmelshausen', 'Schmißberg', 'Verbandsgemeinde Ransbach-Baumbach', 'Laufeld', 'Schwegenheim', 'Verbandsgemeinde Ruwer', 'Verbandsgemeinde Mendig', 'Otterbach', 'Wahlrod', 'Hetzerath', 'Daxweiler', 'Verbandsgemeinde Landstuhl', 'Idar-Oberstein', 'Albig', 'Verbandsgemeinde Winnweiler', 'Feuerscheid', 'Bendorf', 'Verbandsgemeinde Kandel', 'Verbandsgemeinde Maxdorf', 'Verbandsgemeinde Rülzheim', 'Bitburg', 'Mertesheim', 'Oberwesel', 'Remagen', 'Verbandsgemeinde Offenbach an der Queich', 'Schweisweiler', 'Klotten', 'Dahn', 'Wilgartswiesen', 'Dernbach', 'Verbandsgemeinde Waldfischbach-Burgalben', 'Dockweiler', 'Gerolsheim', 'Klüsserath', 'Niederhorbach', 'Girod', 'Verbandsgemeinde Bad Hönningen', 'Gundersheim', 'Laudert']",200
+stolpersteine-berlin.de,"['Berlin Open Data', 'Berlin']",200
+vhsit.berlin.de,['Berlin Open Data'],200
+kriminalitaetsatlas.berlin.de,['Berlin Open Data'],200
+nord-sued-bruecken.de,"['Berlin Open Data', 'Berlin']",200
+wiki.dbpedia.org,"['Berlin Open Data', 'Berlin']",200
+berlin.de,"['Berlin Open Data', 'Berlin']",200
+imperia9.berlinonline.de,"['Berlin Open Data', 'Berlin']",error
+flow.dai-labor.de,"['Berlin Open Data', 'Berlin']",200
+lab.technologiestiftung-berlin.de,['Berlin Open Data'],200
+bwb.de,"['Berlin Open Data', 'Berlin']",200
+projektzukunft.berlin.de,"['Berlin Open Data', 'Berlin']",200
+fbinter.stadt-berlin.de,"['Berlin Open Data', 'Berlin']",404
+gedenktafeln-in-berlin.de,"['Berlin Open Data', 'Berlin']",200
+energieatlas.berlin.de,['Berlin Open Data'],200
+berlinonline.github.io,['Berlin Open Data'],404
+digis-online.de,['Berlin Open Data'],200
+stromnetz-berlin.de,"['Berlin Open Data', 'Berlin']",200
+bsr.de,"['Berlin Open Data', 'Berlin']",200
+gsi-berlin.info,"['Berlin Open Data', 'Berlin']",200
+stromnetz.berlin,"['Berlin Open Data', 'Berlin']",200
+lak-energiebilanzen.de,"['Berlin Open Data', 'Berlin']",200
+datenregister.berlin.de,"['Berlin Open Data', 'Berlin']",200
+download.geofabrik.de,"['Berlin Open Data', 'Berlin']",200
+stadtentwicklung.berlin.de,"['Berlin Open Data', 'Berlin']",200
+statistik-berlin-brandenburg.de,"['Berlin Open Data', 'Berlin']",200
+gis-broker.de,['Berlin Open Data'],200
+vbb.de,"['Berlin Open Data', 'Berlin']",200
+businesslocationcenter.de,"['Berlin Open Data', 'Berlin']",200
+api.deutsche-digitale-bibliothek.de,"['Berlin', 'Die Beauftragte der Bundesregierung für Kultur und Medien']",200
+vattenfall.de,['Berlin'],200
+datenfragen.de,['Berlin'],200
+downloads.dbpedia.org,['Berlin'],200
+VBB.de,['Berlin'],200
+bdew.de,['Berlin'],200
+141.91.172.224:6081,['Land Schleswig-Holstein'],400
+kiel.de,['Land Schleswig-Holstein'],200
+141.91.172.224:6080,['Land Schleswig-Holstein'],400
+umweltdaten.landsh.de,['Land Schleswig-Holstein'],200
+umweltbundesamt.de,['Land Schleswig-Holstein'],200
+opendata.zitsh.de,['Land Schleswig-Holstein'],200
+185.223.104.6,['Land Schleswig-Holstein'],200
+region.statistik-nord.de,['Land Schleswig-Holstein'],200
+katalog-stadtarchiv.kiel.de,['Land Schleswig-Holstein'],200
+statistik-nord.de,"['Land Schleswig-Holstein', 'Hamburg']",200
+schleswig-holstein.de,"['Land Schleswig-Holstein', 'Hamburg']",200
+10.61.35.179,['Land Schleswig-Holstein'],error
+ssl5.bremen.de,['Bremen'],error
+213168213236,"['Bremen', 'Transparenzportal Bremen']",200
+umwelt.bremen.de,"['Bremen', 'Transparenzportal Bremen']",200
+standorte-videoueberwachung.bremen.de,"['Bremen', 'Transparenzportal Bremen']",200
+buergerservice.bremen.de,"['Bremen', 'Transparenzportal Bremen']",200
+daten.bremen.de,"['Bremen', 'Transparenzportal Bremen']",200
+statistik-bremen.de,"['Bremen', 'Transparenzportal Bremen']",200
+gdi1.geo.bremen.de,"['Bremen', 'Transparenzportal Bremen']",200
+transparenz.bremen.de,"['Bremen', 'Transparenzportal Bremen']",200
+spiellandschaft-bremen.de,"['Bremen', 'Transparenzportal Bremen']",200
+statistik.bremen.de,"['Bremen', 'Transparenzportal Bremen']",200
+bildung.bremen.de,['Bremen'],200
+bremen.de,"['Bremen', 'Transparenzportal Bremen']",200
+metaver.de,"['Hamburg', 'Transparenzportal Hamburg']",200
+archiv.transparenz.hamburg.de,"['Hamburg', 'Transparenzportal Hamburg']",200
+geodienste-hamburg.de,['Hamburg'],200
+daten.transparenz.hamburg.de,"['Hamburg', 'Transparenzportal Hamburg']",200
+wabiha.de,"['Hamburg', 'Transparenzportal Hamburg']",200
+fhh1.hamburg.de,"['Hamburg', 'Transparenzportal Hamburg']",200
+umwelt.daten-hamburg.de,['Hamburg'],error
+adv-online.de,['Hamburg'],200
+Daten-hamburg.de,"['Hamburg', 'Transparenzportal Hamburg']",200
+hamburg-port-authority.de,['Hamburg'],200
+landesrecht-hamburg.de,['Hamburg'],200
+hamburg.de,"['Hamburg', 'Transparenzportal Hamburg']",200
+beteiligungsbericht.fb.hamburg.de,"['Hamburg', 'Transparenzportal Hamburg']",200
+hmbtg.geronimus.info,"['Hamburg', 'Transparenzportal Hamburg']",200
+suche.transparenz.hamburg.de,"['Hamburg', 'Transparenzportal Hamburg']",200
+geodienste.hamburg.de,"['Hamburg', 'Transparenzportal Hamburg']",200
+daten-hamburg.de,"['Hamburg', 'Transparenzportal Hamburg']",200
+geoportal-hamburg.de,"['Hamburg', 'Transparenzportal Hamburg']",200
+transport_verkehr.daten-hamburg.de,['Hamburg'],error
+hvv.de,"['Hamburg', 'Transparenzportal Hamburg']",200
+bmi.bund.de,['Bundesministerium des Innern'],200
+bundespruefstelle.de,['Bundesministerium des Innern'],200
+bundeskartellamt.de,['Bundesministerium des Innern'],200
+bdbos.bund.de,['Bundesministerium des Innern'],200
+bfarm.de,['Bundesministerium des Innern'],200
+bib.bund.de,['Bundesministerium des Innern'],200
+bpb.de,['Bundesministerium des Innern'],200
+bfn.de,['Bundesministerium des Innern'],200
+bsi.bund.de,['Bundesministerium des Innern'],200
+bundeskanzlerin.de,['Bundesministerium des Innern'],200
+bmel-statistik.de,"['Bundesministerium des Innern', 'Bundesanstalt für Landwirtschaft und Ernährung']",200
+bbsr.bund.de,['Bundesministerium des Innern'],200
+braunschweig.de,"['Bundesministerium des Innern', 'Braunschweig']",200
+gdi.ti.bund.de,['Bundesministerium des Innern'],200
+bamf.de,['Bundesministerium des Innern'],200
+geodienste.bfn.de,['Bundesministerium des Innern'],200
+verwaltung-innovativ.de,['Bundesministerium des Innern'],200
+bstu.bund.de,['Bundesministerium des Innern'],200
+thw.de,['Bundesministerium des Innern'],200
+bstu.de,['Bundesministerium des Innern'],200
+bundesnetzagentur.de,['Bundesministerium des Innern'],200
+bzga.de,['Bundesministerium des Innern'],200
+bfr.bund.de,['Bundesministerium des Innern'],200
+bescha.bund.de,['Bundesministerium des Innern'],200
+badv.bund.de,"['Bundesministerium des Innern', 'Bundesausgleichsamt']",200
+bundespolizei.de,['Bundesministerium des Innern'],200
+bka.de,['Bundesministerium des Innern'],200
+geodatenzentrum.de,"['Bundesministerium des Innern', 'Braunschweig', 'Open Knowledge Foundation Deutschland']",200
+u99132.bs.ptb.de,['Bundesministerium des Innern'],200
+bbk.bund.de,['Bundesministerium des Innern'],200
+jki.bund.de,['Bundesministerium des Innern'],200
+bundesregierung.de,"['Bundesministerium des Innern', 'Die Beauftragte der Bundesregierung für Kultur und Medien']",200
+bundesgesundheitsministerium.de,['Bundesministerium des Innern'],200
+bafza.de,"['Bundesministerium des Innern', 'Bundesministerium für Familie, Senioren, Frauen und Jugend']",200
+open-data.ble.de,"['Bundesministerium des Innern', 'Bundesanstalt für Landwirtschaft und Ernährung']",200
+auswaertiges-amt.de,['Bundesministerium des Innern'],200
+lba.de,['Bundesministerium des Innern'],200
+landesrecht.rlp.de,['Rheinland-Pfalz'],200
+jugendforum.rlp.de,['Rheinland-Pfalz'],200
+wir-tun-was.de,['Rheinland-Pfalz'],200
+hochmoseluebergang.rlp.de,['Rheinland-Pfalz'],200
+mainzerring.de,"['Rheinland-Pfalz', 'Mainz']",200
+statistik.rlp.de,"['Rheinland-Pfalz', 'Zweibrücken', 'Trier', 'Verbandsgemeinde Kusel', 'Verbandsgemeinde Altenkirchen (Westerwald)', 'Mainz', 'Verbandsgemeinde Bad Kreuznach', 'Worms', 'Koblenz', 'Kaiserslautern', 'Neuwied', 'Bad Dürkheim', 'Frankenthal (Pfalz)', 'Verbandsgemeinde Birkenfeld', 'Speyer', 'Germersheim', 'Pirmasens', 'Verbandsgemeinde Bad Ems']",200
+datenschutz.rlp.de,"['Rheinland-Pfalz', 'Mainz', 'Speyer']",200
+isim.rlp.de,['Rheinland-Pfalz'],200
+geoportal.rlp.de:80,"['Rheinland-Pfalz', 'Boppard', 'Simmern', 'Zweibrücken', 'Trier', 'Verbandsgemeinde Cochem', 'Verbandsgemeinde Altenkirchen (Westerwald)', 'Mainz', 'Verbandsgemeinde Hamm (Sieg)', 'Verbandsgemeinde Vallendar', 'Verbandsgemeinde Kirchberg (Hunsrück)', 'Koblenz', 'Verbandsgemeinde Dierdorf', 'Andernach', 'Bad Dürkheim', 'Verbandsgemeinde Sankt Goar-Oberwesel', 'Verbandsgemeinde Kastellaun', 'Verbandsgemeinde Gerolstein', 'Verbandsgemeinde Emmelshausen', 'Verbandsgemeinde Selters (Westerwald)', 'Verbandsgemeinde Rheinböllen']",200
+onlinesuche.rlp.de,['Rheinland-Pfalz'],200
+mydataset.com,['Rheinland-Pfalz'],200
+83.243.48.195,['Rheinland-Pfalz'],403
+sozialportal.rlp.de,['Rheinland-Pfalz'],200
+genesis.destatis.de,"['Statistisches Bundesamt', 'Open Knowledge Foundation Deutschland']",error
+service.destatis.de,['Statistisches Bundesamt'],error
+bundeswahlleiter.de,['Statistisches Bundesamt'],200
+destatis.de,['Statistisches Bundesamt'],200
+lubw.baden-wuerttemberg.de,['Baden-Württemberg'],200
+mwk.baden-wuerttemberg.de,['Baden-Württemberg'],200
+kultusportal-bw.de,['Baden-Württemberg'],200
+statistik.baden-wuerttemberg.de,['Baden-Württemberg'],200
+mfw.baden-wuerttemberg.de,['Baden-Württemberg'],200
+schule-bw.de,['Baden-Württemberg'],200
+statistik-bw.de,['Baden-Württemberg'],200
+lka-bw.de,['Baden-Württemberg'],200
+opendata.service-bw.de,"['Baden-Württemberg', 'Sonstige']",200
+im.baden-wuerttemberg.de,['Baden-Württemberg'],200
+svz-bw.de,['Baden-Württemberg'],200
+.landtag-bw.de,['Baden-Württemberg'],error
+jum.baden-wuerttemberg.de,['Baden-Württemberg'],200
+mvi.baden-wuerttemberg.de,['Baden-Württemberg'],200
+ulm.de,"['Baden-Württemberg', 'Sonstige']",200
+webatlasde.de,"['Baden-Württemberg', 'Apps4Deutschland']",error
+gibachtimverkehr.de,['Baden-Württemberg'],error
+studieninfo-bw.de,['Baden-Württemberg'],200
+verbraucherportal-bw.de,['Baden-Württemberg'],200
+daten.ulm.de,"['Ulm', 'Sonstige']",200
+adressen.bmas.de,['Bundesministerium für Arbeit und Soziales'],error
+armuts-und-reichtumsbericht.de,['Bundesministerium für Arbeit und Soziales'],403
+bmas.de,['Bundesministerium für Arbeit und Soziales'],403
+bundeshaushalt.de,['Bundesministerium der Finanzen'],200
+bundesfinanzministerium.de,['Bundesministerium der Finanzen'],200
+bundeshaushalt-info.de,"['Bundesministerium der Finanzen', 'Open Knowledge Foundation Deutschland']",200
+produktcenter.bgr.de,['Braunschweig'],200
+intranet.stadt.braunschweig.de,['Braunschweig'],error
+.braunschweig.de,['Braunschweig'],error
+stadtplan.braunschweig.de,['Braunschweig'],200
+gis.uba.de,['Braunschweig'],200
+geoportal.braunschweig.de,['Braunschweig'],200
+meerbusch.de,['Meerbusch'],200
+bauumwelt.bremen.de,['Transparenzportal Bremen'],200
+dpma.de,['Deutsches Patent- und Markenamt'],200
+ble.de,['Bundesanstalt für Landwirtschaft und Ernährung'],200
+luft.hamburg.de,['Transparenzportal Hamburg'],200
+eur-lex.europa.eu,['Transparenzportal Hamburg'],200
+offenedaten.de,"['OK Lab München', 'Open Knowledge Foundation Deutschland', 'Universitätsbibliothek Leipzig', 'Coding da Vinci', 'Jugend Hackt', 'Max-Planck-Instituts für Wissenschaftsgeschichte', 'Coding da Vinci Nord']",200
+baysis.bayern.de,['OK Lab München'],200
+service.bund.de,['Bundesverwaltungsamt'],200
+wsvmapserv.wsv.bund.de,['Apps4Deutschland'],error
+bwastr-locator.wsv.bund.de,['Apps4Deutschland'],error
+apps4d.geoportal-hamburg.de,['Apps4Deutschland'],error
+gateway.hamburg.de,['Apps4Deutschland'],200
+luen-ni.de,['Apps4Deutschland'],200
+odlinfo.bfs.de,['Apps4Deutschland'],200
+elwis.de,['Apps4Deutschland'],200
+umweltprobenbank.de,['Apps4Deutschland'],200
+dgg.bam.de,['Apps4Deutschland'],200
+infosis.uba.de,['Apps4Deutschland'],200
+lod.b3kat.de,['Apps4Deutschland'],200
+commondatastorage.googleapis.com,['Apps4Deutschland'],400
+wahl.ulm.de,['Sonstige'],200
+govdata.de,['Sonstige'],200
+geodaten-mittenwalde.gdi-server.de,"['Sonstige', 'Open Knowledge Foundation Deutschland', 'Stadt Mittenwalde']",200
+mittenwalde.de,['Sonstige'],200
+pegelmobil.de,['ITZ-Bund'],200
+geoportal.frankfurt.de,['Frankfurt am Main'],200
+offenedaten.frankfurt.de,['Frankfurt am Main'],200
+bmbf.de,['Open Knowledge Foundation Deutschland'],200
+parkleit-api.codeformuenster.org,['Open Knowledge Foundation Deutschland'],404
+kreis-swm.de,['Open Knowledge Foundation Deutschland'],200
+bundestag.de,['Open Knowledge Foundation Deutschland'],200
+zefys.staatsbibliothek-berlin.de,['Open Knowledge Foundation Deutschland'],200
+raw.github.com,['Open Knowledge Foundation Deutschland'],200
+lmsbw.ausbildung.bundeswehr.org,['Open Knowledge Foundation Deutschland'],error
+ww.tc-berlin-weissensee.de,['Open Knowledge Foundation Deutschland'],200
+orka-mv.de,"['OpenData.HRO', 'Rostock']",200
+geo.sv.rostock.de,"['OpenData.HRO', 'Rostock']",200
+online-service.kvb-koeln.de,['Köln'],404
+geodaten.metropoleruhr.de,['Köln'],200
+data.dnb.de,['Deutsche Nationalbibliothek'],401
+duesseldorf.de,['Düsseldorf'],200
+data.gelsen.net,['Gelsenkirchen'],200
+secure.gelsenkirchen.de,['Gelsenkirchen'],200
+gdi.gelsenkirchen.de,['Gelsenkirchen'],200
+datenadler.de,['Land Brandenburg'],200
+lasv.brandenburg.de,['Land Brandenburg'],200
+service.brandenburg.de,['Land Brandenburg'],200
+s3-eu-west-1.amazonaws.com,['Coding da Vinci'],200
+ogc.muenchen.de,['München'],200
+opengov-muenchen.de,['München'],200
+openagrar.bmel-forschung.de,"['Max Rubner-Institut', 'Friedrich-Loeffler-Institut']",error
+transparenz.karlsruhe.de,['Karlsruhe'],200
+karlsruhe.de,['Karlsruhe'],200
+raw.githubusercontent.com,['Karlsruhe'],200
+213.144.24.66,['Karlsruhe'],error
+web3.karlsruhe.de,['Karlsruhe'],200
+opendata.bvl.bund.de,['Bundesamt für Verbraucherschutz und Lebensmittelsicherheit'],200
+zoll.de,['Generalzolldirektion'],200
+baua.de,['Bundesanstalt für Arbeitsschutz und Arbeitsmedizin '],403
+bmz.de,['Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung'],200
+services.gdi-server.de,['Stadt Mittenwalde'],error
+geo.muelheim-ruhr.de,['Mülheim an der Ruhr'],200
+staedtebaufoerderung.info,"['Bundesinstitut für Bau-, Stadt- und Raumforschung (BBSR) im Bundesamt für Bauwesen und Raumordnung (BBR)']",200
+bundesversicherungsamt.de,['Bundesversicherungsamt'],200
+regionalstatistik.de,['Regionalstatistik'],200
+daten.bmfsfj.de,"['Bundesministerium für Familie, Senioren, Frauen und Jugend']",200
+mehrgenerationenhaeuser.de,"['Bundesministerium für Familie, Senioren, Frauen und Jugend']",200
+antidiskriminierungsstelle.de,"['Bundesministerium für Familie, Senioren, Frauen und Jugend']",200
+bundesjustizamt.de,['Bundesamt für Justiz'],200
+verwaltungsvorschriften-im-internet.de,['Bundesamt für Justiz'],200
+gesetze-im-internet.de,['Bundesamt für Justiz'],200
+map.jena.de,['Jena'],200
+opendata.jena.de,['Jena'],200
+open-data.bundesarchiv.de,['Bundesarchiv'],error
+muenchen.offenerhaushalt.de,['MOGDy München'],error
+mstatistik-muenchen.de,['MOGDy München'],200
+bmvg.de,['Bundesministerium der Verteidigung'],200
+offenesdatenportal.dehttp:,['Wesel'],error
+bzst.de,['Bundeszentralamt für Steuern'],200
+bfdi.bund.de,['Die Bundesbeauftragte für den Datenschutz und die Informationsfreiheit'],200
+tes.bam.de,['Bundesanstalt für Materialforschung und -prüfung '],200
+bundessortenamt.de,['Bundessortenamt'],200
+bmwi.de,['Bundesministerium für Wirtschaft und Energie'],200
+rohstofftransparenz.de,['Bundesministerium für Wirtschaft und Energie'],200
+i-upb.de,['Stadt Paderborn'],error
+bafa.de,['Bundesamt für Wirtschaft und Ausfuhrkontrolle'],200
+datenportal.bmbf.de,['Bundesministerium für Bildung und Forschung'],200

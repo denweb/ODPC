@@ -1,0 +1,1634 @@
+<data>
+	<row _id="1">
+		<portal_title>govdata - Datenportal für Deutschland</portal_title>
+		<type>country+other</type>
+		<url>https://www.govdata.de/</url>
+		<begin xsi:nil="true" />
+		<nuts>DE</nuts>
+		<ags xsi:nil="true" />
+		<accountable>Christian Horn</accountable>
+		<email>info@govdata.de</email>
+		<twitter>https://twitter.com/govdata_de</twitter>
+		<facebook>https://www.facebook.com/govdata.de/</facebook>
+		<hosting>SEITENBAU GmbH</hosting>
+		<technology>CKAN</technology>
+		<api>https://ckan.govdata.de/api/3/action/package_list</api>
+		<dcat_ap_de>https://ckan.govdata.de/catalog.xml</dcat_ap_de>
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="2">
+		<portal_title>Baustelleninformationssystem des Bundes und der Länder</portal_title>
+		<type>other</type>
+		<url>https://www.bast.de/BASt_2017/DE/Fahrzeugtechnik/Fachthemen/Baustelleninformation/baustelleninformation.html</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable>Dr. Lutz Rittershaus</accountable>
+		<email>mdm@bast.de</email>
+		<twitter />
+		<facebook />
+		<hosting>Materna Information &amp; Communications SE</hosting>
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="3">
+		<portal_title>Bundesamt für Kartographie und Geodäsie</portal_title>
+		<type>other</type>
+		<url>http://www.geodatenzentrum.de/geodaten/gdz_rahmen.gdz_div?gdz_spr=deu&amp;gdz_akt_zeile=5&amp;gdz_anz_zeile=0&amp;gdz_user_id=0</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting>Bundesamt für Kartographie und Geodäsie</hosting>
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-03-09T00:00:00</last_check>
+	</row>
+	<row _id="4">
+		<portal_title>Bundesministerium für Verkehr und digitale Infrastruktur (BMVI)</portal_title>
+		<type>supreme</type>
+		<url>https://www.mcloud.de/</url>
+		<begin>2016-05-18T00:00:00</begin>
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable>Dr. Roland Goetzke</accountable>
+		<email>mcloud@bmvi.bund.de</email>
+		<twitter />
+		<facebook />
+		<hosting>ITZBund</hosting>
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-03-09T00:00:00</last_check>
+	</row>
+	<row _id="5">
+		<portal_title>Deutsche Bahn</portal_title>
+		<type>other</type>
+		<url>http://data.deutschebahn.com/</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable />
+		<email>DBOpenData@deutschebahn.com</email>
+		<twitter>https://twitter.com/dbopendata</twitter>
+		<facebook />
+		<hosting />
+		<technology>CKAN</technology>
+		<api>https://data.deutschebahn.com/api/3/action/package_list</api>
+		<dcat_ap_de />
+		<last_check>2019-03-09T00:00:00</last_check>
+	</row>
+	<row _id="6">
+		<portal_title>Deutscher Wetterdienst</portal_title>
+		<type>other</type>
+		<url>https://opendata.dwd.de/</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="7">
+		<portal_title>Geobasisdaten und Geodatendienste der Vermessungsverwaltung Baden-Württemberg</portal_title>
+		<type>other</type>
+		<url>https://www.lgl-bw.de/lgl-internet/opencms/de/07_Produkte_und_Dienstleistungen/Open_Data_Initiative/</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable />
+		<email>geodaten@lgl.bwl.de</email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="8">
+		<portal_title>OffeneDaten.de</portal_title>
+		<type>other</type>
+		<url>https://offenedaten.de/</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable />
+		<email>info@okfn.de</email>
+		<twitter />
+		<facebook />
+		<hosting>Open Knowledge Foundation Deutschland</hosting>
+		<technology>CKAN</technology>
+		<api>https://offenedaten.de/api/3/action/package_list</api>
+		<dcat_ap_de />
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="9">
+		<portal_title>Regionalverband Ruhr - Geodatenshop</portal_title>
+		<type>other</type>
+		<url>http://www.geoshop.metropoleruhr.de/public/rvr/Startseite</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable />
+		<email>info@metropoleruhr.de</email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="10">
+		<portal_title>Baden-Württemberg</portal_title>
+		<type>state</type>
+		<url>http://opendata.service-bw.de</url>
+		<begin>2014-10-08T00:00:00</begin>
+		<nuts>DE1</nuts>
+		<ags xsi:nil="true" />
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology />
+		<api />
+		<dcat_ap_de />
+		<last_check xsi:nil="true" />
+	</row>
+	<row _id="11">
+		<portal_title>Karlsruhe</portal_title>
+		<type>city</type>
+		<url>https://transparenz.karlsruhe.de/</url>
+		<begin xsi:nil="true" />
+		<nuts>DE122</nuts>
+		<ags>8212000</ags>
+		<accountable />
+		<email>transparenz@karlsruhe.de</email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>CKAN</technology>
+		<api>https://transparenz.karlsruhe.de/api/3/action/package_list</api>
+		<dcat_ap_de />
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="12">
+		<portal_title>Mannheim</portal_title>
+		<type>city</type>
+		<url>https://opendata.mannheim.de/</url>
+		<begin>2015-11-24T00:00:00</begin>
+		<nuts>DE126</nuts>
+		<ags>8222000</ags>
+		<accountable />
+		<email>opendata@mannheim.de</email>
+		<twitter />
+		<facebook />
+		<hosting>OpenDataSoft</hosting>
+		<technology>OpenDataSoft</technology>
+		<api>https://mannheim.opendatasoft.com/api/v2/catalog/datasets</api>
+		<dcat_ap_de />
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="13">
+		<portal_title>Freiburg im Breisgau</portal_title>
+		<type>city</type>
+		<url>http://opendata.freiburg.de</url>
+		<begin xsi:nil="true" />
+		<nuts>DE131</nuts>
+		<ags>8311000</ags>
+		<accountable />
+		<email>statistik@stadt.freiburg.de</email>
+		<twitter />
+		<facebook />
+		<hosting>badenIT GmbH</hosting>
+		<technology>Website</technology>
+		<api>https://fritz.freiburg.de/duva2ckan/files/</api>
+		<dcat_ap_de />
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="14">
+		<portal_title>Ortenaukreis</portal_title>
+		<type>district</type>
+		<url>http://www.ortenaukreis.de/Online-Dienste/Open-Data</url>
+		<begin xsi:nil="true" />
+		<nuts>DE134</nuts>
+		<ags xsi:nil="true" />
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-07-30T00:00:00</last_check>
+	</row>
+	<row _id="15">
+		<portal_title>Ulm</portal_title>
+		<type>city</type>
+		<url>http://daten.ulm.de/</url>
+		<begin xsi:nil="true" />
+		<nuts>DE144</nuts>
+		<ags>8421000</ags>
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting>Wilken Rechenzentrum GmbH</hosting>
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-07-30T00:00:00</last_check>
+	</row>
+	<row _id="16">
+		<portal_title>Bayern</portal_title>
+		<type>state</type>
+		<url>http://www.opendata.bayern.de/</url>
+		<begin xsi:nil="true" />
+		<nuts>DE2</nuts>
+		<ags xsi:nil="true" />
+		<accountable />
+		<email>poststelle@stmflh.bayern.de</email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>CKAN</technology>
+		<api>https://opendata.bayern.de/api/1/search/dataset?all_fields=1&amp;q=*:*</api>
+		<dcat_ap_de />
+		<last_check>2019-07-31T00:00:00</last_check>
+	</row>
+	<row _id="17">
+		<portal_title>München</portal_title>
+		<type>city</type>
+		<url>http://www.opengov-muenchen.de</url>
+		<begin>2014-12-19T00:00:00</begin>
+		<nuts>DE212</nuts>
+		<ags>9162000</ags>
+		<accountable />
+		<email>data.opengov@muenchen.de</email>
+		<twitter>https://twitter.com/opendata_muc</twitter>
+		<facebook />
+		<hosting />
+		<technology>CKAN</technology>
+		<api>https://www.opengov-muenchen.de/api/3/action/package_list</api>
+		<dcat_ap_de />
+		<last_check>2019-07-31T00:00:00</last_check>
+	</row>
+	<row _id="18">
+		<portal_title>Berlin</portal_title>
+		<type>city+state</type>
+		<url>http://daten.berlin.de/</url>
+		<begin xsi:nil="true" />
+		<nuts>DE3</nuts>
+		<ags>11000000</ags>
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting>BerlinOnline Stadtportal GmbH &amp; Co. KG</hosting>
+		<technology>CKAN</technology>
+		<api>https://datenregister.berlin.de/api/3/action/package_list</api>
+		<dcat_ap_de />
+		<last_check>2019-08-04T00:00:00</last_check>
+	</row>
+	<row _id="19">
+		<portal_title>Potsdam</portal_title>
+		<type>city</type>
+		<url>https://opendata.potsdam.de/</url>
+		<begin>2018-01-11T00:00:00</begin>
+		<nuts>DE404</nuts>
+		<ags>12054000</ags>
+		<accountable>Stefanie Buchta</accountable>
+		<email>opendata@rathaus.potsdam.de</email>
+		<twitter />
+		<facebook />
+		<hosting>OpenDataSoft</hosting>
+		<technology>OpenDataSoft</technology>
+		<api>https://opendata.potsdam.de/api/v2/catalog/datasets</api>
+		<dcat_ap_de />
+		<last_check>2019-07-31T00:00:00</last_check>
+	</row>
+	<row _id="20">
+		<portal_title>Freie Hansestadt Bremen</portal_title>
+		<type>state</type>
+		<url>http://daten.bremen.de/</url>
+		<begin xsi:nil="true" />
+		<nuts>DE5</nuts>
+		<ags xsi:nil="true" />
+		<accountable />
+		<email>transparenz@finanzen.bremen.de</email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-07-31T00:00:00</last_check>
+	</row>
+	<row _id="21">
+		<portal_title>Hamburg</portal_title>
+		<type>city+state</type>
+		<url>http://daten.hamburg.de/</url>
+		<begin xsi:nil="true" />
+		<nuts>DE6</nuts>
+		<ags>2000000</ags>
+		<accountable />
+		<email>transparenzportal@kb.hamburg.de</email>
+		<twitter />
+		<facebook />
+		<hosting>Staatsarchiv Hamburg</hosting>
+		<technology>CKAN</technology>
+		<api>http://suche.transparenz.hamburg.de/api/3/action/package_list</api>
+		<dcat_ap_de>http://suche.transparenz.hamburg.de/catalog.xml</dcat_ap_de>
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="22">
+		<portal_title>Frankfurt am Main</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.frankfurt.de/</url>
+		<begin>2014-10-15T00:00:00</begin>
+		<nuts>DE712</nuts>
+		<ags>6412000</ags>
+		<accountable>Michael Leist</accountable>
+		<email>offene.daten@stadt-frankfurt.de</email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>CKAN</technology>
+		<api>http://offenedaten.frankfurt.de/api/3/action/package_list</api>
+		<dcat_ap_de />
+		<last_check>2019-08-04T00:00:00</last_check>
+	</row>
+	<row _id="23">
+		<portal_title>Neubrandenburg</portal_title>
+		<type>city</type>
+		<url>http://www.neubrandenburg.de/opendata/</url>
+		<begin xsi:nil="true" />
+		<nuts>DE802</nuts>
+		<ags>13071107</ags>
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology />
+		<api />
+		<dcat_ap_de />
+		<last_check xsi:nil="true" />
+	</row>
+	<row _id="24">
+		<portal_title>Rostock</portal_title>
+		<type>city</type>
+		<url>http://www.opendata-hro.de/</url>
+		<begin xsi:nil="true" />
+		<nuts>DE803</nuts>
+		<ags>13003000</ags>
+		<accountable />
+		<email>opendata.hro@rostock.de</email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>CKAN</technology>
+		<api>https://www.opendata-hro.de/api/3/action/package_list</api>
+		<dcat_ap_de>https://www.opendata-hro.de/catalog.xml</dcat_ap_de>
+		<last_check>2019-08-04T00:00:00</last_check>
+	</row>
+	<row _id="25">
+		<portal_title>Braunschweig</portal_title>
+		<type>city</type>
+		<url>http://www.braunschweig.de/leben/stadtplanung_bauen/geoinformationen/opengeodata.html</url>
+		<begin xsi:nil="true" />
+		<nuts>DE911</nuts>
+		<ags>3101000</ags>
+		<accountable />
+		<email>opengeodata@braunschweig.de</email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-04T00:00:00</last_check>
+	</row>
+	<row _id="26">
+		<portal_title>Wennigsen (Deister)</portal_title>
+		<type>city</type>
+		<url>http://data.wennigsen.net/</url>
+		<begin xsi:nil="true" />
+		<nuts>DE929020</nuts>
+		<ags>3241020</ags>
+		<accountable>Jens Spiwek</accountable>
+		<email>jens@spiwi.de</email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-04T00:00:00</last_check>
+	</row>
+	<row _id="27">
+		<portal_title>Landkreis Lüneburg</portal_title>
+		<type>district</type>
+		<url>https://open.lklg.net/</url>
+		<begin>2016-08-18T00:00:00</begin>
+		<nuts>DE935</nuts>
+		<ags xsi:nil="true" />
+		<accountable>Hendrik Lampe</accountable>
+		<email>opendata@lklg.de</email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>CKAN</technology>
+		<api>https://open.lklg.net/api/3/action/package_list</api>
+		<dcat_ap_de />
+		<last_check>2019-08-04T00:00:00</last_check>
+	</row>
+	<row _id="28">
+		<portal_title>Nordrhein-Westfalen</portal_title>
+		<type>state</type>
+		<url>https://open.nrw/</url>
+		<begin xsi:nil="true" />
+		<nuts>DEA</nuts>
+		<ags xsi:nil="true" />
+		<accountable>Dr. Björn Fleischer</accountable>
+		<email>kontakt@open.nrw.de</email>
+		<twitter />
+		<facebook />
+		<hosting>Landesbetrieb Information und Technik Nordrhein-Westfalen (IT.NRW)</hosting>
+		<technology>Drupal</technology>
+		<api>https://ckan.www.open.nrw.de/api/3/action/package_list</api>
+		<dcat_ap_de>https://ckan.www.open.nrw.de/catalog.xml</dcat_ap_de>
+		<last_check>2019-08-04T00:00:00</last_check>
+	</row>
+	<row _id="29">
+		<portal_title>Niederrhein (Region)</portal_title>
+		<type>district</type>
+		<url>http://offenesdatenportal.de/</url>
+		<begin>2015-04-16T00:00:00</begin>
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable />
+		<email>info@krzn.de</email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>CKAN</technology>
+		<api>https://www.offenesdatenportal.de/api/3/action/package_list</api>
+		<dcat_ap_de />
+		<last_check>2019-08-04T00:00:00</last_check>
+	</row>
+	<row _id="30">
+		<portal_title>Düsseldorf</portal_title>
+		<type>city</type>
+		<url>https://opendata.duesseldorf.de/</url>
+		<begin>2017-12-06T00:00:00</begin>
+		<nuts>DEA11</nuts>
+		<ags>5111000</ags>
+		<accountable />
+		<email />
+		<twitter>https://twitter.com/opendataddorf</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api>https://opendata.duesseldorf.de/api/3/action/package_list</api>
+		<dcat_ap_de>https://opendata.duesseldorf.de/catalog.xml</dcat_ap_de>
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="31">
+		<portal_title>Krefeld</portal_title>
+		<type>city</type>
+		<url>https://www.offenesdatenportal.de/organization/krefeld</url>
+		<begin>2016-01-13T00:00:00</begin>
+		<nuts>DEA14</nuts>
+		<ags>5114000</ags>
+		<accountable>Florian Reykers</accountable>
+		<email>florian.reykers@krefeld.de</email>
+		<twitter />
+		<facebook />
+		<hosting>KRZN</hosting>
+		<technology>CKAN</technology>
+		<api>https://www.offenesdatenportal.de/api/3/action/organization_activity_list?id=krefeld</api>
+		<dcat_ap_de />
+		<last_check>2019-03-12T00:00:00</last_check>
+	</row>
+	<row _id="32">
+		<portal_title>Mönchengladbach</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.moenchengladbach.de/</url>
+		<begin>2015-05-11T00:00:00</begin>
+		<nuts>DEA15</nuts>
+		<ags>5116000</ags>
+		<accountable />
+		<email>offenedaten@moenchengladbach.de</email>
+		<twitter>https://twitter.com/OpenDataMG</twitter>
+		<facebook />
+		<hosting>Stadt Mönchengladbach</hosting>
+		<technology>TYPO3</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-03-24T00:00:00</last_check>
+	</row>
+	<row _id="33">
+		<portal_title>Mülheim an der Ruhr</portal_title>
+		<type>city</type>
+		<url>http://open.muelheim-ruhr.de</url>
+		<begin xsi:nil="true" />
+		<nuts>DEA16</nuts>
+		<ags>5117000</ags>
+		<accountable />
+		<email />
+		<twitter>-</twitter>
+		<facebook />
+		<hosting>Stadt Mülheim an der Ruhr</hosting>
+		<technology>DKAN</technology>
+		<api>https://geo.muelheim-ruhr.de/api/3/action/package_list</api>
+		<dcat_ap_de />
+		<last_check>2019-03-12T00:00:00</last_check>
+	</row>
+	<row _id="34">
+		<portal_title>Wuppertal</portal_title>
+		<type>city</type>
+		<url>http://www.offenedaten-wuppertal.de/</url>
+		<begin>2016-09-05T00:00:00</begin>
+		<nuts>DEA1A</nuts>
+		<ags>5124000</ags>
+		<accountable />
+		<email>offenedaten@stadt.wuppertal.de</email>
+		<twitter>https://twitter.com/OpenData_Wtal</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api>https://www.offenedaten-wuppertal.de/api/3/action/package_list</api>
+		<dcat_ap_de>https://www.offenedaten-wuppertal.de/catalog.xml</dcat_ap_de>
+		<last_check>2019-08-04T00:00:00</last_check>
+	</row>
+	<row _id="35">
+		<portal_title>Kreis Kleve</portal_title>
+		<type>district</type>
+		<url>https://www.offenesdatenportal.de/organization/kreis-kleve</url>
+		<begin xsi:nil="true" />
+		<nuts>DEA1B</nuts>
+		<ags xsi:nil="true" />
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting>KRZN</hosting>
+		<technology>CKAN</technology>
+		<api>https://www.offenesdatenportal.de/api/3/action/organization_activity_list?id=kreis-kleve</api>
+		<dcat_ap_de />
+		<last_check>2019-03-12T00:00:00</last_check>
+	</row>
+	<row _id="36">
+		<portal_title>Kleve</portal_title>
+		<type>city</type>
+		<url>https://www.offenesdatenportal.de/organization/stadt-kleve</url>
+		<begin xsi:nil="true" />
+		<nuts>DEA1B036</nuts>
+		<ags>5154036</ags>
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting>KRZN</hosting>
+		<technology>CKAN</technology>
+		<api>https://www.offenesdatenportal.de/api/3/action/organization_activity_list?id=stadt-kleve</api>
+		<dcat_ap_de />
+		<last_check>2019-03-12T00:00:00</last_check>
+	</row>
+	<row _id="37">
+		<portal_title>Wachtendonk</portal_title>
+		<type>city</type>
+		<url>https://www.offenesdatenportal.de/organization/gemeinde-wachtendonk</url>
+		<begin xsi:nil="true" />
+		<nuts>DEA1B060</nuts>
+		<ags>5154060</ags>
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting>KRZN</hosting>
+		<technology>CKAN</technology>
+		<api>https://www.offenesdatenportal.de/api/3/action/organization_activity_list?id=gemeinde-wachtendonk</api>
+		<dcat_ap_de />
+		<last_check>2019-03-12T00:00:00</last_check>
+	</row>
+	<row _id="38">
+		<portal_title>Dormagen</portal_title>
+		<type>city</type>
+		<url>https://opendata.dormagen.de</url>
+		<begin>2017-12-07T00:00:00</begin>
+		<nuts>DEA1D004</nuts>
+		<ags>5162004</ags>
+		<accountable />
+		<email>opendata@stadt-dormagen.de</email>
+		<twitter />
+		<facebook />
+		<hosting>OpenDataSoft</hosting>
+		<technology>OpenDataSoft</technology>
+		<api>https://opendata.dormagen.de/api/v2/catalog/datasets</api>
+		<dcat_ap_de />
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="39">
+		<portal_title>Meerbusch</portal_title>
+		<type>city</type>
+		<url>https://opendata.meerbusch.de/</url>
+		<begin>2017-02-11T00:00:00</begin>
+		<nuts>DEA1D022</nuts>
+		<ags>5162022</ags>
+		<accountable />
+		<email>opendata@meerbusch.de</email>
+		<twitter>https://twitter.com/OpenMeerbusch</twitter>
+		<facebook />
+		<hosting>Viderum</hosting>
+		<technology>CKAN</technology>
+		<api>https://opendata.meerbusch.de/api/3/action/package_list</api>
+		<dcat_ap_de />
+		<last_check>2019-03-24T00:00:00</last_check>
+	</row>
+	<row _id="40">
+		<portal_title>Kreis Viersen</portal_title>
+		<type>district</type>
+		<url>https://www.offenesdatenportal.de/organization/kreis-viersen</url>
+		<begin xsi:nil="true" />
+		<nuts>DEA1E</nuts>
+		<ags xsi:nil="true" />
+		<accountable>Michael Stein</accountable>
+		<email>michael.stein@kreis-viersen.de</email>
+		<twitter />
+		<facebook />
+		<hosting>KRZN</hosting>
+		<technology>CKAN</technology>
+		<api>https://www.offenesdatenportal.de/api/3/action/organization_activity_list?id=kreis-viersen</api>
+		<dcat_ap_de />
+		<last_check>2019-03-12T00:00:00</last_check>
+	</row>
+	<row _id="41">
+		<portal_title>Moers</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.moers.de/</url>
+		<begin xsi:nil="true" />
+		<nuts>DEA1F024</nuts>
+		<ags>5170024</ags>
+		<accountable>Stephan Bernoth und Thorsten Magerstedt</accountable>
+		<email>offenedaten@moers.de</email>
+		<twitter>https://twitter.com/opendatamoers</twitter>
+		<facebook />
+		<hosting>KRZN</hosting>
+		<technology>CKAN</technology>
+		<api>https://www.offenesdatenportal.de/api/3/action/organization_activity_list?id=moers</api>
+		<dcat_ap_de />
+		<last_check>2019-03-12T00:00:00</last_check>
+	</row>
+	<row _id="42">
+		<portal_title>Wesel</portal_title>
+		<type>city</type>
+		<url>http://opendata.wesel.de/</url>
+		<begin xsi:nil="true" />
+		<nuts>DEA1F048</nuts>
+		<ags>5170048</ags>
+		<accountable>Herr Scholten und Herr Bohm</accountable>
+		<email>informationstechnik@wesel.de</email>
+		<twitter />
+		<facebook />
+		<hosting>KRZN</hosting>
+		<technology>CKAN</technology>
+		<api>https://www.offenesdatenportal.de/api/3/action/organization_activity_list?id=stadt-wesel</api>
+		<dcat_ap_de />
+		<last_check>2019-03-12T00:00:00</last_check>
+	</row>
+	<row _id="43">
+		<portal_title>Bonn</portal_title>
+		<type>city</type>
+		<url>http://opendata.bonn.de/</url>
+		<begin>2014-05-28T00:00:00</begin>
+		<nuts>DEA22</nuts>
+		<ags>5314000</ags>
+		<accountable>Sven Hense</accountable>
+		<email>opendata@bonn.de</email>
+		<twitter>https://twitter.com/opendatabonn</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api>https://opendata.bonn.de/api/3/action/package_list</api>
+		<dcat_ap_de />
+		<last_check>2019-07-30T00:00:00</last_check>
+	</row>
+	<row _id="44">
+		<portal_title>Köln</portal_title>
+		<type>city</type>
+		<url>http://offenedaten-koeln.de/</url>
+		<begin xsi:nil="true" />
+		<nuts>DEA23</nuts>
+		<ags>5315000</ags>
+		<accountable>Sabine Möwes</accountable>
+		<email>e-government@stadt-koeln.de</email>
+		<twitter>https://twitter.com/OpenDataKoeln</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api>https://offenedaten-koeln.de/api/3/action/package_list</api>
+		<dcat_ap_de>https://offenedaten-koeln.de/catalog.xml</dcat_ap_de>
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="45">
+		<portal_title>Heimbach (Eifel)</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/heimbach</url>
+		<begin>2016-11-08T00:00:00</begin>
+		<nuts>DEA26012</nuts>
+		<ags>5358012</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="46">
+		<portal_title>Hürtgenwald</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/h%C3%BCrtgenwald</url>
+		<begin>2016-11-08T00:00:00</begin>
+		<nuts>DEA26016</nuts>
+		<ags>5358016</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="47">
+		<portal_title>Jülich</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/j%C3%BClich</url>
+		<begin>2016-11-08T00:00:00</begin>
+		<nuts>DEA26024</nuts>
+		<ags>5358024</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="48">
+		<portal_title>Kreuzau</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/kreuzau</url>
+		<begin>2016-11-08T00:00:00</begin>
+		<nuts>DEA26028</nuts>
+		<ags>5358028</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="49">
+		<portal_title>Langerwehe</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/langerwehe</url>
+		<begin>2016-11-08T00:00:00</begin>
+		<nuts>DEA26032</nuts>
+		<ags>5358032</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="50">
+		<portal_title>Linnich</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/linnich</url>
+		<begin>2016-11-08T00:00:00</begin>
+		<nuts>DEA26036</nuts>
+		<ags>5358036</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="51">
+		<portal_title>Merzenich</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/merzenich</url>
+		<begin>2016-11-08T00:00:00</begin>
+		<nuts>DEA26040</nuts>
+		<ags>5358040</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="52">
+		<portal_title>Titz</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/titz</url>
+		<begin>2016-11-08T00:00:00</begin>
+		<nuts>DEA26056</nuts>
+		<ags>5358056</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="53">
+		<portal_title>Vettweiß</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/vettwei%C3%9F</url>
+		<begin>2016-11-08T00:00:00</begin>
+		<nuts>DEA26060</nuts>
+		<ags>5358060</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="54">
+		<portal_title>Bedburg</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/bedburg</url>
+		<begin>2017-04-29T00:00:00</begin>
+		<nuts>DEA27004</nuts>
+		<ags>5362004</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="55">
+		<portal_title>Bergheim</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/bergheim</url>
+		<begin>2016-11-08T00:00:00</begin>
+		<nuts>DEA27008</nuts>
+		<ags>9185118</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="56">
+		<portal_title>Brühl (Rheinland)</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/br%C3%BChl</url>
+		<begin>2016-11-08T00:00:00</begin>
+		<nuts>DEA27012</nuts>
+		<ags>5362012</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="57">
+		<portal_title>Elsdorf (Rheinland)</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/elsdorf</url>
+		<begin>2016-11-08T00:00:00</begin>
+		<nuts>DEA27016</nuts>
+		<ags>5362016</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="58">
+		<portal_title>Kerpen</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/kerpen</url>
+		<begin>2016-11-08T00:00:00</begin>
+		<nuts>DEA27032</nuts>
+		<ags>5362032</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="59">
+		<portal_title>Wesseling</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/wesseling</url>
+		<begin>2016-11-08T00:00:00</begin>
+		<nuts>DEA27040</nuts>
+		<ags>5362040</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="60">
+		<portal_title>Kreis Euskirchen</portal_title>
+		<type>district</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/kreis-euskirchen</url>
+		<begin>2016-11-08T00:00:00</begin>
+		<nuts>DEA28</nuts>
+		<ags xsi:nil="true" />
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="61">
+		<portal_title>Bad Münstereifel</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/bad-m%C3%BCnstereifel</url>
+		<begin>2016-11-08T00:00:00</begin>
+		<nuts>DEA28004</nuts>
+		<ags>5366004</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="62">
+		<portal_title>Kall</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/kall</url>
+		<begin>2016-11-08T00:00:00</begin>
+		<nuts>DEA28024</nuts>
+		<ags>5366024</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="63">
+		<portal_title>Aachen</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.aachen.de/</url>
+		<begin xsi:nil="true" />
+		<nuts>DEA2D002</nuts>
+		<ags>5334002</ags>
+		<accountable />
+		<email>offenedaten@mail.aachen.de</email>
+		<twitter />
+		<facebook />
+		<hosting>regio iT - gesellschaft für informationstechnologie mbH</hosting>
+		<technology>CKAN</technology>
+		<api>http://offenedaten.aachen.de/api/3/action/package_list</api>
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="64">
+		<portal_title>Gelsenkirchen</portal_title>
+		<type>city</type>
+		<url>https://opendata.gelsenkirchen.de/</url>
+		<begin>2017-05-23T00:00:00</begin>
+		<nuts>DEA32</nuts>
+		<ags>5513000</ags>
+		<accountable>Ulrike Karn und Manfred vom Sondern</accountable>
+		<email>ulrike.karn@gelsenkirchen.de</email>
+		<twitter />
+		<facebook />
+		<hosting>gkd-el</hosting>
+		<technology>DKAN</technology>
+		<api>https://opendata.gelsenkirchen.de/api/3/action/package_list</api>
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="65">
+		<portal_title>Münster (Westfalen)</portal_title>
+		<type>city</type>
+		<url>https://www.stadt-muenster.de/open-data.html</url>
+		<begin xsi:nil="true" />
+		<nuts>DEA33</nuts>
+		<ags>5515000</ags>
+		<accountable>Thomas Werner und Astrid Reich</accountable>
+		<email>opendata@citeq.de</email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>Typo3</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-03-12T00:00:00</last_check>
+	</row>
+	<row _id="66">
+		<portal_title>Bochum</portal_title>
+		<type>city</type>
+		<url>http://www.bochum.de/opendata</url>
+		<begin xsi:nil="true" />
+		<nuts>DEA51</nuts>
+		<ags>5911000</ags>
+		<accountable>Frau auf'm Kamp und Frau Hartweg und Frau Vidakovic</accountable>
+		<email>info@bochum.de </email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="67">
+		<portal_title>Herne</portal_title>
+		<type>city</type>
+		<url>https://www.herne.de/Stadt-und-Leben/Stadtfakten/Open-Data/</url>
+		<begin xsi:nil="true" />
+		<nuts>DEA55</nuts>
+		<ags>5916000</ags>
+		<accountable />
+		<email>opendata@herne.de</email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="68">
+		<portal_title>Arnsberg</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.arnsberg.de</url>
+		<begin xsi:nil="true" />
+		<nuts>DEA57004</nuts>
+		<ags>5958004</ags>
+		<accountable>Elmar Kettler</accountable>
+		<email>pressestelle.kettler@arnsberg.de</email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="69">
+		<portal_title>Rheinland-Pfalz</portal_title>
+		<type>state</type>
+		<url>http://daten.rlp.de/</url>
+		<begin xsi:nil="true" />
+		<nuts>DEB</nuts>
+		<ags xsi:nil="true" />
+		<accountable>Aylin Akça</accountable>
+		<email>referat391@mdi.rlp.de</email>
+		<twitter />
+		<facebook />
+		<hosting>Landesbetrieb Daten und Information</hosting>
+		<technology>CKAN</technology>
+		<api>https://daten.rlp.de/api/3/action/package_list</api>
+		<dcat_ap_de>https://daten.rlp.de/catalog.xml</dcat_ap_de>
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="70">
+		<portal_title>Sachsen</portal_title>
+		<type>state</type>
+		<url>http://www.opendata.sachsen.de/</url>
+		<begin xsi:nil="true" />
+		<nuts>DED</nuts>
+		<ags xsi:nil="true" />
+		<accountable />
+		<email>opendata@sid.sachsen.de</email>
+		<twitter>https://twitter.com/OpenDataSachsen</twitter>
+		<facebook />
+		<hosting />
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="71">
+		<portal_title>Chemnitz</portal_title>
+		<type>city</type>
+		<url>http://portal-chemnitz.opendata.arcgis.com/</url>
+		<begin>2017-03-07T00:00:00</begin>
+		<nuts>DED41</nuts>
+		<ags>14511000</ags>
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting>Amt für Informationsverarbeitung</hosting>
+		<technology>ArcGIS</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="72">
+		<portal_title>Leipzig</portal_title>
+		<type>city</type>
+		<url>https://opendata.leipzig.de</url>
+		<begin xsi:nil="true" />
+		<nuts>DED51</nuts>
+		<ags>14713000</ags>
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting>Lecos GmbH</hosting>
+		<technology>CKAN</technology>
+		<api>https://opendata.leipzig.de/api/3/action/package_list</api>
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="73">
+		<portal_title>Halle (Saale)</portal_title>
+		<type>city</type>
+		<url>http://opendata.halle.de</url>
+		<begin xsi:nil="true" />
+		<nuts>DEE02</nuts>
+		<ags>15002000</ags>
+		<accountable />
+		<email>opendata@halle.de</email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="74">
+		<portal_title>Jena</portal_title>
+		<type>city</type>
+		<url>https://opendata.jena.de/</url>
+		<begin>2016-12-20T00:00:00</begin>
+		<nuts>DEG03</nuts>
+		<ags>16053000</ags>
+		<accountable />
+		<email>info@jena.de</email>
+		<twitter />
+		<facebook />
+		<hosting>IT-Service - Kommunale Immobilien Jena</hosting>
+		<technology>CKAN</technology>
+		<api>https://opendata.jena.de/api/3/action/package_list</api>
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="75">
+		<portal_title>Altenburg</portal_title>
+		<type>city</type>
+		<url>https://www.altenburg.eu/sixcms/detail.php?id=139875</url>
+		<begin xsi:nil="true" />
+		<nuts>DEG0M001</nuts>
+		<ags>16077001</ags>
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="76">
+		<portal_title>Bielefeld</portal_title>
+		<type>city</type>
+		<url>https://open-data.bielefeld.de/</url>
+		<begin xsi:nil="true" />
+		<nuts>DEA41</nuts>
+		<ags>5711000</ags>
+		<accountable />
+		<email>opendata@bielefeld.de</email>
+		<twitter />
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api>https://open-data.bielefeld.de/api/3/action/package_list</api>
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="77">
+		<portal_title>Siegburg</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/siegburg</url>
+		<begin xsi:nil="true" />
+		<nuts>DEA2C060</nuts>
+		<ags>5382060</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="78">
+		<portal_title>Niederzier</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/niederzier</url>
+		<begin xsi:nil="true" />
+		<nuts>DEA26048</nuts>
+		<ags>5358048</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="79">
+		<portal_title>Nörvenich</portal_title>
+		<type>city</type>
+		<url>http://offenedaten.kdvz-frechen.de/group/n%C3%B6rvenich</url>
+		<begin xsi:nil="true" />
+		<nuts>DEA26052</nuts>
+		<ags>5358052</ags>
+		<accountable />
+		<email>offene-daten@kdvz-frechen.de</email>
+		<twitter>https://twitter.com/OpenDataKDVZ</twitter>
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-10T00:00:00</last_check>
+	</row>
+	<row _id="80">
+		<portal_title>Brandenburg</portal_title>
+		<type>state</type>
+		<url>https://datenadler.de/</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable>Frank Schiersner</accountable>
+		<email>frank.schiersner@mik.brandenburg.de</email>
+		<twitter />
+		<facebook />
+		<hosting>Inqbus scientific computing</hosting>
+		<technology>PKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-11T00:00:00</last_check>
+	</row>
+	<row _id="81">
+		<portal_title>OpenData-Plattform ÖPNV</portal_title>
+		<type>other</type>
+		<url>https://www.opendata-oepnv.de/</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable />
+		<email>opendata-oepnv@vrr.de</email>
+		<twitter />
+		<facebook />
+		<hosting>Verkehrsverbund Rhein-Ruhr AöR</hosting>
+		<technology>CKAN</technology>
+		<api>https://www.opendata-oepnv.de/api/3/action/package_list</api>
+		<dcat_ap_de />
+		<last_check>2019-08-11T00:00:00</last_check>
+	</row>
+	<row _id="82">
+		<portal_title>Kiel</portal_title>
+		<type>city</type>
+		<url>https://opendata.schleswig-holstein.de/organization/landeshauptstadt-kiel</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags>1002000</ags>
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting>Dataport</hosting>
+		<technology>CKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-11T00:00:00</last_check>
+	</row>
+	<row _id="83">
+		<portal_title>Dortmund</portal_title>
+		<type>city</type>
+		<url>https://opendata.dortmund.de/</url>
+		<begin>2018-08-23T00:00:00</begin>
+		<nuts />
+		<ags>5913000</ags>
+		<accountable />
+		<email>opendata@dortmund.de</email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-11T00:00:00</last_check>
+	</row>
+	<row _id="84">
+		<portal_title>Esri Deutschland Open Data Portal</portal_title>
+		<type>other</type>
+		<url>https://opendata-esri-de.opendata.arcgis.com/</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-11T00:00:00</last_check>
+	</row>
+	<row _id="85">
+		<portal_title>Magdeburg</portal_title>
+		<type>city</type>
+		<url>https://www.magdeburg.de/Start/B%C3%BCrger-Stadt/Verwaltung-Service/Offene-Verwaltungsdaten</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags>15003000</ags>
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-11T00:00:00</last_check>
+	</row>
+	<row _id="86">
+		<portal_title>Mittenwalde</portal_title>
+		<type>city</type>
+		<url>http://stadt-mittenwalde.opendata.arcgis.com/</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags>12073404</ags>
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>ArcGIS</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-11T00:00:00</last_check>
+	</row>
+	<row _id="87">
+		<portal_title>Duisburg</portal_title>
+		<type>city</type>
+		<url>https://opendata-duisburg.de/</url>
+		<begin>2019-03-19T00:00:00</begin>
+		<nuts />
+		<ags>5112000</ags>
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting>Stadt Köln</hosting>
+		<technology>DKAN</technology>
+		<api>https://opendata-duisburg.de/api/3/action/package_list</api>
+		<dcat_ap_de>https://opendata-duisburg.de/catalog.xml</dcat_ap_de>
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="88">
+		<portal_title>Landkreis Diepholz</portal_title>
+		<type>district</type>
+		<url>https://daten.diepholz.de/</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>DKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="89">
+		<portal_title>Schleswig-Holstein</portal_title>
+		<type>state</type>
+		<url>https://opendata.schleswig-holstein.de/</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable />
+		<email>opendata@lr.landsh.de</email>
+		<twitter />
+		<facebook />
+		<hosting>Dataport</hosting>
+		<technology>CKAN</technology>
+		<api>https://opendata.schleswig-holstein.de/api/3/action/package_list</api>
+		<dcat_ap_de>https://opendata.schleswig-holstein.de/catalog.xml</dcat_ap_de>
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="90">
+		<portal_title>Nahverkehrsgesellschaft Baden-Württemberg mbH</portal_title>
+		<type>other</type>
+		<url>https://www.nvbw.de/aufgaben/digitale-mobilitaet/open-data/</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable>Dietmar Seifert</accountable>
+		<email>opendata@nvbw.de</email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>TYPO3</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="91">
+		<portal_title>Bundesamt für Seeschifffahrt und Hydrographie</portal_title>
+		<type>other</type>
+		<url>https://www.mcloud.de/web/guest/suche/-/results/searchAgg?_mcloudsearchportlet_aggsChoice=extras.displayContact.name.raw%3A%22Bundesamt+f%C3%BCr+Seeschifffahrt+und+Hydrographie+(BSH)%22</url>
+		<begin>2019-07-13T00:00:00</begin>
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology />
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="92">
+		<portal_title>Rhein-Kreis Neuss</portal_title>
+		<type>district</type>
+		<url>http://opendata.rhein-kreis-neuss.de/</url>
+		<begin>2019-02-12T00:00:00</begin>
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable>Tobias Schellhorn und Jürgen Brings</accountable>
+		<email>digitalisierung@rhein-kreis-neuss.de</email>
+		<twitter />
+		<facebook />
+		<hosting>OpenDataSoft</hosting>
+		<technology>OpenDataSoft</technology>
+		<api>https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets</api>
+		<dcat_ap_de />
+		<last_check>2019-07-29T00:00:00</last_check>
+	</row>
+	<row _id="93">
+		<portal_title>Norderstedt</portal_title>
+		<type>city</type>
+		<url>https://opendata.schleswig-holstein.de/organization/norderstedt</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting>Dataport</hosting>
+		<technology>CKAN</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-11T00:00:00</last_check>
+	</row>
+	<row _id="94">
+		<portal_title>Dresden</portal_title>
+		<type>city</type>
+		<url>https://opendata.dresden.de</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable />
+		<email>statistik@dresden.de</email>
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>DUVA</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-11T00:00:00</last_check>
+	</row>
+	<row _id="95">
+		<portal_title>Hochsauerlandkreis</portal_title>
+		<type>district</type>
+		<url>http://www.hochsauerlandkreis.de/buergerservice/bauen_wohnen_kataster/geo_service/OpenData/</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-11T00:00:00</last_check>
+	</row>
+	<row _id="96">
+		<portal_title>Kreis Soest</portal_title>
+		<type>district</type>
+		<url>https://www.kreis-soest.de/gis/start/opendata/opendata.php</url>
+		<begin xsi:nil="true" />
+		<nuts />
+		<ags xsi:nil="true" />
+		<accountable />
+		<email />
+		<twitter />
+		<facebook />
+		<hosting />
+		<technology>Website</technology>
+		<api />
+		<dcat_ap_de />
+		<last_check>2019-08-11T00:00:00</last_check>
+	</row>
+</data>

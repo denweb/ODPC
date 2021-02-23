@@ -1,0 +1,97 @@
+title;type;url;technology;api
+govdata - Datenportal für Deutschland;country+other;govdata.de/;CKAN;https://ckan.govdata.de/api/3/action/package_list
+Baustelleninformationssystem des Bundes und der Länder;other;bast.de/BASt_2017/DE/Fahrzeugtechnik/Fachthemen/Baustelleninformation/baustelleninformation.html;Website;
+Bundesamt für Kartographie und Geodäsie;other;geodatenzentrum.de/geodaten/gdz_rahmen.gdz_div?gdz_spr=deu&gdz_akt_zeile=5&gdz_anz_zeile=0&gdz_user_id=0;Website;
+Bundesministerium für Verkehr und digitale Infrastruktur (BMVI);supreme;mcloud.de/;Website;
+Deutsche Bahn;other;data.deutschebahn.com/;CKAN;https://data.deutschebahn.com/api/3/action/package_list
+Deutscher Wetterdienst;other;opendata.dwd.de/;Website;
+Geobasisdaten und Geodatendienste der Vermessungsverwaltung Baden-Württemberg;other;lgl-bw.de/lgl-internet/opencms/de/07_Produkte_und_Dienstleistungen/Open_Data_Initiative/;Website;
+OffeneDaten.de;other;offenedaten.de/;CKAN;https://offenedaten.de/api/3/action/package_list
+Regionalverband Ruhr - Geodatenshop;other;geoshop.metropoleruhr.de/public/rvr/Startseite;Website;
+Baden-Württemberg;state;opendata.service-bw.de;;
+Karlsruhe;city;transparenz.karlsruhe.de/;CKAN;https://transparenz.karlsruhe.de/api/3/action/package_list
+Mannheim;city;opendata.mannheim.de/;OpenDataSoft;https://mannheim.opendatasoft.com/api/v2/catalog/datasets
+Freiburg im Breisgau;city;opendata.freiburg.de;Website;https://fritz.freiburg.de/duva2ckan/files/
+Ortenaukreis;district;ortenaukreis.de/Online-Dienste/Open-Data;Website;
+Ulm;city;daten.ulm.de/;Website;
+Bayern;state;opendata.bayern.de/;CKAN;https://opendata.bayern.de/api/1/search/dataset?all_fields=1&q=*:*
+München;city;opengov-muenchen.de;CKAN;https://www.opengov-muenchen.de/api/3/action/package_list
+Berlin;city+state;daten.berlin.de/;CKAN;https://datenregister.berlin.de/api/3/action/package_list
+Potsdam;city;opendata.potsdam.de/;OpenDataSoft;https://opendata.potsdam.de/api/v2/catalog/datasets
+Freie Hansestadt Bremen;state;daten.bremen.de/;Website;
+Hamburg;city+state;daten.hamburg.de/;CKAN;http://suche.transparenz.hamburg.de/api/3/action/package_list
+Frankfurt am Main;city;offenedaten.frankfurt.de/;CKAN;http://offenedaten.frankfurt.de/api/3/action/package_list
+Neubrandenburg;city;neubrandenburg.de/opendata/;;
+Rostock;city;opendata-hro.de/;CKAN;https://www.opendata-hro.de/api/3/action/package_list
+Braunschweig;city;braunschweig.de/leben/stadtplanung_bauen/geoinformationen/opengeodata.html;Website;
+Wennigsen (Deister);city;data.wennigsen.net/;Website;
+Landkreis Lüneburg;district;open.lklg.net/;CKAN;https://open.lklg.net/api/3/action/package_list
+Nordrhein-Westfalen;state;open.nrw/;Drupal;https://ckan.www.open.nrw.de/api/3/action/package_list
+Niederrhein (Region);district;offenesdatenportal.de/;CKAN;https://www.offenesdatenportal.de/api/3/action/package_list
+Düsseldorf;city;opendata.duesseldorf.de/;DKAN;https://opendata.duesseldorf.de/api/3/action/package_list
+Krefeld;city;offenesdatenportal.de/organization/krefeld;CKAN;https://www.offenesdatenportal.de/api/3/action/organization_activity_list?id=krefeld
+Mönchengladbach;city;offenedaten.moenchengladbach.de/;TYPO3;
+Mülheim an der Ruhr;city;open.muelheim-ruhr.de;DKAN;https://geo.muelheim-ruhr.de/api/3/action/package_list
+Wuppertal;city;offenedaten-wuppertal.de/;DKAN;https://www.offenedaten-wuppertal.de/api/3/action/package_list
+Kreis Kleve;district;offenesdatenportal.de/organization/kreis-kleve;CKAN;https://www.offenesdatenportal.de/api/3/action/organization_activity_list?id=kreis-kleve
+Kleve;city;offenesdatenportal.de/organization/stadt-kleve;CKAN;https://www.offenesdatenportal.de/api/3/action/organization_activity_list?id=stadt-kleve
+Wachtendonk;city;offenesdatenportal.de/organization/gemeinde-wachtendonk;CKAN;https://www.offenesdatenportal.de/api/3/action/organization_activity_list?id=gemeinde-wachtendonk
+Dormagen;city;opendata.dormagen.de;OpenDataSoft;https://opendata.dormagen.de/api/v2/catalog/datasets
+Meerbusch;city;opendata.meerbusch.de/;CKAN;https://opendata.meerbusch.de/api/3/action/package_list
+Kreis Viersen;district;offenesdatenportal.de/organization/kreis-viersen;CKAN;https://www.offenesdatenportal.de/api/3/action/organization_activity_list?id=kreis-viersen
+Moers;city;offenedaten.moers.de/;CKAN;https://www.offenesdatenportal.de/api/3/action/organization_activity_list?id=moers
+Wesel;city;opendata.wesel.de/;CKAN;https://www.offenesdatenportal.de/api/3/action/organization_activity_list?id=stadt-wesel
+Bonn;city;opendata.bonn.de/;DKAN;https://opendata.bonn.de/api/3/action/package_list
+Köln;city;offenedaten-koeln.de/;DKAN;https://offenedaten-koeln.de/api/3/action/package_list
+Heimbach (Eifel);city;offenedaten.kdvz-frechen.de/group/heimbach;DKAN;
+Hürtgenwald;city;offenedaten.kdvz-frechen.de/group/h%C3%BCrtgenwald;DKAN;
+Jülich;city;offenedaten.kdvz-frechen.de/group/j%C3%BClich;DKAN;
+Kreuzau;city;offenedaten.kdvz-frechen.de/group/kreuzau;DKAN;
+Langerwehe;city;offenedaten.kdvz-frechen.de/group/langerwehe;DKAN;
+Linnich;city;offenedaten.kdvz-frechen.de/group/linnich;DKAN;
+Merzenich;city;offenedaten.kdvz-frechen.de/group/merzenich;DKAN;
+Titz;city;offenedaten.kdvz-frechen.de/group/titz;DKAN;
+Vettweiß;city;offenedaten.kdvz-frechen.de/group/vettwei%C3%9F;DKAN;
+Bedburg;city;offenedaten.kdvz-frechen.de/group/bedburg;DKAN;
+Bergheim;city;offenedaten.kdvz-frechen.de/group/bergheim;DKAN;
+Brühl (Rheinland);city;offenedaten.kdvz-frechen.de/group/br%C3%BChl;DKAN;
+Elsdorf (Rheinland);city;offenedaten.kdvz-frechen.de/group/elsdorf;DKAN;
+Kerpen;city;offenedaten.kdvz-frechen.de/group/kerpen;DKAN;
+Wesseling;city;offenedaten.kdvz-frechen.de/group/wesseling;DKAN;
+Kreis Euskirchen;district;offenedaten.kdvz-frechen.de/group/kreis-euskirchen;DKAN;
+Bad Münstereifel;city;offenedaten.kdvz-frechen.de/group/bad-m%C3%BCnstereifel;DKAN;
+Kall;city;offenedaten.kdvz-frechen.de/group/kall;DKAN;
+Aachen;city;offenedaten.aachen.de/;CKAN;http://offenedaten.aachen.de/api/3/action/package_list
+Gelsenkirchen;city;opendata.gelsenkirchen.de/;DKAN;https://opendata.gelsenkirchen.de/api/3/action/package_list
+Münster (Westfalen);city;stadt-muenster.de/open-data.html;Typo3;
+Bochum;city;bochum.de/opendata;Website;
+Herne;city;herne.de/Stadt-und-Leben/Stadtfakten/Open-Data/;Website;
+Arnsberg;city;offenedaten.arnsberg.de;Website;
+Rheinland-Pfalz;state;daten.rlp.de/;CKAN;https://daten.rlp.de/api/3/action/package_list
+Sachsen;state;opendata.sachsen.de/;Website;
+Chemnitz;city;portal-chemnitz.opendata.arcgis.com/;ArcGIS;
+Leipzig;city;opendata.leipzig.de;CKAN;https://opendata.leipzig.de/api/3/action/package_list
+Halle (Saale);city;opendata.halle.de;Website;
+Jena;city;opendata.jena.de/;CKAN;https://opendata.jena.de/api/3/action/package_list
+Altenburg;city;altenburg.eu/sixcms/detail.php?id=139875;Website;
+Bielefeld;city;open-data.bielefeld.de/;DKAN;https://open-data.bielefeld.de/api/3/action/package_list
+Siegburg;city;offenedaten.kdvz-frechen.de/group/siegburg;DKAN;
+Niederzier;city;offenedaten.kdvz-frechen.de/group/niederzier;DKAN;
+Nörvenich;city;offenedaten.kdvz-frechen.de/group/n%C3%B6rvenich;DKAN;
+Brandenburg;state;datenadler.de/;PKAN;
+OpenData-Plattform ÖPNV;other;opendata-oepnv.de/;CKAN;https://www.opendata-oepnv.de/api/3/action/package_list
+Kiel;city;opendata.schleswig-holstein.de/organization/landeshauptstadt-kiel;CKAN;
+Dortmund;city;opendata.dortmund.de/;Website;
+Esri Deutschland Open Data Portal;other;opendata-esri-de.opendata.arcgis.com/;Website;
+Magdeburg;city;magdeburg.de/Start/B%C3%BCrger-Stadt/Verwaltung-Service/Offene-Verwaltungsdaten;Website;
+Mittenwalde;city;stadt-mittenwalde.opendata.arcgis.com/;ArcGIS;
+Duisburg;city;opendata-duisburg.de/;DKAN;https://opendata-duisburg.de/api/3/action/package_list
+Landkreis Diepholz;district;daten.diepholz.de/;DKAN;
+Schleswig-Holstein;state;opendata.schleswig-holstein.de/;CKAN;https://opendata.schleswig-holstein.de/api/3/action/package_list
+Nahverkehrsgesellschaft Baden-Württemberg mbH;other;nvbw.de/aufgaben/digitale-mobilitaet/open-data/;TYPO3;
+Bundesamt für Seeschifffahrt und Hydrographie;other;mcloud.de/web/guest/suche/-/results/searchAgg?_mcloudsearchportlet_aggsChoice=extras.displayContact.name.raw%3A%22Bundesamt+f%C3%BCr+Seeschifffahrt+und+Hydrographie+(BSH)%22;;
+Rhein-Kreis Neuss;district;opendata.rhein-kreis-neuss.de/;OpenDataSoft;https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets
+Norderstedt;city;opendata.schleswig-holstein.de/organization/norderstedt;CKAN;
+Dresden;city;opendata.dresden.de;DUVA;
+Hochsauerlandkreis;district;hochsauerlandkreis.de/buergerservice/bauen_wohnen_kataster/geo_service/OpenData/;Website;
+Kreis Soest;district;kreis-soest.de/gis/start/opendata/opendata.php;Website;

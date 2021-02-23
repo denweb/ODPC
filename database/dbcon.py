@@ -268,11 +268,13 @@ class DBConnection (object):
                   "SET " \
                   "valide = '{1}', " \
                   "anzahlFehler = '{2}', " \
-                  "fehler = '{3}' " \
+                  "fehler = '{3}', " \
+                  "dateiGrößeReal = '{4}' " \
                   "WHERE rohDatensatzID = '{0}'".format(id,
                                                         data["valide"],
                                                         data["anzahlFehler"],
-                                                        fehler)
+                                                        fehler,
+                                                        data["dateiGrößeReal"])
 
             self.cursor.execute(sql)
         except Exception as e:

@@ -92,7 +92,12 @@ def validate_link(q):
                         if os.path.isfile(filepath):
                             try:
                                 validation = get_valid(filepath)
+
                                 # Todo: Add information about file to result
+                                # merke tatsächliche Dateigröße
+                                actual_size = os.path.getsize(filepath)
+                                validation["dateiGrößeReal"] = actual_size
+
                                 update = update_dataitem(lid, validation)
 
                                 print(update)

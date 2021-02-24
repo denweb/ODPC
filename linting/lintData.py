@@ -25,7 +25,7 @@ def get_valid(file):
         else:
             result = False
     except Exception:
-        result = {"valid": 3,
+        result = {"valide": 3,
                   "fehler": [],
                   "anzahlFehler": 0
                   }
@@ -60,8 +60,8 @@ def reformat_result(result, case):
             "rohDatensatzID": "dummy",
             "fehlerCode": fehler["code"],
             "fehlerNachricht": fehler["message"],
-            "fehlerTags": False,
-            "fehlerExtras": False
+            "fehlerTags": None,
+            "fehlerExtras": None
         }
             for fehler in result["tables"][0]["errors"]
         ]

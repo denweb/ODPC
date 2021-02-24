@@ -6,7 +6,7 @@ from threading import Thread
 from utility.utility import get_connection
 from utility.websiteInfo import check_all
 import re
-from linting.linttest import get_valid
+from linting.lintData import get_valid
 import urllib3
 
 
@@ -71,6 +71,7 @@ def validate_link(q):
             if url_info["url_status"] == "200, OK":
                 # Todo: Herausfinden, welche files genau geparsed werden könne. Was ist mit XML? XSL?
                 # Todo: Add support for archives like zip, tar or rar. Could be done with shutil
+                online = True
                 ext = url_info["ext"]
                 if ext in ["CSV",
                             "XLS",

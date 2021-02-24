@@ -36,28 +36,7 @@ def map_dataendpoint(endpoint, input):
     # check, if  its "accessURL" or "downloadURL"
     if "accessURL" in endpoint:
         new_endpoint["link"] = endpoint["accessURL"]
-        #response = get_connection(endpoint["accessURL"])
     elif "downloadURL" in endpoint:
         new_endpoint["link"] = endpoint["downloadURL"]
-        #response = get_connection(endpoint["downloadURL"])
-    else:
-        response = None
-
-    """
-    if isinstance(response, requests.Response):
-        url_data = check_all(response)
-        response.close()
-    else:
-        url_data = {'url_status': "404"}
-
-    # update values for the endpoint
-    if url_data['url_status'] == "200, OK":
-        new_endpoint["active"] = True
-        new_endpoint["size"] = url_data['size']
-        new_endpoint["mimeType"] = url_data['mimetype']
-        new_endpoint["dataFormat"] = url_data['ext']
-    else:
-        new_endpoint["active"] = False
-    """
 
     return new_endpoint

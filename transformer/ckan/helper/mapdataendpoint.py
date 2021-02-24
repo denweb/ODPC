@@ -24,7 +24,7 @@ def map_dataendpoint(endpoint):
             endpoint[field] = None
 
 
-    # Todo: extras, default online Status bestimmen
+    # Todo: extras
     # map to standard format
     new_endpoint = {
         "link": endpoint["url"],
@@ -42,34 +42,17 @@ def map_dataendpoint(endpoint):
     }
 
     # check if date-information is given
+    # Wird das gebraucht? Glaube fast nicht.
     if endpoint["created"] != "N/A":
         new_endpoint["erstellDatum"] = transform_date(endpoint["created"], "ckan")
     else:
         new_endpoint["erstellDatum"] = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3]+"+0000"
+
     if endpoint["last_modified"] != "N/A":
         new_endpoint["updateDatum"] = transform_date(endpoint["last_modified"], "ckan")
     elif all([endpoint["last_modified"] == "N/A", endpoint["created"] != "N/A"]):
         new_endpoint["updateDatum"] = transform_date(endpoint["created"], "ckan")
     elif all([endpoint["last_modified"] == "N/A", endpoint["created"] == "N/A"]):
         new_endpoint["updateDatum"] = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3] + "+0000"
-
-    #Todo: Beim Rohdaten-Check auktualisieren, da dort eh alles getestet wird.
-    """
-    # check the url-status
-    response = get_connection(endpoint["url"])
-    if isinstance(response, requests.Response):
-        url_data = check_all(response)
-        response.close()
-    else:
-        url_data = {'url_status': "404"}
-
-    # update values for the endpoint
-    if url_data['url_status'] == "200, OK":
-        new_endpoint["online"] = True
-        new_endpoint["dateiGröße"] = url_data['size']
-        new_endpoint["dateiTyp"] = url_data['ext']
-    else:
-        new_endpoint["online"] = False
-    """
 
     return new_endpoint

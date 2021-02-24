@@ -88,6 +88,8 @@ def validate_link(q):
 
                 if ext in ["CSV",
                             "XLS",
+                            "XLSX",
+                            "ODS",
                             "JSON",
                             "GEOJSON"]:
 
@@ -129,14 +131,13 @@ def validate_link(q):
 
             response.close()
         update = update_dataitem(lid, updated_data_item)
-        print(update)
         q.task_done()
 
 
 # Todo: Testen auf Server mit großer Menge, ob Fehler gefunden / upgedated werden.
 urllib3.disable_warnings()
 
-links = get_links()[100:150]
+links = get_links()[:1000]
 q = Queue(maxsize=0)
 
 for link in links:

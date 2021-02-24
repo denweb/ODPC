@@ -5,7 +5,7 @@ import sqlite3
 class DBConnection (object):
     def __init__(self):
         self.dbname = "testdb.db"
-        self.connection = sqlite3.connect("C:/Users/Dennis/PycharmProjects/ODPC/database/testdb.db")
+        self.connection = sqlite3.connect("E:/PycharmProjects/ODPC/database/testdb.db")
         self.cursor = self.connection.cursor()
 
     def create_portal(self, portal_data):
@@ -236,11 +236,11 @@ class DBConnection (object):
 
         sql = "INSERT INTO fehler " \
               "(rohDatensatzID, fehlerCode, fehlerNachricht, fehlerTags, fehlerExtras) " \
-              "VALUES('{0}', '{1}', '{2}', '{3}', '{4}')".format(data_id,
+              "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}')".format(data_id,
                                                                  values["fehlerCode"],
                                                                  values["fehlerNachricht"],
-                                                                 values["fehlerTags"],
-                                                                 values["fehlerExtras"])
+                                                                 str(values["fehlerTags"]).replace("'",'"'),
+                                                                 str(values["fehlerExtras"]))
 
         self.cursor.execute(sql)
         attr_id = self.cursor.lastrowid

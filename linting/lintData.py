@@ -3,24 +3,20 @@ import goodtables
 import json
 from pprint import pprint
 
-# Todo: Link aus DB ziehen, Datei herunterladen & mit entsprechenden Infos weiterverarbeiten.
-file = "opendata_v.csv"
 
-
-# Todo: Ergebnis-Format anpassen für jeweils verwendete Bibliothek
 def get_valid(file):
     ftype = file.split(".")[-1].lower()
 
     try:
         # frictionless handles everything but JSON better.
-        if ftype in ["csv", "xlx", "xlsx", "ods"]:
+        if ftype in ["csv", "xls", "xlsx", "ods"]:
             result = frictionless.validate(file)
-            result = reformat_result(result, 1)
+            result = reformat_result(result, ftype)
 
         # JSON must be done with goodtables for now.
         elif ftype in ["json"]:
             result = goodtables.validate(file, row_limit=10000)
-            result = reformat_result(result, 2)
+            result = reformat_result(result, ftype)
 
         else:
             result = False
@@ -33,7 +29,7 @@ def get_valid(file):
     return result
 
 
-def reformat_result(result, case):
+def reformat_result(result, ftype):
     new_result = {}
 
     # valide transkribieren
@@ -42,8 +38,8 @@ def reformat_result(result, case):
     else:
         new_result["valide"] = 0
 
-    # frictionless-format
-    if case == 1:
+    # frictionless-format - unterschiede zwischen Ergebnisformaten
+    if ftype in ["csv", "ods"]:
         new_result["fehler"] = [{
             "rohDatensatzID": "dummy",
             "fehlerCode": fehler["code"],
@@ -52,6 +48,16 @@ def reformat_result(result, case):
             "fehlerExtras": gen_extras(fehler)
         }
                                 for fehler in result["tables"][0]["errors"]
+                                ]
+    elif ftype in ["xls", "xlsx"]:
+        new_result["fehler"] = [{
+            "rohDatensatzID": "dummy",
+            "fehlerCode": fehler["code"],
+            "fehlerNachricht": fehler["message"],
+            "fehlerTags": fehler["tags"],
+            "fehlerExtras": gen_extras(fehler)
+        }
+                                for fehler in result["tasks"][0]["errors"]
                                 ]
 
     # goodtables format
@@ -82,10 +88,10 @@ def gen_extras(fehler):
 
     return str(extras)
 
+#file = "G_IV_1_m0409_H.xls"
 
 #pprint(get_valid(file))
 #print(json.dumps(get_valid(file)))
-# Todo: Ergebnis in DB speichern
 
 #frictionless works for all formats except JSON...
 #It depicts JSON as JSON, when the ending is given in caps. But

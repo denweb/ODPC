@@ -262,6 +262,7 @@ class DBConnection (object):
         res = True
 
         fehler = [self.create_attr_fehler(id, fehler) for fehler in data["fehler"]]
+        dateityp_real_id = self.get_id("dateiTyp", data["dateiTypReal"])
 
         try:
             sql = "UPDATE rohDatensatz " \
@@ -269,12 +270,16 @@ class DBConnection (object):
                   "valide = '{1}', " \
                   "anzahlFehler = '{2}', " \
                   "fehler = '{3}', " \
-                  "dateiGrößeReal = '{4}' " \
+                  "dateiGrößeReal = '{4}', " \
+                  "online = '{5}', " \
+                  "dateiTypReal = '{6}' " \
                   "WHERE rohDatensatzID = '{0}'".format(id,
                                                         data["valide"],
                                                         data["anzahlFehler"],
                                                         fehler,
-                                                        data["dateiGrößeReal"])
+                                                        data["dateiGrößeReal"],
+                                                        data["online"],
+                                                        dateityp_real_id)
 
             self.cursor.execute(sql)
         except Exception as e:

@@ -62,6 +62,16 @@ def validate_link(q):
         link = link_info["link"]
         lid = link_info["id"]
 
+        # To save all generated new information
+        updated_data_item = {
+            "online": False,
+            "dateiTypReal": None,
+            "dateiGrößeReal": None,
+            "valide": 2,
+            "fehler": [],
+            "anzahlFehler": None,
+        }
+
         response = get_connection(link, open_conn=True)
 
         if isinstance(response, requests.Response):
@@ -71,8 +81,11 @@ def validate_link(q):
             if url_info["url_status"] == "200, OK":
                 # Todo: Herausfinden, welche files genau geparsed werden könne. Was ist mit XML? XSL?
                 # Todo: Add support for archives like zip, tar or rar. Could be done with shutil
-                online = True
                 ext = url_info["ext"]
+
+                updated_data_item["online"] = True
+                updated_data_item["dateiTypReal"] = ext
+
                 if ext in ["CSV",
                             "XLS",
                             "JSON",
@@ -92,16 +105,16 @@ def validate_link(q):
                             f.write(response.content)
                         if os.path.isfile(filepath):
                             try:
-                                validation = get_valid(filepath)
-
-                                # Todo: Add information about file to result
                                 # merke tatsächliche Dateigröße
                                 actual_size = os.path.getsize(filepath)
-                                validation["dateiGrößeReal"] = actual_size
+                                updated_data_item["dateiGrößeReal"] = actual_size
 
-                                update = update_dataitem(lid, validation)
+                                # Validation
+                                validation = get_valid(filepath)
+                                updated_data_item["valide"] = validation["valide"]
+                                updated_data_item["fehler"] = validation["fehler"]
+                                updated_data_item["anzahlFehler"] = validation["anzahlFehler"]
 
-                                print(update)
                             except Exception as e:
                                 print("Validation Error", e)
 
@@ -115,6 +128,8 @@ def validate_link(q):
                     pass
 
             response.close()
+        update = update_dataitem(lid, updated_data_item)
+        print(update)
         q.task_done()
 
 

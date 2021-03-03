@@ -136,19 +136,20 @@ def validate_link(q):
         q.task_done()
 
 
-urllib3.disable_warnings()
+def validate_raw_data_links():
+    urllib3.disable_warnings()
 
-links = get_links()
-q = Queue(maxsize=0)
+    links = get_links()
+    q = Queue(maxsize=0)
 
-for link in links:
-    q.put(link)
+    for link in links:
+        q.put(link)
 
-for i in range(3):
-    t = Thread(target=validate_link, args=(q, ))
-    t.start()
+    for i in range(3):
+        t = Thread(target=validate_link, args=(q, ))
+        t.start()
 
-q.join()
+    q.join()
 
 # put links in list (csv?) for better control in case of error
 # put links in q ?

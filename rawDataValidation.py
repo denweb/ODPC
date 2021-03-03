@@ -122,8 +122,10 @@ def validate_link(q):
 
                             os.remove(filepath)
                         else:
+                            updated_data_item["valide"] = 4
                             print("Save file not created successfully // Could not be read")
                     except:
+                        updated_data_item["valide"] = 5
                         print("Error. Save to ID or something")
                 else:
                     # print("Save not supported file type", ext)
@@ -134,10 +136,9 @@ def validate_link(q):
         q.task_done()
 
 
-# Todo: Testen auf Server mit großer Menge, ob Fehler gefunden / upgedated werden.
 urllib3.disable_warnings()
 
-links = get_links()[:1000]
+links = get_links()
 q = Queue(maxsize=0)
 
 for link in links:

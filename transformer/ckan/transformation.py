@@ -46,7 +46,10 @@ def remap(dataitem, portal_id):
     else:
         dataitem["groups"] = []
 
-    dataEndpoints = [map_dataendpoint(endpoint) for endpoint in dataitem['resources']]
+    if "resources" in dataitem:
+        dataEndpoints = [map_dataendpoint(endpoint) for endpoint in dataitem['resources']]
+    else:
+        dataEndpoints = []
 
     # Todo: Kategorie, extras (+ fixen!)
     output = {

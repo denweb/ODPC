@@ -38,6 +38,11 @@ def remap(dataitem, portal_id):
     else:
         dataitem["keyword"] = []
 
+    if "distribution" in dataitem:
+        dataEndpoints = [map_dataendpoint(endpoint, dataitem) for endpoint in dataitem['distribution']]
+    else:
+        dataEndpoints = []
+
     # Todo: extra
     output = {
         "titel": remove_html_tags(dataitem["title"]),
@@ -64,7 +69,7 @@ def remap(dataitem, portal_id):
         "tags": dataitem["keyword"],
         "kategorien": [],
         "portalID": portal_id,
-        "endpunkte": [map_dataendpoint(endpoint, dataitem) for endpoint in dataitem['distribution']]
+        "endpunkte": dataEndpoints
     }
 
     return output

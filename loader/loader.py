@@ -3,7 +3,7 @@ from database.dbcon import DBConnection
 
 def upload(data, instance_type):
 
-    db = DBConnection()
+    db = DBConnection("testdb.db")
 
     if instance_type == "meta":
         meta_id = db.create_metadatensatz(data)

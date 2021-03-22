@@ -11,7 +11,7 @@ import urllib3
 
 
 def get_links():
-    db = DBConnection()
+    db = DBConnection("testdb.db")
     res = [{"id": entry[0], "link": entry[1]} for entry in db.get_rawdata_links()]
 
     db.connection.close()
@@ -21,7 +21,7 @@ def get_links():
 
 # Todo: Evtl. Connection in Thread-Funktion legen?
 def update_dataitem(id, res):
-    db = DBConnection()
+    db = DBConnection("testdb.db")
 
     res = db.update_rawdata(id, res)
 

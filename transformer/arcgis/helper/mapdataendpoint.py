@@ -30,7 +30,7 @@ def map_dataendpoint(endpoint, input):
         "erstellDatum": transform_date(input["issued"], "arcgis"),
         "updateDatum": transform_date(input["modified"], "arcgis"),
         "metaDatensatz": 1,
-        "extras": "Ne"
+        "extras": None
     }
 
     # check, if  its "accessURL" or "downloadURL"

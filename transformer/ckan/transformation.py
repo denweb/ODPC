@@ -19,70 +19,62 @@ def remap(dataitem, portal_id):
     :return: A dictionary representing a dataitem in advaneo-format. Or None if the requirements are not met.
     """
     # check for missing values in dataitem
-    checklist = ["author", "author_email", "maintainer", "maintainer_email", "license_id", "license_title", "license_url",
+    checklist = ["title", "author", "author_email", "maintainer", "maintainer_email", "license_id", "license_title", "license_url",
                  "notes", "url", "type", "organization", "metadata_created", "metadata_modified"]
 
-    # check if dataitem has a title and DataEndpoints
-    # Todo: Dieser check benötigt?
-    if all(["title" in dataitem, "id" in dataitem, "resources" in dataitem]):
-        if dataitem["resources"]:
-            dataEndpoints = [map_dataendpoint(endpoint) for endpoint in dataitem['resources']]
+    for field in checklist:
+        if field not in dataitem:
+            dataitem[field] = None
+        elif dataitem[field] == "":
+            dataitem[field] = None
+        elif dataitem[field] == " ":
+            dataitem[field] = None
 
-            for field in checklist:
-                if field not in dataitem:
-                    dataitem[field] = None
-                elif dataitem[field] == "":
-                    dataitem[field] = None
-                elif dataitem[field] == " ":
-                    dataitem[field] = None
-
-            # check if array-attributes are given (cannot be replaced by standard N/A if missing.)
-            if "extras" in dataitem:
-                dataitem["extras"] = transform_garbage(dataitem["extras"], "ckan")
-            else:
-                dataitem["extras"] = ""
-
-            if "tags" in dataitem:
-                dataitem["tags"] = transform_keywords(dataitem["tags"], "ckan")
-            else:
-                dataitem["tags"] = []
-
-            if "groups" in dataitem:
-                dataitem["groups"] = [transform_group(gruppe, "ckan") for gruppe in dataitem["groups"]]
-            else:
-                dataitem["groups"] = []
-
-            # Todo: Kategorie, extras (+ fixen!)
-            output = {
-                "titel": remove_html_tags(dataitem["title"]),
-                "beschreibung": remove_html_tags(dataitem["notes"]),
-                "autor": {
-                    "kontaktName": dataitem["author"],
-                    "kontaktEmail": transform_mail(dataitem["author_email"])
-                },
-                "verwalter": {
-                    "kontaktName": dataitem["maintainer"],
-                    "kontaktEmail": transform_mail(dataitem["maintainer_email"])
-                },
-                "url": dataitem["url"],
-                "geo": None,
-                "organisation": transform_organisation("ckan", dataitem["organization"]),
-                "erstellDatum": transform_date(dataitem["metadata_created"], "ckan"),
-                "updateDatum": transform_date(dataitem["metadata_modified"], "ckan"),
-                "gruppen": dataitem["groups"],
-                "extra": None,
-                "lizenz": {
-                    "lizenzTitel": dataitem["license_title"],
-                    "lizenzUrl": dataitem["license_url"]
-                },
-                "tags": dataitem["tags"],
-                "kategorien": [],
-                "portalID": portal_id,
-                "endpunkte": dataEndpoints
-            }
-
-            return output
-        else:
-            return None
+    # check if array-attributes are given
+    if "extras" in dataitem:
+        dataitem["extras"] = transform_garbage(dataitem["extras"], "ckan")
     else:
-        return None
+        dataitem["extras"] = None
+
+    if "tags" in dataitem:
+        dataitem["tags"] = transform_keywords(dataitem["tags"], "ckan")
+    else:
+        dataitem["tags"] = []
+
+    if "groups" in dataitem:
+        dataitem["groups"] = [transform_group(gruppe, "ckan") for gruppe in dataitem["groups"]]
+    else:
+        dataitem["groups"] = []
+
+    dataEndpoints = [map_dataendpoint(endpoint) for endpoint in dataitem['resources']]
+
+    # Todo: Kategorie, extras (+ fixen!)
+    output = {
+        "titel": remove_html_tags(dataitem["title"]),
+        "beschreibung": remove_html_tags(dataitem["notes"]),
+        "autor": {
+            "kontaktName": dataitem["author"],
+            "kontaktEmail": dataitem["author_email"]
+        },
+        "verwalter": {
+            "kontaktName": dataitem["maintainer"],
+            "kontaktEmail": dataitem["maintainer_email"]
+        },
+        "url": dataitem["url"],
+        "geo": None,
+        "organisation": transform_organisation("ckan", dataitem["organization"]),
+        "erstellDatum": transform_date(dataitem["metadata_created"], "ckan"),
+        "updateDatum": transform_date(dataitem["metadata_modified"], "ckan"),
+        "gruppen": dataitem["groups"],
+        "extra": None,
+        "lizenz": {
+            "lizenzTitel": dataitem["license_title"],
+            "lizenzUrl": dataitem["license_url"]
+        },
+        "tags": dataitem["tags"],
+        "kategorien": [],
+        "portalID": portal_id,
+        "endpunkte": dataEndpoints
+    }
+
+    return output

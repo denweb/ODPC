@@ -5,7 +5,7 @@ import sqlite3
 class DBConnection (object):
     def __init__(self, dbname):
         self.dbname = dbname
-        self.connection = sqlite3.connect("C:/Users/Dennis/PycharmProjects/ODPC/database/{0}".format(dbname))
+        self.connection = sqlite3.connect("E:/PycharmProjects/ODPC/database/{0}".format(dbname))
         self.cursor = self.connection.cursor()
 
     def create_portal(self, portal_data):
@@ -152,7 +152,7 @@ class DBConnection (object):
                 else:
                     attr_id = self.create_attr(table, values)
         # Todo: Add a second try if unque contraint is the problem. Easiest solution: Add second function.
-        except:
+        except Exception:
             attr_id = 999999999
 
         return attr_id

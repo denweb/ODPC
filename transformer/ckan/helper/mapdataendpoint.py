@@ -41,18 +41,20 @@ def map_dataendpoint(endpoint):
         "extras": "Ne"
     }
 
+    """
     # check if date-information is given
     # Wird das gebraucht? Glaube fast nicht.
-    if endpoint["created"] != "N/A":
+    if endpoint["created"]:
         new_endpoint["erstellDatum"] = transform_date(endpoint["created"], "ckan")
     else:
         new_endpoint["erstellDatum"] = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3]+"+0000"
 
-    if endpoint["last_modified"] != "N/A":
+    if endpoint["last_modified"]:
         new_endpoint["updateDatum"] = transform_date(endpoint["last_modified"], "ckan")
     elif all([endpoint["last_modified"] == "N/A", endpoint["created"] != "N/A"]):
         new_endpoint["updateDatum"] = transform_date(endpoint["created"], "ckan")
     elif all([endpoint["last_modified"] == "N/A", endpoint["created"] == "N/A"]):
         new_endpoint["updateDatum"] = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3] + "+0000"
+    """
 
     return new_endpoint

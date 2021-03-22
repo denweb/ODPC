@@ -13,7 +13,8 @@ def transform_organisation(portal, org):
 
         if portal == "ckan":
 
-            fields = ["description", "created", "title", "name", "is_organization", "state", "image_url", "revision_id", "type", "id", "approval_status"]
+            fields = ["description", "created", "title", "name", "is_organization", "state", "image_url",
+                      "revision_id", "type", "id", "approval_status"]
 
             for field in fields:
                 if field not in org:
@@ -28,8 +29,8 @@ def transform_organisation(portal, org):
             beschreibung = org["description"]
             status = org["state"]
             kontakt = {
-                "kontaktName": "",
-                "kontaktEmail": ""
+                "kontaktName": None,
+                "kontaktEmail": None
             }
             extra = ", ".join([org["created"],
                                str(org["is_organization"]),
@@ -51,4 +52,3 @@ def transform_organisation(portal, org):
     }
 
     return organisation
-

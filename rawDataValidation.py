@@ -132,7 +132,12 @@ def validate_link(q):
                     pass
 
             response.close()
-        update = update_dataitem(lid, updated_data_item)
+
+        # Quckfix f. Fehler bei der Fehlererstellung. Todo: später genauer untersuchen.
+        try:
+            update_dataitem(lid, updated_data_item)
+        except Exception as e:
+            print("Fehler beim updaten:", e)
         q.task_done()
 
 

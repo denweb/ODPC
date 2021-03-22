@@ -3,7 +3,7 @@ from datetime import datetime
 from urllib3 import disable_warnings
 from utility.utility import set_limit_and_offset
 from crawlers.crawler import Crawler
-from utility.deceider import assign
+from rawDataValidation import validate_raw_data_links
 import sys
 import csv
 
@@ -48,3 +48,8 @@ if __name__ == '__main__':
         logging.info("%s Dataitems loaded of this link" % len(c.uploaded_ids))
         logging.info("\n")
     logging.info("Crawler done")
+    logging.info("Starting raw data validation")
+
+    validate_raw_data_links()
+
+    logging.info("Raw data validation down.")

@@ -5,7 +5,7 @@ import sqlite3
 class DBConnection (object):
     def __init__(self, dbname):
         self.dbname = dbname
-        self.connection = sqlite3.connect("C:/Users/Dennis/PycharmProjects/ODPC/database/{0}".format(dbname))
+        self.connection = sqlite3.connect("database/{0}".format(dbname))
         self.cursor = self.connection.cursor()
 
     def create_portal(self, portal_data):
@@ -324,10 +324,24 @@ class DBConnection (object):
 
         return res
 
-    def get_tables_dict_by_condition(self, tablename, col, value):
+    def get_tables_dict_by_condition_single(self, tablename, col, value):
         sql = "SELECT * " \
               "FROM {0} " \
               "WHERE {1} = '{2}';".format(tablename, col, value)
+
+        cursor = self.cursor
+        cursor.row_factory = sqlite3.Row
+
+        self.cursor.execute(sql)
+
+        res = self.cursor.fetchall()
+
+        return res
+
+    def get_tables_dict_by_condition_list(self, tablename, col, values):
+        sql = "SELECT * " \
+              "FROM {0} " \
+              "WHERE {1} in {2};".format(tablename, col, tuple(values))
 
         cursor = self.cursor
         cursor.row_factory = sqlite3.Row

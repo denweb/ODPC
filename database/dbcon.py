@@ -5,7 +5,7 @@ import sqlite3
 class DBConnection (object):
     def __init__(self, dbname):
         self.dbname = dbname
-        self.connection = sqlite3.connect("E:/PycharmProjects/ODPC/database/{0}".format(dbname))
+        self.connection = sqlite3.connect("C:/Users/Dennis/PycharmProjects/ODPC/database/{0}".format(dbname))
         self.cursor = self.connection.cursor()
 
     def create_portal(self, portal_data):
@@ -262,6 +262,61 @@ class DBConnection (object):
         sql = "SELECT portalID " \
               "FROM portal " \
               "WHERE portalTyp='2' or portalTyp='3' or portalTyp='4';"
+
+        self.cursor.execute(sql)
+
+        res = self.cursor.fetchall()
+
+        return res
+
+    def get_meta_ids(self, portal):
+        sql = "SELECT metaDatensatzID " \
+              "FROM metaDatensatz " \
+              "WHERE portal='{}';".format(portal)
+
+        self.cursor.execute(sql)
+
+        res = self.cursor.fetchall()
+
+        return res
+
+    def get_roh_ids_single(self, meta):
+        sql = "SELECT rohDatensatzID " \
+              "FROM rohDatensatz " \
+              "WHERE metaDatensatz='{}';".format(meta)
+
+        self.cursor.execute(sql)
+
+        res = self.cursor.fetchall()
+
+        return res
+
+    def get_roh_ids_list(self, meta):
+        sql = "SELECT rohDatensatzID " \
+              "FROM rohDatensatz " \
+              "WHERE metaDatensatz IN {};".format(tuple(meta))
+
+        self.cursor.execute(sql)
+
+        res = self.cursor.fetchall()
+
+        return res
+
+    def get_attr_single(self, table_name, attr, condition, value):
+        sql = "SELECT {0} " \
+              "FROM {1} " \
+              "WHERE {2} = '{3}';".format(attr, table_name, condition, value)
+
+        self.cursor.execute(sql)
+
+        res = self.cursor.fetchall()
+
+        return res
+
+    def get_attr_list(self, table_name, attr, condition, values):
+        sql = "SELECT {0} " \
+              "FROM {1} " \
+              "WHERE {2} IN {3};".format(attr, table_name, condition, tuple(values))
 
         self.cursor.execute(sql)
 

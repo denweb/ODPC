@@ -42,36 +42,42 @@ def get_rohdaten(db, meta):
     return res
 
 
-dbPortals = DBConnection("testdb.db")
-portals = get_portal_ids(dbPortals)
-
-for portal in portals:
-    metadaten = get_metadataitems(dbPortals, portal)
-    rohdaten = [get_rohdaten(dbPortals, meta["metaDatensatzID"]) for meta in metadaten]
-
-    data = {
-        "meta": metadaten,
-        "roh": rohdaten
-    }
-
-    print(data)
-
-#metadaten = get_metadataitems(dbPortals, portals[0])
-#rohdaten = get_rohdaten(dbPortals, metadaten[0]["metaDatensatzID"])
-
-#print(rohdaten)
+def get_metadataids(db, portal):
+    return tuple(meta[0] for meta in db.get_meta_ids(portal))
 
 
-dbPortals.connection.close()
+def get_rohdataids_meta(db, meta):
+    return tuple(roh[0] for roh in db.get_roh_ids_single(meta))
 
 
-"""
-data = {}
-for portal in portals:
-    data[portal] = {}
-    data[portal]["meta"]= get_metadataitems(dbPortals, portal)
-    for metaitem in data[portal]["meta"]:
-        data[portal]["rohdaten"] = get_rohdaten(dbPortals, metaitem["metaDatensatzID"])
+def get_rohdataids_list(db, meta):
+    return tuple(roh[0] for roh in db.get_roh_ids_list(meta))
 
-print(data)
-"""
+
+def get_attr_single(db, table, attr, condition, value):
+    return db.get_attr_single(table, attr, condition, value)
+
+
+def get_attr_list(db, table, attr, condition, values):
+    return tuple(attr[0] for attr in db.get_attr_list(table, attr, condition, values))
+
+
+def get_voll(db, portal_ids):
+    pass
+
+
+if __name__ == '__main__':
+    dbPortals = DBConnection("testdb.db")
+    portals = get_portal_ids(dbPortals)
+
+    for portal in portals:
+        meta_ids = get_metadataids(dbPortals, portal)
+        roh_ids = get_rohdataids_list(dbPortals, meta_ids)
+
+        portal_data = {
+            "portal": portal,
+            "meta": meta_ids,
+            "roh": roh_ids
+        }
+
+    dbPortals.connection.close()

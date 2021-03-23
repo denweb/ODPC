@@ -352,6 +352,19 @@ class DBConnection (object):
 
         return res
 
+    def get_tables_dict(self, tablename):
+        sql = "SELECT * " \
+              "FROM {0};".format(tablename)
+
+        cursor = self.cursor
+        cursor.row_factory = sqlite3.Row
+
+        self.cursor.execute(sql)
+
+        res = self.cursor.fetchall()
+
+        return res
+
     def update_rawdata(self, id, data):
         res = True
 

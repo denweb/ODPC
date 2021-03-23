@@ -30,10 +30,20 @@ def get_gew_vollst(metadaten):
     return res
 
 
+#Todo: Das Rohdaten...
+def get_rohdaten_vollst():
+    pass
 
 
 def get_vollst(meta):
+    res = {
+        "gewVollst": 0,
+        "rohZelle": 0,
+        "rohReihe": 0,
+        "rohLabel": 0,
+    }
 
-    gew = int(mean([get_gew_vollst(metadaten) for metadaten in meta])*7/20)
+    # gew. Vollständigkeit
+    res["gewVollst"] =  mean([get_gew_vollst(metadaten) for metadaten in meta])*7/20
 
-    print(gew)
+    return res

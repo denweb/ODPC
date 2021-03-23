@@ -1,6 +1,7 @@
 from database.dbcon import DBConnection
 from ast import literal_eval
 from framework.framework import get_portal_scores
+import re
 
 
 def get_portal_ids(db):
@@ -67,11 +68,37 @@ def get_voll(db, portal_ids):
     pass
 
 
+def get_valide_kontakte(db):
+    kontakte = db.get_tables_dict("kontakt")
+
+    kont = {
+        "beide": set(),
+        "name": set(),
+        "email": set()
+    }
+
+    regex = re.compile(r"[^@]+(@|(at))[^@]+\.[^@]+")
+
+    for kontakt in kontakte:
+        mail = regex.fullmatch(kontakt["kontaktEmail"])
+        name = kontakt["kontaktName"] != "" and kontakt["kontaktName"] != "None"
+
+        if name and mail:
+            kont["beide"].add(kontakt["kontaktID"])
+        elif name:
+            kont["name"].add(kontakt["kontaktID"])
+        elif mail:
+            kont["email"].add(kontakt["kontaktID"])
+
+    return kont
+
 if __name__ == '__main__':
     db = DBConnection("testdb.db")
     portals = get_portal_ids(db)
 
+    kontakte = get_valide_kontakte(db)
+
     for portal in portals:
-        res = get_portal_scores(db, portal)
+        res = get_portal_scores(db, portal, kontakte)
 
     db.connection.close()

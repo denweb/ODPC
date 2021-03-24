@@ -93,13 +93,21 @@ def get_valide_kontakte(db):
     return kont
 
 
+def get_akt_daten(db):
+    akt_daten = set(datum["datumID"]
+                    for datum in db.get_attr_where("datum", "datumID", "(datum LIKE '%2021%' OR datum LIKE '%2020%')"))
+
+    return akt_daten
+
+
 if __name__ == '__main__':
     db = DBConnection("testdb.db")
     portals = get_portal_ids(db)
 
     kontakte = get_valide_kontakte(db)
+    akt_daten = get_akt_daten(db)
 
     for portal in portals:
-        res = get_portal_scores(db, portal, kontakte)
+        res = get_portal_scores(db, portal, kontakte, akt_daten)
 
     db.connection.close()

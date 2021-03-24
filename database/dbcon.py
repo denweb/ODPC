@@ -324,6 +324,17 @@ class DBConnection (object):
 
         return res
 
+    def get_attr_where(self, table_name, attr, condition):
+        sql = "SELECT {0} " \
+              "FROM {1} " \
+              "WHERE {2};".format(attr, table_name, condition)
+
+        self.cursor.execute(sql)
+
+        res = self.cursor.fetchall()
+
+        return res
+
     def get_tables_dict_by_condition_single(self, tablename, col, value):
         sql = "SELECT * " \
               "FROM {0} " \

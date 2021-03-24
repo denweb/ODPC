@@ -55,6 +55,4 @@ def get_genau(meta, kontakte):
 
     res["syntax"] = mean([check_valid_metadata(metadaten, kontakte) for metadaten in meta])
 
-    print(res)
-
     return res

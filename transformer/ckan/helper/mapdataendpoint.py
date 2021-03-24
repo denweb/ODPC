@@ -38,7 +38,7 @@ def map_dataendpoint(endpoint):
         "erstellDatum": transform_date(endpoint["created"], "ckan"),
         "updateDatum": transform_date(endpoint["last_modified"], "ckan"),
         "metaDatensatz": 1,
-        "extras": "Ne"
+        "extras": None
     }
 
     """

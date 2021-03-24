@@ -9,13 +9,16 @@ def transform_date(date, portal=None):
     if date:
         try:
             if portal in ["european", "ckan", "dkan"]:
-                res = datetime.datetime.strptime(date, "%Y-%m-%dT%H:%M:%S.%f").strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3]+"+0000"
+                res = datetime.datetime.strptime(date, "%Y-%m-%dT%H:%M:%S.%f").strftime("%Y-%m-%d")
             elif portal == "arcgis":
-                res = datetime.datetime.strptime(date, "%Y-%m-%dT%H:%M:%S.%fZ").strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3] + "+0000"
+                res = datetime.datetime.strptime(date, "%Y-%m-%dT%H:%M:%S.%fZ").strftime("%Y-%m-%d")
             else:
-                res = datetime.datetime.strptime(date[:-3], "%Y-%m-%dT%H:%M:%S+%f").strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3] + "+0000"
-        except:
+                res = datetime.datetime.strptime(date[:-3], "%Y-%m-%dT%H:%M:%S+%f").strftime("%Y-%m-%d")
+        except Exception:
             date = date.split()[-1]
-            res = dateparser.parse(date).strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3]+"+0000"
+            try:
+                res = dateparser.parse(date).strftime("%Y-%m-%d")
+            except Exception:
+                pass
 
     return res

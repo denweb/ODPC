@@ -29,7 +29,7 @@ class DBConnection (object):
 
             portal_id = self.cursor.lastrowid
         except:
-            portal_id = 999999999
+            portal_id = 9999999
 
         return portal_id
 
@@ -68,7 +68,7 @@ class DBConnection (object):
 
             meta_data_id = self.cursor.lastrowid
         except:
-            meta_data_id = 999999999
+            meta_data_id = 9999999
 
         return meta_data_id
 
@@ -98,7 +98,7 @@ class DBConnection (object):
 
             roh_data_id = self.cursor.lastrowid
         except:
-            roh_data_id = 999999999
+            roh_data_id = 9999999
 
         return roh_data_id
 
@@ -153,7 +153,7 @@ class DBConnection (object):
                     attr_id = self.create_attr(table, values)
         # Todo: Add a second try if unque contraint is the problem. Easiest solution: Add second function.
         except Exception:
-            attr_id = 999999999
+            attr_id = 9999999
 
         return attr_id
 

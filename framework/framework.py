@@ -27,3 +27,4 @@ def get_portal_scores(db, portal, kontakte):
         genau = get_genau(meta, kontakte)
         vollst = get_vollst(meta)
 
+

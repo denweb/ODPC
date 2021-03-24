@@ -92,6 +92,7 @@ def get_valide_kontakte(db):
 
     return kont
 
+
 if __name__ == '__main__':
     db = DBConnection("testdb.db")
     portals = get_portal_ids(db)

@@ -44,6 +44,6 @@ def get_vollst(meta):
     }
 
     # gew. Vollständigkeit
-    res["gewVollst"] =  mean([get_gew_vollst(metadaten) for metadaten in meta])*7/20
+    res["gewVollst"] = mean([get_gew_vollst(metadaten) for metadaten in meta])*7/20
 
     return res

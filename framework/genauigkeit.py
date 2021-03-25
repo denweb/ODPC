@@ -40,6 +40,7 @@ def check_valid_metadata(metadaten, kontakte):
     return res
 
 
+# Todo: Informationsgehalt? Lesbarkeit?
 def get_genau(meta, kontakte):
     res = {
         "titel": 0,

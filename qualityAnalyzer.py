@@ -1,6 +1,7 @@
 from database.dbcon import DBConnection
 from ast import literal_eval
 from framework.framework import get_portal_scores
+from framework.utility.db_helfer import get_dateiformat_ids
 import re
 
 
@@ -106,8 +107,9 @@ if __name__ == '__main__':
 
     kontakte = get_valide_kontakte(db)
     akt_daten = get_akt_daten(db)
+    dateiformate_ids = get_dateiformat_ids(db)
 
     for portal in portals:
-        res = get_portal_scores(db, portal, kontakte, akt_daten)
+        res = get_portal_scores(db, portal, kontakte, akt_daten, dateiformate_ids)
 
     db.connection.close()

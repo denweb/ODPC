@@ -1,6 +1,9 @@
 from framework.vollständigkeit import get_vollst
 from framework.genauigkeit import get_genau
 from framework.aktualität import get_akt
+from framework.abrufbarkeit import get_abr
+from framework.offenheit import get_off
+from urllib.parse import urlparse
 
 
 def get_metadataids(db, portal):
@@ -22,12 +25,13 @@ def get_datum_ids(db, meta):
     return datum_ids
 
 
-def get_portal_scores(db, portal, kontakte, akt_daten):
+def get_portal_scores(db, portal, kontakte, akt_daten, dateiformate_ids):
     meta_ids = get_metadataids(db, portal)
     roh_ids = get_rohdataids_list(db, meta_ids)
 
     meta = tuple(db.get_tables_dict_by_condition_list("metaDatensatz", "metaDatensatzID", meta_ids))
     roh = tuple(db.get_tables_dict_by_condition_list("rohDatensatz", "rohDatensatzID", roh_ids))
+    portal_domain = urlparse(db.get_attr_single("portal", "url", "portalID", portal)[0]["url"]).netloc
 
     datum_ids = get_datum_ids(db, meta)
 
@@ -35,5 +39,7 @@ def get_portal_scores(db, portal, kontakte, akt_daten):
         genau = get_genau(meta, kontakte)
         vollst = get_vollst(meta)
         akt = get_akt(meta, akt_daten, datum_ids)
+        abr = get_abr(roh, portal_domain)
+        off = get_off(meta, roh, dateiformate_ids)
 
-
+        print(off)

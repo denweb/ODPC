@@ -1,5 +1,6 @@
 from statistics import mean
 
+
 def get_abr(rohdaten, portal_domain):
     res = {
         "linkOnline": mean([9 if data["online"] == "True" else 0 for data in rohdaten]),

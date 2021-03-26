@@ -28,7 +28,7 @@ def get_datum_ids(db, meta):
     return datum_ids
 
 
-def get_portal_scores(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehler):
+def get_portal_scores(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehler, vollst_fehler):
     meta_ids = get_metadataids(db, portal)
     roh_ids = get_rohdataids_list(db, meta_ids)
 
@@ -40,7 +40,7 @@ def get_portal_scores(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehl
 
     if meta:
         genau = get_genau(meta, kontakte)
-        vollst = get_vollst(meta)
+        vollst = get_vollst(meta, roh, vollst_fehler)
         akt = get_akt(meta, akt_daten, datum_ids)
         abr = get_abr(roh, portal_domain)
         off = get_off(meta, roh, dateiformate_ids)
@@ -48,4 +48,4 @@ def get_portal_scores(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehl
         rue = get_rue(meta)
         val = get_val(roh, se_fehler)
 
-        print(val)
+        print(vollst)

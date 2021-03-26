@@ -108,6 +108,20 @@ def get_source_error_fehler(db):
     return se_fehler
 
 
+def get_vollst_fehler(db):
+    vollst_fehler = {
+        "zelle": {fehler["fehlerID"]
+                  for fehler in
+                  db.get_attr_where("fehler", "fehlerID", "fehlerCode = 'missing-value' OR fehlerCode = 'missing-cell'")},
+        "reihe": {fehler["fehlerID"]
+                  for fehler in db.get_attr_single("fehler", "fehlerID", "fehlerCode", "blank-row")},
+        "label": {fehler["fehlerID"]
+                   for fehler in db.get_attr_single("fehler", "fehlerID", "fehlerCode", "blank-label")}
+    }
+
+    return vollst_fehler
+
+
 if __name__ == '__main__':
     db = DBConnection("testdb.db")
     portals = get_portal_ids(db)
@@ -116,8 +130,9 @@ if __name__ == '__main__':
     akt_daten = get_akt_daten(db)
     dateiformate_ids = get_dateiformat_ids(db)
     se_fehler = get_source_error_fehler(db)
+    vollst_fehler = get_vollst_fehler(db)
 
     for portal in portals:
-        res = get_portal_scores(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehler)
+        res = get_portal_scores(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehler, vollst_fehler)
 
     db.connection.close()

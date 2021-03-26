@@ -1,4 +1,5 @@
 from statistics import mean
+from ast import literal_eval
 
 
 def get_gew_vollst(metadaten):
@@ -30,20 +31,20 @@ def get_gew_vollst(metadaten):
     return res
 
 
-#Todo: Das Rohdaten...
-def get_rohdaten_vollst():
-    pass
-
-
-def get_vollst(meta):
+# Todo: Warum gew. Vollständigkeit?
+#  Nicht sinnvoller, einach vollständigkeit & gew. in Genauigkeit - wegen Informationsgehalt?
+def get_vollst(meta, roh, vollst_fehler):
     res = {
-        "gewVollst": 0,
-        "rohZelle": 0,
-        "rohReihe": 0,
-        "rohLabel": 0,
+        "gewVollst": mean([get_gew_vollst(metadaten) for metadaten in meta])*7/20,
+        "rohZelle": mean([1 if not set(literal_eval(data["fehler"])).intersection(vollst_fehler["zelle"]) else 0
+                          for data in roh
+                          if data["anzahlFehler"] is not None]),
+        "rohReihe": mean([1 if not set(literal_eval(data["fehler"])).intersection(vollst_fehler["reihe"]) else 0
+                          for data in roh
+                          if data["anzahlFehler"] is not None]),
+        "rohLabel": mean([1 if not set(literal_eval(data["fehler"])).intersection(vollst_fehler["label"]) else 0
+                          for data in roh
+                          if data["anzahlFehler"] is not None]),
     }
-
-    # gew. Vollständigkeit
-    res["gewVollst"] = mean([get_gew_vollst(metadaten) for metadaten in meta])*7/20
 
     return res

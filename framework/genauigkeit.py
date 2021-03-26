@@ -40,6 +40,7 @@ def check_valid_metadata(metadaten, kontakte):
     return res
 
 
+# Todo: Weitere Felder auf Existenz / Validität prüfen.
 # Todo: Informationsgehalt? Lesbarkeit?
 def get_genau(meta, kontakte):
     res = {

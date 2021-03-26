@@ -68,7 +68,7 @@ def validate_link(q):
             "dateiTypReal": None,
             "dateiGrößeReal": None,
             "valide": 2,
-            "fehler": [],
+            "fehler": None,
             "anzahlFehler": None,
         }
 

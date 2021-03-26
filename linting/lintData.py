@@ -21,7 +21,7 @@ def get_valid(file):
 
     except Exception:
         result = {"valide": 3,
-                  "fehler": [],
+                  "fehler": None,
                   "anzahlFehler": None
                   }
 

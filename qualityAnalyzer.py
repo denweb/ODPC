@@ -101,6 +101,13 @@ def get_akt_daten(db):
     return akt_daten
 
 
+def get_source_error_fehler(db):
+    se_fehler = {fehler["fehlerID"]
+                 for fehler in db.get_attr_single("fehler", "fehlerID", "fehlerCode", "source-error")}
+
+    return se_fehler
+
+
 if __name__ == '__main__':
     db = DBConnection("testdb.db")
     portals = get_portal_ids(db)
@@ -108,8 +115,9 @@ if __name__ == '__main__':
     kontakte = get_valide_kontakte(db)
     akt_daten = get_akt_daten(db)
     dateiformate_ids = get_dateiformat_ids(db)
+    se_fehler = get_source_error_fehler(db)
 
     for portal in portals:
-        res = get_portal_scores(db, portal, kontakte, akt_daten, dateiformate_ids)
+        res = get_portal_scores(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehler)
 
     db.connection.close()

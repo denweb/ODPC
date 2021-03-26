@@ -79,7 +79,6 @@ def validate_link(q):
             url_info = check_all(response)
 
             if url_info["url_status"] == "200, OK":
-                # Todo: Herausfinden, welche files genau geparsed werden könne. Was ist mit XML? XSL?
                 # Todo: Add support for archives like zip, tar or rar. Could be done with shutil
                 ext = url_info["ext"]
 
@@ -124,7 +123,7 @@ def validate_link(q):
                         else:
                             updated_data_item["valide"] = 4
                             print("Save file not created successfully // Could not be read")
-                    except:
+                    except Exception:
                         updated_data_item["valide"] = 5
                         print("Error. Save to ID or something")
                 else:

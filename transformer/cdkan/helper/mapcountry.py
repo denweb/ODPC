@@ -4,9 +4,9 @@ import json
 # NOT USED AT THE MOMENT! European data portal is mapped differently now.
 def map_country(org_title):
     """
-    Takes the catalogue-title of a ckan-dataitem to map to the corresponding country in ISO-3-format.
+    Takes the catalogue-title of a cdkan-dataitem to map to the corresponding country in ISO-3-format.
     For the europeandataportal.org.
-    :param org_title: ["organization"]["title"]-information of a ckan dataitem.
+    :param org_title: ["organization"]["title"]-information of a cdkan dataitem.
     :return: The ISO-3 Code of the mapped country. Or "N/A" if none is found.
     """
     if org_title is not None:

@@ -1,5 +1,5 @@
 def transform_garbage(garbage, portal):
-    if portal in ["european", "ckan", "dkan"]:
+    if portal in ["european", "cdkan", "dkan"]:
         result = [
             str(item["value"]) for item in garbage
         ]

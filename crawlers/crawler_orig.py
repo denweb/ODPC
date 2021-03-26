@@ -3,7 +3,7 @@ from utility.utility import get_connection, create_modlink
 from extractor.getdataitems import get_dataitems
 from loader.loader import upload
 from transformer.european.transformation import remap as euro_remap
-from transformer.ckan.transformation import remap as ckan_remap
+from transformer.cdkan.transformation import remap as ckan_remap
 from transformer.arcgis.transformation import remap as arcgis_remap
 from transformer.socrata.transformation import remap as socrata_remap
 from utility.websiteInfo import check_all
@@ -61,7 +61,7 @@ class Crawler (object):
 
                     self.extract_and_process_website(url_current)
 
-            elif self.portal == "ckan":
+            elif self.portal == "cdkan":
                 if self.limit == 0:
                     self.limit = self.number_items_overall
 
@@ -91,7 +91,7 @@ class Crawler (object):
         proceed = False
 
         # get test-url for minimum call
-        if self.portal in ["ckan", "european"]:
+        if self.portal in ["cdkan", "european"]:
             modlink = self.modlink.format(1, 0)
         else:
             modlink = self.modlink
@@ -107,7 +107,7 @@ class Crawler (object):
                 response.close()
 
                 if website_data is not None:
-                    if self.portal in ["ckan", "european"]:
+                    if self.portal in ["cdkan", "european"]:
                         self.number_items_overall = website_data["result"]["count"]
                     else:
                         self.number_items_overall = len(website_data['dataset'])
@@ -176,7 +176,7 @@ class Crawler (object):
 
             if self.portal == "european":
                 remapped = euro_remap(dataitem)
-            elif self.portal == "ckan":
+            elif self.portal == "cdkan":
                 remapped = ckan_remap(dataitem)
             elif self.portal == "arcgis":
                 remapped = arcgis_remap(dataitem)

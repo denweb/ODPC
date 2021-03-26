@@ -7,7 +7,7 @@ import requests
 
 def get_link_portal(link):
     if isinstance(link, str):
-        pre = ["data.", "daten.", "transparenz.", "suche.", "ckan."]
+        pre = ["data.", "daten.", "transparenz.", "suche.", "cdkan."]
         post = ["/dataset", "/data", "/daten"]
 
         domain = get_domain(link)
@@ -60,7 +60,7 @@ def assign(link):
         return "arcgis"
 
     # Check for CKAN
-    ckan_testlink = create_modlink(link, "ckan")
+    ckan_testlink = create_modlink(link, "cdkan")
 
     response = get_connection(ckan_testlink.format(1, 0), open_conn=True)
 
@@ -70,7 +70,7 @@ def assign(link):
 
         if isinstance(link_content, dict):
             if "result" in link_content:
-                return "ckan"
+                return "cdkan"
 
     # check for DKAN
     dkan_testlink = create_modlink(link, "dkan")

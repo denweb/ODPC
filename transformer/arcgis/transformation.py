@@ -58,8 +58,8 @@ def remap(dataitem, portal_id):
         "url": dataitem["landingPage"],
         "geo": dataitem["spatial"],
         "organisation": transform_organisation("arcgis", dataitem["publisher"]),
-        "erstellDatum": transform_date(dataitem["issued"], "ckan"),
-        "updateDatum": transform_date(dataitem["modified"], "ckan"),
+        "erstellDatum": transform_date(dataitem["issued"], "cdkan"),
+        "updateDatum": transform_date(dataitem["modified"], "cdkan"),
         "gruppen": [],
         "extra": None,
         "lizenz": {

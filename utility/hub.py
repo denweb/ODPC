@@ -2,8 +2,8 @@ def distribute(link, portal):
     if portal == "arcgis":
         # Todo: Pass to arcgis cralwer here
         pass
-    elif portal == "ckan":
-        # Todo: Pass to ckan crawler here
+    elif portal == "cdkan":
+        # Todo: Pass to cdkan crawler here
         pass
     elif portal == "socrata":
         # Todo: Pass to socrata crawler here

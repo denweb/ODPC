@@ -93,7 +93,7 @@ def get_portals():
             website_data = get_website_data(response)
 
             # get dataitems
-            dataitems = get_dataitems(website_data, "ckan")
+            dataitems = get_dataitems(website_data, "cdkan")
 
             # preparations for queuing
             temp_item_number = len(dataitems)

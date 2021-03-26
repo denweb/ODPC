@@ -4,6 +4,7 @@ from framework.aktualität import get_akt
 from framework.abrufbarkeit import get_abr
 from framework.offenheit import get_off
 from framework.kontaktierbarkeit import get_kon
+from framework.rückverfolgbarkeit import get_rue
 from urllib.parse import urlparse
 
 
@@ -43,5 +44,6 @@ def get_portal_scores(db, portal, kontakte, akt_daten, dateiformate_ids):
         abr = get_abr(roh, portal_domain)
         off = get_off(meta, roh, dateiformate_ids)
         kon = get_kon(meta, kontakte)
+        rue = get_rue(meta)
 
-        print(kon)
+        print(rue)

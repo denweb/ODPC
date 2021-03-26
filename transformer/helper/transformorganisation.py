@@ -11,7 +11,7 @@ def transform_organisation(portal, org):
     # check if org information was given.
     if org:
 
-        if portal == "ckan":
+        if portal == "cdkan":
 
             fields = ["description", "created", "title", "name", "is_organization", "state", "image_url",
                       "revision_id", "type", "id", "approval_status"]

@@ -58,7 +58,7 @@ def get_connection(url, open_conn=False):
 def create_modlink(link, portal):
     modlink = ""
 
-    if portal == "ckan":
+    if portal == "cdkan":
         if not link.endswith("/"):
             modlink = "".join([link, "/api/3/action/package_search?rows={}&start={}"])
         else:
@@ -66,9 +66,9 @@ def create_modlink(link, portal):
 
     if portal == "european":
         if not link.endswith("/"):
-            modlink = "".join([link, "/data/search/ckan/package_search?rows={}&start={}"])
+            modlink = "".join([link, "/data/search/cdkan/package_search?rows={}&start={}"])
         else:
-            modlink = "".join([link, "data/search/ckan/package_search?rows={}&start={}"])
+            modlink = "".join([link, "data/search/cdkan/package_search?rows={}&start={}"])
 
     if portal == "dkan":
         if not link.endswith("/"):

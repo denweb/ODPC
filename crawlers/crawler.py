@@ -3,7 +3,7 @@ from utility.utility import get_connection, create_modlink
 from extractor.getdataitems import get_dataitems
 from loader.loader import upload
 from transformer.european.transformation import remap as euro_remap
-from transformer.ckan.transformation import remap as ckan_remap
+from transformer.cdkan.transformation import remap as ckan_remap
 from transformer.arcgis.transformation import remap as arcgis_remap
 from transformer.socrata.transformation import remap as socrata_remap
 from utility.websiteInfo import check_all
@@ -43,7 +43,7 @@ class Crawler (object):
         self.portal_id = self.upload_portal()
 
         # check for known portal type and availability of website
-        if self.portal_type in ["ckan", "dkan", "arcgis"]:
+        if self.portal_type in ["cdkan", "dkan", "arcgis"]:
             if self.initial_check():
                 logging.info("Initial check passed.")
                 logging.info("Total number of data items on this link: {}".format(self.number_items_overall))
@@ -58,7 +58,7 @@ class Crawler (object):
 
                         self.extract_and_process_website(url_current)
 
-                elif self.portal_type == "ckan":
+                elif self.portal_type == "cdkan":
                     if self.limit == 0:
                         self.limit = self.number_items_overall
 
@@ -88,7 +88,7 @@ class Crawler (object):
         proceed = False
 
         # get test-url for minimum call
-        if self.portal_type in ["ckan", "european"]:
+        if self.portal_type in ["cdkan", "european"]:
             modlink = self.modlink.format(1, 0)
         elif self.portal_type == "opendatasoft":
             modlink = self.modlink.format(1)
@@ -107,7 +107,7 @@ class Crawler (object):
 
                 # Number of items overall is needed for the correct API call for some portals later.
                 if website_data is not None:
-                    if self.portal_type in ["ckan", "european"]:
+                    if self.portal_type in ["cdkan", "european"]:
                         self.number_items_overall = website_data["result"]["count"]
                     elif self.portal_type in ["socrata", "arcgis"]:
                         self.number_items_overall = len(website_data['dataset'])
@@ -182,7 +182,7 @@ class Crawler (object):
 
             if self.portal_type == "european":
                 remapped = euro_remap(dataitem, self.portal_id)
-            elif self.portal_type in ["ckan", "dkan"]:
+            elif self.portal_type in ["cdkan", "dkan"]:
                 remapped = ckan_remap(dataitem, self.portal_id)
             elif self.portal_type == "arcgis":
                 remapped = arcgis_remap(dataitem, self.portal_id)

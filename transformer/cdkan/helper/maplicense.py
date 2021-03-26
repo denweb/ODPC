@@ -3,34 +3,19 @@ import json
 
 def remap_license(dataitem):
     """
-    Maps the license-information given in a ckan-dataitem to the advaneo-license-format.
-    :param dataitem: A dictionary containing a dataitem in ckan-format
+    Maps the license-information given in a cdkan-dataitem to the advaneo-license-format.
+    :param dataitem: A dictionary containing a dataitem in cdkan-format
     :return: a list with the license-information in advaneo-format. "N/A" as values if nothing is matched.
     """
     input_license_information = []
-    fields = ["licence_id", "licence"]
+    fields = ["license_id", "license_url", "license_title"]
 
     for field in fields:
         if field in dataitem:
             if dataitem[field] is not None:
-                if all([
-                    dataitem[field] != "N/A",
-                    dataitem[field] != "notspecified",
-                    dataitem[field] != ""
-                ]):
-                    if field == "licence":
-                        input_license_information.append(dataitem[field]["resource"].lower())
-                    else:
-                        input_license_information.append(dataitem[field].lower())
-
-        if field in dataitem["resources"][0]:
-            if dataitem["resources"][0][field] is not None:
-                if all([
-                    dataitem["resources"][0][field] != "N/A",
-                    dataitem["resources"][0][field] != "notspecified",
-                    dataitem["resources"][0][field] != ""
-                ]):
-                    input_license_information.append(dataitem["resources"][0][field]["resource"].lower())
+                if all([dataitem[field] != "N/A", dataitem[field] != "notspecified",
+                        "other" not in dataitem[field].lower()]):
+                    input_license_information.append(dataitem[field].lower())
 
     if input_license_information:
         # check if license-information is in mapping-file
@@ -38,7 +23,7 @@ def remap_license(dataitem):
             for input_license_field in input_license_information:
                 if any([input_license_field in license["id"].lower(),
                         input_license_field in license["title"].lower(),
-                        input_license_field[5:] in license["url"].lower(),
+                        input_license_field in license["url"].lower(),
                         input_license_field in license["mappings"].lower()]
                        ):
                     # return mapped license information on any hit

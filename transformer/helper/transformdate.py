@@ -8,7 +8,7 @@ def transform_date(date, portal=None):
 
     if date:
         try:
-            if portal in ["european", "ckan", "dkan"]:
+            if portal in ["european", "cdkan", "dkan"]:
                 res = datetime.datetime.strptime(date, "%Y-%m-%dT%H:%M:%S.%f").strftime("%Y-%m-%d")
             elif portal == "arcgis":
                 res = datetime.datetime.strptime(date, "%Y-%m-%dT%H:%M:%S.%fZ").strftime("%Y-%m-%d")

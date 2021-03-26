@@ -10,7 +10,7 @@ def get_dataitems(website_data, portal):
     """
 
     try:
-        if portal in ["ckan", "european"]:
+        if portal in ["cdkan", "european"]:
             return website_data['result']["results"]
         elif portal in ["socrata", "arcgis"]:
             return website_data['dataset']

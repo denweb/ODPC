@@ -1,7 +1,7 @@
 def transform_keywords(keywords, portal):
     if keywords is not None:
 
-        if portal in ["european", "ckan"]:
+        if portal in ["european", "cdkan"]:
 
             result = [keyword["name"].upper() for keyword in keywords
                       if any([len(keyword["name"]) >= 1, len(keyword["name"]) < 100])]

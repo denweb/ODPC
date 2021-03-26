@@ -8,7 +8,7 @@ def transform_group(group, portal):
     # Todo: Gruppe für Kategorien nutzen
     # check if group information is present
     if group:
-        if portal == "ckan":
+        if portal == "cdkan":
             fields = ["display_name", "description", "image_display_url", "title", "name"]
 
             for field in fields:

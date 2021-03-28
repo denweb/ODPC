@@ -6,6 +6,7 @@ from framework.offenheit import get_off
 from framework.kontaktierbarkeit import get_kon
 from framework.rückverfolgbarkeit import get_rue
 from framework.validität import get_val
+from framework.diversität import get_div
 from urllib.parse import urlparse
 
 
@@ -47,5 +48,6 @@ def get_portal_scores(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehl
         kon = get_kon(meta, kontakte)
         rue = get_rue(meta)
         val = get_val(roh, se_fehler)
+        div = get_div(meta, roh)
 
-        print(vollst)
+        #print(vollst)

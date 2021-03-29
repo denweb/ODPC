@@ -41,19 +41,36 @@ def get_extension(response):
     except IndexError:
         ext = content_type
 
-    # check for special cases
-    if ext == "pyz":
-        ext = "zip"
-    elif ext == "htm":
-        ext = "html"
-    elif ext == "turtle":
-        ext = "ttl"
-    elif ext == "VND.GOOGLE-EARTH.KML+XML":
-        ext = "kml"
-    elif ext == "xlb":
-        ext = "xls"
-    elif ext == "geo+json":
-        ext = "geojson"
+    ext = ext.lower()
+
+    try:
+        # check for special cases
+        if ext == "pyz":
+            ext = "zip"
+        elif ext == "htm":
+            ext = "html"
+        elif ext == "turtle":
+            ext = "ttl"
+        elif "kml" in ext:
+            ext = "kml"
+        elif ext == "xlb":
+            ext = "xls"
+        elif "geo+json" in ext:
+            ext = "geojson"
+        elif "csv" in ext:
+            ext = "csv"
+        elif all(["json" in ext, ext != "geojson"]):
+            ext = "json"
+        elif "xlsx" in ext:
+            ext = "xlsx"
+        elif all(["xls" in ext, "xlsx" not in ext]):
+            ext = "xls"
+        elif "ods" in ext:
+            ext = "ods"
+        elif "geojson" in ext:
+            ext = "geojson"
+    except Exception:
+        pass
 
     return content_type.upper(), ext.upper()
 

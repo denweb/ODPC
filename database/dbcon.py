@@ -378,8 +378,11 @@ class DBConnection (object):
 
     def update_rawdata(self, id, data):
         res = True
+        if data["fehler"]:
+            fehler = [self.create_attr_fehler(id, fehler) for fehler in data["fehler"]]
+        else:
+            fehler = None
 
-        fehler = [self.create_attr_fehler(id, fehler) for fehler in data["fehler"]]
         dateityp_real_id = self.get_id("dateiTyp", data["dateiTypReal"])
 
         try:

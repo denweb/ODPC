@@ -5,8 +5,8 @@ from transformer.helper.transformdate import transform_date
 def map_dataendpoint(endpoint):
 
     # check for missing values in input
-    endpoint_checklist = ["hash", "description", "format", "name", "resource_type", "mimetype", "mimetype_inner", "cache_url",
-                          "created", "last_modified", "cache_last_updated", "upload", "package_id"]
+    endpoint_checklist = ["hash", "description", "format", "name", "resource_type", "mimetype", "mimetype_inner",
+                          "cache_url", "created", "last_modified", "cache_last_updated", "upload", "package_id"]
 
     for field in endpoint_checklist:
         if field not in endpoint:

@@ -50,4 +50,4 @@ def get_portal_scores(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehl
         # val = get_val(roh, se_fehler)
         div = get_div(meta, roh)
 
-        #print(vollst)
+        print(div)

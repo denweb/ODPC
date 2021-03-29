@@ -40,14 +40,14 @@ def get_portal_scores(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehl
     datum_ids = get_datum_ids(db, meta)
 
     if meta:
-        genau = get_genau(meta, kontakte)
-        vollst = get_vollst(meta, roh, vollst_fehler)
-        akt = get_akt(meta, akt_daten, datum_ids)
-        abr = get_abr(roh, portal_domain)
-        off = get_off(meta, roh, dateiformate_ids)
-        kon = get_kon(meta, kontakte)
-        rue = get_rue(meta)
-        val = get_val(roh, se_fehler)
+        # genau = get_genau(meta, kontakte)
+        # vollst = get_vollst(meta, roh, vollst_fehler)
+        # akt = get_akt(meta, akt_daten, datum_ids)
+        # abr = get_abr(roh, portal_domain)
+        # off = get_off(meta, roh, dateiformate_ids)
+        # kon = get_kon(meta, kontakte)
+        # rue = get_rue(meta)
+        # val = get_val(roh, se_fehler)
         div = get_div(meta, roh)
 
         #print(vollst)

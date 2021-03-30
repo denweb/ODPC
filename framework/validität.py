@@ -1,5 +1,6 @@
 from statistics import mean
 from ast import literal_eval
+from framework.utility.scores import calc_score
 
 
 def get_lesbar(data, se_fehler):
@@ -37,5 +38,8 @@ def get_val(roh, se_fehler):
         res["rdValide"] = mean([get_valide(data) for data in roh if data["valide"] != 2])
     except Exception:
         pass
+
+    res["score"] = calc_score(res)
+    res["gewScore"] = res["score"]
 
     return res

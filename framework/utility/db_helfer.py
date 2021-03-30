@@ -28,3 +28,14 @@ def get_dateiformat_ids(db):
     }
 
     return res
+
+
+def gen_sql(framework_dict, name):
+    keys = ", ".join("".join(["'", key, "'"]) for key in framework_dict.keys())
+    values = ", ".join([str(framework_dict[key]) for key in framework_dict.keys()])
+
+    sql = "INSERT INTO {0} " \
+          "({1}) " \
+          "VALUES ({2})".format(name, keys, values)
+
+    print(sql)

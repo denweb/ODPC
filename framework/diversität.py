@@ -1,5 +1,6 @@
 from statistics import mean, median, pstdev
 from ast import literal_eval
+from framework.utility.scores import calc_score
 
 
 def get_end(roh):
@@ -122,5 +123,8 @@ def get_div(meta, roh):
         "anteilOrg": get_ant_org(meta),
         "stdevOrg": get_stdev_org(meta)
     }
+
+    res["score"] = calc_score(res)
+    res["gewScore"] = res["score"]*5
 
     return res

@@ -1,5 +1,6 @@
 from statistics import mean
 from ast import literal_eval
+from framework.utility.scores import calc_score
 
 
 def get_gew_vollst(metadaten):
@@ -46,5 +47,8 @@ def get_vollst(meta, roh, vollst_fehler):
                           for data in roh
                           if data["anzahlFehler"] is not None]),
     }
+
+    res["score"] = calc_score(res)
+    res["gewScore"] = res["score"]
 
     return res

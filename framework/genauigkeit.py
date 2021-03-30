@@ -1,5 +1,6 @@
 from statistics import mean
 from urllib.parse import urlparse
+from framework.utility.scores import calc_score
 
 
 def check_metadata(metadaten):
@@ -56,5 +57,8 @@ def get_genau(meta, kontakte):
         res[feld] = mean([res[feld] for res in meta_inf])
 
     res["syntax"] = mean([check_valid_metadata(metadaten, kontakte) for metadaten in meta])
+
+    res["score"] = calc_score(res)
+    res["gewScore"] = res["score"]
 
     return res

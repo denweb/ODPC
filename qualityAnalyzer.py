@@ -132,7 +132,13 @@ if __name__ == '__main__':
     se_fehler = get_source_error_fehler(db)
     vollst_fehler = get_vollst_fehler(db)
 
+    framework_db = DBConnection("framework.db")
+
     for portal in portals:
-        res = get_portal_scores(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehler, vollst_fehler)
+        res = get_portal_scores(db, framework_db,
+                                portal, kontakte, akt_daten, dateiformate_ids, se_fehler, vollst_fehler)
 
     db.connection.close()
+
+    framework_db.connection.commit()
+    framework_db.connection.close()

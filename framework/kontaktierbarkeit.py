@@ -1,4 +1,5 @@
 from statistics import mean
+from framework.utility.scores import calc_score
 
 
 def check_kontakt_valide(kontakt, val_kontakte):
@@ -17,5 +18,8 @@ def get_kon(meta, kontakte):
         "autorValide": mean([check_kontakt_valide(datensatz["autor"], kontakte) for datensatz in meta]),
         "verwalterValide": mean([check_kontakt_valide(datensatz["verwalter"], kontakte) for datensatz in meta])
     }
+
+    res["score"] = calc_score(res)
+    res["gewScore"] = res["score"]*0.3
 
     return res

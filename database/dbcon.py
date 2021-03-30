@@ -410,6 +410,18 @@ class DBConnection (object):
         return res
 
 
+    def create_framework(self, sql):
+
+        try:
+            self.cursor.execute(sql)
+
+            roh_data_id = self.cursor.lastrowid
+        except:
+            roh_data_id = 9999999
+
+        return roh_data_id
+
+
 
 
 dummy_portal = {

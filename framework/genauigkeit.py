@@ -8,7 +8,7 @@ def check_metadata(metadaten):
         "titel": 0,
         "beschreibung": 0,
         "tags": 0,
-        "geo": 0
+        "geodaten": 0
     }
 
     if metadaten["titel"] and metadaten["titel"] != "None":
@@ -18,7 +18,7 @@ def check_metadata(metadaten):
     if metadaten["tags"] and metadaten["tags"] != "[]":
         res["tags"] += 1
     if metadaten["geo"] and metadaten["geo"] != "None":
-        res["geo"] += 1
+        res["geodaten"] += 1
 
     return res
 
@@ -43,22 +43,24 @@ def check_valid_metadata(metadaten, kontakte):
 
 # Todo: Weitere Felder auf Existenz / Validität prüfen.
 # Todo: Informationsgehalt? Lesbarkeit?
-def get_genau(meta, kontakte):
+def get_genau(meta, kontakte, portal):
     res = {
         "titel": 0,
         "beschreibung": 0,
         "tags": 0,
-        "geo": 0,
-        "syntax": 0
+        "geodaten": 0,
+        "metaValidität": 0
     }
 
     meta_inf = [check_metadata(metadaten) for metadaten in meta]
-    for feld in ["titel", "beschreibung", "tags", "geo"]:
+    for feld in ["titel", "beschreibung", "tags", "geodaten"]:
         res[feld] = mean([res[feld] for res in meta_inf])
 
-    res["syntax"] = mean([check_valid_metadata(metadaten, kontakte) for metadaten in meta])
+    res["metaValidität"] = mean([check_valid_metadata(metadaten, kontakte) for metadaten in meta])
 
     res["score"] = calc_score(res)
     res["gewScore"] = res["score"]
+
+    res["portalID"] = portal
 
     return res

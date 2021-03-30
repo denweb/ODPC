@@ -1,5 +1,6 @@
 import os
 import sqlite3
+import traceback
 
 
 class DBConnection (object):
@@ -409,7 +410,6 @@ class DBConnection (object):
 
         return res
 
-
     def create_framework(self, sql):
 
         try:
@@ -417,6 +417,7 @@ class DBConnection (object):
 
             roh_data_id = self.cursor.lastrowid
         except:
+            traceback.print_exc()
             roh_data_id = 9999999
 
         return roh_data_id

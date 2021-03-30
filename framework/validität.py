@@ -26,7 +26,7 @@ def get_valide(data):
     return res
 
 
-def get_val(roh, se_fehler):
+def get_val(roh, se_fehler, portal):
     res = {
         "rdLesbar": 0,
         "rdValide": 0,
@@ -41,5 +41,7 @@ def get_val(roh, se_fehler):
 
     res["score"] = calc_score(res)
     res["gewScore"] = res["score"]
+
+    res["portalID"] = portal
 
     return res

@@ -13,7 +13,7 @@ def check_kontakt_valide(kontakt, val_kontakte):
     return res
 
 
-def get_kon(meta, kontakte):
+def get_kon(meta, kontakte, portal):
     res = {
         "autorValide": mean([check_kontakt_valide(datensatz["autor"], kontakte) for datensatz in meta]),
         "verwalterValide": mean([check_kontakt_valide(datensatz["verwalter"], kontakte) for datensatz in meta])
@@ -21,5 +21,7 @@ def get_kon(meta, kontakte):
 
     res["score"] = calc_score(res)
     res["gewScore"] = res["score"]*0.3
+
+    res["portalID"] = portal
 
     return res

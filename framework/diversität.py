@@ -109,7 +109,7 @@ def get_stdev_org(meta):
     return res
 
 
-def get_div(meta, roh):
+def get_div(meta, roh, portal):
     endp = get_end(roh)
     df = get_DF(roh)
 
@@ -126,5 +126,7 @@ def get_div(meta, roh):
 
     res["score"] = calc_score(res)
     res["gewScore"] = res["score"]*5
+
+    res["portalID"] = portal
 
     return res

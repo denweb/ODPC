@@ -38,4 +38,4 @@ def gen_sql(framework_dict, name):
           "({1}) " \
           "VALUES ({2})".format(name, keys, values)
 
-    print(sql)
+    return sql

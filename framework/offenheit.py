@@ -4,7 +4,7 @@ from framework.utility.scores import calc_score
 
 
 # Todo: Nicht offene Lizenzen IDs anpassen, sobald DB final ist.
-def get_off(meta, roh, dateiformate_ids):
+def get_off(meta, roh, dateiformate_ids, portal):
     res = {
         "dfML": mean([4 if rohdatei["dateiTypReal"] in dateiformate_ids["dateiformate_mr"] else 0 for rohdatei in roh]),
         "dfOffen": mean([2 if rohdatei["dateiTypReal"] in dateiformate_ids["dateiformate_np"] else 0 for rohdatei in roh]),
@@ -13,5 +13,7 @@ def get_off(meta, roh, dateiformate_ids):
 
     res["score"] = calc_score(res)
     res["gewScore"] = res["score"]*0.8
+
+    res["portalID"] = portal
 
     return res

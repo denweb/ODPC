@@ -34,7 +34,7 @@ def get_gew_vollst(metadaten):
 
 # Todo: Warum gew. Vollständigkeit?
 #  Nicht sinnvoller, einach vollständigkeit & gew. in Genauigkeit - wegen Informationsgehalt?
-def get_vollst(meta, roh, vollst_fehler):
+def get_vollst(meta, roh, vollst_fehler, portal):
     res = {
         "gewVollst": mean([get_gew_vollst(metadaten) for metadaten in meta])*7/20,
         "rohZelle": mean([1 if not set(literal_eval(data["fehler"])).intersection(vollst_fehler["zelle"]) else 0
@@ -50,5 +50,7 @@ def get_vollst(meta, roh, vollst_fehler):
 
     res["score"] = calc_score(res)
     res["gewScore"] = res["score"]
+
+    res["portalID"] = portal
 
     return res

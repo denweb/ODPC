@@ -40,21 +40,33 @@ def get_portal_scores(db, framework_db, portal, kontakte, akt_daten, dateiformat
 
     datum_ids = get_datum_ids(db, meta)
 
-
     if meta:
-        genau = get_genau(meta, kontakte)
-        gen_sql(genau, "Genauigkeit")
-        vollst = get_vollst(meta, roh, vollst_fehler)
-        gen_sql(vollst, "Vollständigkeit")
-        akt = get_akt(meta, akt_daten, datum_ids)
-        abr = get_abr(roh, portal_domain)
-        off = get_off(meta, roh, dateiformate_ids)
-        kon = get_kon(meta, kontakte)
-        rue = get_rue(meta)
-        val = get_val(roh, se_fehler)
-        div = get_div(meta, roh)
+        genau = get_genau(meta, kontakte, portal)
+        framework_db.create_framework(gen_sql(genau, "Genauigkeit"))
 
-        #print(genau, div, vollst, akt, abr, off, kon, rue, val)
-        #print()
+        vollst = get_vollst(meta, roh, vollst_fehler, portal)
+        framework_db.create_framework(gen_sql(vollst, "Vollständigkeit"))
+
+        akt = get_akt(meta, akt_daten, datum_ids, portal)
+        framework_db.create_framework(gen_sql(akt, "Aktualität"))
+
+        abr = get_abr(roh, portal_domain, portal)
+        framework_db.create_framework(gen_sql(abr, "Abrufbarkeit"))
+
+        off = get_off(meta, roh, dateiformate_ids, portal)
+        framework_db.create_framework(gen_sql(off, "Offenheit"))
+
+        kon = get_kon(meta, kontakte, portal)
+        framework_db.create_framework(gen_sql(kon, "Kontaktierbarkeit"))
+
+        rue = get_rue(meta, portal)
+        framework_db.create_framework(gen_sql(rue, "Rückverfolgbarkeit"))
+
+        val = get_val(roh, se_fehler, portal)
+        framework_db.create_framework(gen_sql(val, "Validität"))
+
+        div = get_div(meta, roh, portal)
+        framework_db.create_framework(gen_sql(div, "Diversität"))
+
 
 

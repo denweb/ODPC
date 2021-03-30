@@ -7,6 +7,9 @@ from framework.kontaktierbarkeit import get_kon
 from framework.rückverfolgbarkeit import get_rue
 from framework.validität import get_val
 from framework.diversität import get_div
+from framework.portalEbene import get_portal_metriken
+from framework.metaEbene import get_meta_metriken
+from framework.rohEbene import get_roh_metriken
 from urllib.parse import urlparse
 from framework.utility.db_helfer import gen_sql
 
@@ -68,5 +71,12 @@ def get_portal_scores(db, framework_db, portal, kontakte, akt_daten, dateiformat
         div = get_div(meta, roh, portal)
         framework_db.create_framework(gen_sql(div, "Diversität"))
 
+        portalEbene = get_portal_metriken(portal, akt, div, abr)
+        framework_db.create_framework(gen_sql(portalEbene, "portalEbene"))
 
+        metaEbene = get_meta_metriken(portal, genau, vollst, akt, abr, off, kon, rue)
+        framework_db.create_framework(gen_sql(metaEbene, "metaEbene"))
+
+        rohEbene = get_roh_metriken(portal, vollst, off, val)
+        framework_db.create_framework(gen_sql(rohEbene, "rohEbene"))
 

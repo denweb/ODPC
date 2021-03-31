@@ -79,4 +79,3 @@ def get_portal_scores(db, framework_db, portal, kontakte, akt_daten, dateiformat
 
         rohEbene = get_roh_metriken(portal, vollst, off, val)
         framework_db.create_framework(gen_sql(rohEbene, "rohEbene"))
-

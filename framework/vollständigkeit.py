@@ -32,21 +32,64 @@ def get_gew_vollst(metadaten):
     return res
 
 
+def get_roh_fehler(roh, vollst_fehler):
+
+    res = {
+        "rohZelle": 0,
+        "rohReihe": 0,
+        "rohLabel": 0
+    }
+
+    zelle = []
+    reihe = []
+    label = []
+
+    for data in roh:
+        if all([data["fehler"] is not None, data["fehler"] != "None"]):
+            fehler = set(literal_eval(data["fehler"]))
+
+            # Zelle
+            if not fehler.intersection(vollst_fehler["zelle"]):
+                zelle.append(1)
+            else:
+                zelle.append(0)
+
+            # Reihe
+            if not fehler.intersection(vollst_fehler["reihe"]):
+                reihe.append(1)
+            else:
+                reihe.append(0)
+
+            # Label
+            if not fehler.intersection(vollst_fehler["label"]):
+                label.append(1)
+            else:
+                label.append(0)
+
+    if zelle:
+        res["rohZelle"] = mean(zelle)
+    if reihe:
+        res["rohReihe"] = mean(reihe)
+    if label:
+        res["rohLabel"] = mean(label)
+
+    return res
+
+
 # Todo: Warum gew. Vollständigkeit?
 #  Nicht sinnvoller, einach vollständigkeit & gew. in Genauigkeit - wegen Informationsgehalt?
 def get_vollst(meta, roh, vollst_fehler, portal):
     res = {
-        "gewVollst": mean([get_gew_vollst(metadaten) for metadaten in meta])*7/20,
-        "rohZelle": mean([1 if not set(literal_eval(data["fehler"])).intersection(vollst_fehler["zelle"]) else 0
-                          for data in roh
-                          if data["anzahlFehler"] is not None]),
-        "rohReihe": mean([1 if not set(literal_eval(data["fehler"])).intersection(vollst_fehler["reihe"]) else 0
-                          for data in roh
-                          if data["anzahlFehler"] is not None]),
-        "rohLabel": mean([1 if not set(literal_eval(data["fehler"])).intersection(vollst_fehler["label"]) else 0
-                          for data in roh
-                          if data["anzahlFehler"] is not None]),
+        "gewVollst": mean([get_gew_vollst(metadaten) for metadaten in meta]) * 7 / 20,
+        "rohZelle": 0,
+        "rohReihe": 0,
+        "rohLabel": 0
     }
+
+    fehler_metr = get_roh_fehler(roh, vollst_fehler)
+
+    for metr in fehler_metr:
+        res[metr] = fehler_metr[metr]
 
     res["score"] = calc_score(res)
     res["gewScore"] = res["score"]

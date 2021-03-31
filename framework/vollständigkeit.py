@@ -10,9 +10,9 @@ def get_gew_vollst(metadaten):
         res += 5
     if metadaten["beschreibung"] and metadaten["beschreibung"] != "None":
         res += 4
-    if metadaten["autor"] and metadaten["autor"] != 3:
+    if metadaten["autor"]:
         res += 1
-    if metadaten["verwalter"] and metadaten["verwalter"] != 3:
+    if metadaten["verwalter"]:
         res += 1
     if metadaten["geo"] and metadaten["geo"] != "None":
         res += 1

@@ -28,7 +28,7 @@ def get_rohdataids_list(db, meta):
 
 def get_datum_ids(db, meta):
     nested_daten = [(datensatz["erstellDatum"], datensatz["updateDatum"]) for datensatz in meta]
-    datum_ids = set(datum for element in nested_daten for datum in element if datum != 4)
+    datum_ids = set(datum for element in nested_daten for datum in element if datum != 3)
 
     return datum_ids
 

@@ -21,8 +21,8 @@ def get_alte_daten(akt_daten, meta_datum):
 
 def get_akt(metadaten, akt_daten, datum_ids, portal):
     res = {
-        "updates": mean([3 if meta["updateDatum"] != 4 else 0 for meta in metadaten]),
-        "erstellt": mean([3 if meta["erstellDatum"] != 4 else 0 for meta in metadaten]),
+        "updates": mean([3 if meta["updateDatum"] != 3 else 0 for meta in metadaten]),
+        "erstellt": mean([3 if meta["erstellDatum"] != 3 else 0 for meta in metadaten]),
         "neueDaten": get_neue_daten(akt_daten, datum_ids),
         "alterDaten": mean([get_alte_daten(akt_daten, meta["erstellDatum"]) for meta in metadaten])
     }

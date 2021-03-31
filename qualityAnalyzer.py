@@ -65,10 +65,6 @@ def get_attr_list(db, table, attr, condition, values):
     return tuple(attr[0] for attr in db.get_attr_list(table, attr, condition, values))
 
 
-def get_voll(db, portal_ids):
-    pass
-
-
 def get_valide_kontakte(db):
     kontakte = db.get_tables_dict("kontakt")
 

@@ -1510,4 +1510,4 @@ for lizenz in data:
     lizenzen["daten"].add(data[lizenz]["title"])
     lizenzen["daten"].add(data[lizenz]["url"])
 
-nicht_offen = (2, 5, 13, 25, 53)
+nicht_offen = (2, 5, 13, 26, 54)

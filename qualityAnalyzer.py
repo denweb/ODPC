@@ -1,8 +1,10 @@
 from database.dbcon import DBConnection
 from ast import literal_eval
 from framework.framework import get_portal_scores
+from framework.metrikencsv import gen_csv_metrik
 from framework.utility.db_helfer import get_dateiformat_ids
 import re
+import csv
 
 
 def get_portal_ids(db):
@@ -129,12 +131,18 @@ if __name__ == '__main__':
     vollst_fehler = get_vollst_fehler(db)
 
     framework_db = DBConnection("framework.db")
+    # for portal in portals:
+    #     res = get_portal_scores(db, framework_db,
+    #                             portal, kontakte, akt_daten, dateiformate_ids, se_fehler, vollst_fehler)
 
-    for portal in portals:
-        res = get_portal_scores(db, framework_db,
-                                portal, kontakte, akt_daten, dateiformate_ids, se_fehler, vollst_fehler)
-
+    res = [gen_csv_metrik(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehler, vollst_fehler) for portal in portals]
+    res = [elem for elem in res if elem]
     db.connection.close()
 
     framework_db.connection.commit()
     framework_db.connection.close()
+
+    with open("results.csv", "w") as f:
+        w = csv.DictWriter(f, list(res[0].keys()))
+        w.writeheader()
+        w.writerows(res)

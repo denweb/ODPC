@@ -86,7 +86,7 @@ def get_ant_org(meta):
     anteil = len(publisher)/len(meta)
 
     if anteil >= 0.01:
-        res += 1
+        res = 0.5
 
     return res
 
@@ -104,7 +104,7 @@ def get_stdev_org(meta):
         dev_orgs = pstdev(list(o_count.values()))
 
         if dev_orgs <= 10:
-            res = 1
+            res = 0.5
 
     return res
 
@@ -125,7 +125,7 @@ def get_div(meta, roh, portal):
     }
 
     res["score"] = calc_score(res)
-    res["gewScore"] = res["score"]*5
+    res["gewScore"] = res["score"]*0.5
 
     res["portalID"] = portal
 

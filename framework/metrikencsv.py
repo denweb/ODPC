@@ -15,6 +15,8 @@ from framework.utility.lizenzen import nicht_offen
 from urllib.parse import urlparse
 from statistics import mean
 from ast import literal_eval
+import traceback
+
 
 
 # Todo: Fix Anteile > 1
@@ -27,11 +29,12 @@ def gen_csv_metrik(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehler,
     meta = tuple(db.get_tables_dict_by_condition_list("metaDatensatz", "metaDatensatzID", meta_ids))
     roh = tuple(db.get_tables_dict_by_condition_list("rohDatensatz", "rohDatensatzID", roh_ids))
     portal_domain = urlparse(db.get_attr_single("portal", "url", "portalID", portal)[0]["url"]).netloc
+    portalsoftware = db.get_attr_single("portal", "portalTyp", "portalID", portal)[0]["portalTyp"]
 
     datum_ids = get_datum_ids(db, meta)
 
-    for data in roh:
-        print(type(data["anzahlFehler"]))
+    # for data in roh:
+    #     print(type(data["fehler"]))
 
     if meta:
         genau = get_genau(meta, kontakte, portal)
@@ -47,22 +50,34 @@ def gen_csv_metrik(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehler,
         metaEbene = get_meta_metriken(portal, genau, vollst, akt, abr, off, kon, rue)
         rohEbene = get_roh_metriken(portal, vollst, off, val)
 
+        anz_fehler = 0
+        try:
+            anz_fehler = sum([len(literal_eval(data["fehler"])) for data in roh if data["fehler"] != "None"])
+        except Exception:
+            pass
+
         res = {
             "Portal": portal,
-            "Portalsoftware": 0,
+            "Portalsoftware": portalsoftware,
             "DS": len(meta),
             "Roh_pro_DS": len(roh)/len(meta),
-            "Titel_Länge": mean([len(data["titel"]) for data in meta]),
+            "Titel_Laenge": mean([len(data["titel"]) for data in meta]),
             "Beschreibung_DS": len([1 for data in meta if data["beschreibung"] != "None"]),
             "Beschreibung_DS_Anteil": 0,
-            "Beschreibung_Länge": mean([len(data["beschreibung"]) for data in meta if data["beschreibung"] != "None"]),
-            "Kontakte_einz": 0,
-            "Kontakte_valide_Anteil": 0,
-            "DS_Kontakte_valide_Anteil": 0,
+            "Beschreibung_Laenge": mean([len(data["beschreibung"]) for data in meta if data["beschreibung"] != "None"]),
+            "Autor_einz": len({data["autor"] for data in meta}),
+            "DS_Autor_valide": len([1 for data in meta
+                                    if any([data["autor"] in kontakte["name"], data["autor"] in kontakte["email"]])]),
+            "DS_Autor_valide_Anteil": 0,
+            "Verwalter_einz": len({data["autor"] for data in meta}),
+            "DS_Verwalter_valide": len([1 for data in meta
+                                        if any([data["verwalter"] in kontakte["name"],
+                                                data["verwalter"] in kontakte["email"]])]),
+            "DS_Verwalter_valide_Anteil": 0,
             "URL_einz": len({data["url"] for data in meta if data["url"] != "None"}),
             "DS_URL": len([1 for data in meta if data["url"] != "None"]),
             "DS_URL_Anteil": 0,
-            "DS_geo": len([1 for data in meta if data["url"] != "None"]),
+            "DS_geo": len([1 for data in meta if data["geo"] != "None"]),
             "DS_geo_Anteil": 0,
             "DS_Erstelldatum":  len([1 for data in meta if data["erstellDatum"] != 3]),
             "DS_Erstelldatum_Anteil": 0,
@@ -98,7 +113,7 @@ def gen_csv_metrik(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehler,
             "offline_Anteil": 0,
             "Name_Anteil": len([1 for data in roh if data["dateiName"] != "None"]) / len(roh),
             "Name_einz": len({data["dateiName"] for data in roh if data["dateiName"] != "None"}),
-            "Name_einz_Länge": 0,
+            "Name_einz_Laenge": 0,
             "DS_Name_einz_Anteil": 0,
             "valid_0": len([1 for data in roh if data["valide"] == 0]),
             "valid_0_Anteil": 0,
@@ -114,7 +129,7 @@ def gen_csv_metrik(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehler,
             "valid_5_Anteil": 0,
             "Beschreibung_Roh": len([1 for data in roh if data["beschreibung"] != "None"]),
             "Beschreibung_Roh_Anteil": 0,
-            "Beschreibung_Roh_Länge": 0,
+            "Beschreibung_Roh_Laenge": 0,
             "Fehler_Durchschnitt": 0,
             "Fehler_pro_Roh_Durchschnitt": 0,
             "Dateityp_einz": len({data["dateiTyp"] for data in roh if data["dateiTyp"] != 1}),
@@ -139,26 +154,28 @@ def gen_csv_metrik(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehler,
             "Roh_validierbar": len([1 for data in roh if data["anzahlFehler"] != "None"]),
             "Roh_validierbar_Anteil": 0,
             "Fehler_validierbar_Durchschnitt": 0,
-            "Rohdaten_Fehler_Zelle": 0,
-            "Rohdaten_Fehler_Zelle_Anteil": 0,
-            "Rohdaten_Fehler_Reihe": 0,
-            "Rohdaten_Fehler_Reihe_Anteil": 0,
-            "Rohdaten_Fehler_Label": 0,
-            "Rohdaten_Fehler_Label_Anteil": 0,
-            "Fehler_Zelle": 0,
+            "Roh_Fehler_Zelle": get_fehler_metr(roh, vollst_fehler, "zelle"),
+            "Roh_Fehler_Zelle_Anteil": 0,
+            "Roh_Fehler_Reihe": get_fehler_metr(roh, vollst_fehler, "reihe"),
+            "Roh_Fehler_Reihe_Anteil": 0,
+            "Roh_Fehler_Label": get_fehler_metr(roh, vollst_fehler, "label"),
+            "Roh_Fehler_Label_Anteil": 0,
+            "Fehler_Zelle": get_fehler_counts(roh, vollst_fehler, "zelle"),
             "Fehler_Zelle_Anteil": 0,
-            "Fehler_Reihe": 0,
+            "Fehler_Reihe": get_fehler_counts(roh, vollst_fehler, "reihe"),
             "Fehler_Reihe_Anteil": 0,
-            "Fehler_Label": 0,
+            "Fehler_Label": get_fehler_counts(roh, vollst_fehler, "label"),
             "Fehler_Label_Anteil": 0,
-            "Dateigröße_Durchschnitt": 0,
-            "Dateigröße_min": 0,
-            "Dateigröße_max": 0,
-            "Dateigröße_Summe": 0,
+            "Dateigroesse_Durchschnitt": 0,
+            "Dateigroesse_min": 0,
+            "Dateigroesse_max": 0,
+            "Dateigroesse_Summe": 0,
         }
 
         # Anteile - Meta
         res["Beschreibung_DS_Anteil"] = res["Beschreibung_DS"] / res["DS"]
+        res["DS_Autor_valide_Anteil"] = res["DS_Autor_valide"] / res["DS"]
+        res["DS_Verwalter_valide_Anteil"] = res["DS_Verwalter_valide"] / res["DS"]
         res["DS_URL_Anteil"] = res["DS_URL"] / res["DS"]
         res["DS_geo_Anteil"] = res["DS_geo"] / res["DS"]
         res["DS_Erstelldatum_Anteil"] = res["DS_Erstelldatum"] / res["DS"]
@@ -179,7 +196,7 @@ def gen_csv_metrik(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehler,
         res["offline"] = res["Roh"] - res["online"]
         res["offline_Anteil"] = res["offline"] / res["Roh"]
         try:
-            res["Name_einz_Länge"] = mean({len(data["dateiName"]) for data in roh if data["dateiName"] != "None"})
+            res["Name_einz_Laenge"] = mean({len(data["dateiName"]) for data in roh if data["dateiName"] != "None"})
         except Exception:
             pass
         res["DS_Name_einz_Anteil"] = res["Name_einz"] / res["Roh"]
@@ -191,30 +208,49 @@ def gen_csv_metrik(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehler,
         res["valid_5_Anteil"] = res["valid_5"] / res["Roh"]
         res["Beschreibung_Roh_Anteil"] = res["Beschreibung_Roh"] / res["Roh"]
         try:
-            res["Beschreibung_Roh_Länge"] = \
+            res["Beschreibung_Roh_Laenge"] = \
                 mean([len(data["beschreibung"]) for data in roh if data["beschreibung"] != "None"])
         except Exception:
             pass
         try:
-            res["Fehler_Durchschnitt"] = mean([data["anzahlFehler"] for data in roh
+            res["Fehler_Durchschnitt"] = mean([int(data["anzahlFehler"]) for data in roh
                                                if all([data["anzahlFehler"] != "None",
-                                                       data["anzahlFehler"] != 0])])
+                                                       data["anzahlFehler"] != 0,
+                                                       data["anzahlFehler"] is not None])])
         except Exception:
             pass
         try:
-            res["Fehler_pro_Roh_Durchschnitt"] = mean([data["anzahlFehler"] for data in roh
+            res["Fehler_pro_Roh_Durchschnitt"] = mean([int(data["anzahlFehler"]) for data in roh
                                                        if all([data["anzahlFehler"] != "None",
-                                                               data["anzahlFehler"] != 0])])
+                                                               data["anzahlFehler"] != 0,
+                                                               data["anzahlFehler"] is not None])])
         except Exception:
             pass
         res["Dateityp_gegeben_Anteil"] = len([1 for data in roh if data["dateiTyp"] != 1]) / res["Roh"]
         res["DateitypReal_gegeben_Anteil"] = len([1 for data in roh if data["dateiTypReal"] != 1]) / res["Roh"]
         res["Roh_ML_Anteil"] = res["Roh_ML"] / res["Roh"]
         res["Roh_offen_Anteil"] = res["Roh_offen"] / res["Roh"]
-        res["Roh_Erstelldatum_Anteil"] = res["Roh_Erstelldatum"] / res["DS"]
-        res["Roh_Updatedatum_Anteil"] = res["Roh_Updatedatum"] / res["DS"]
-        res["Roh_Updatedatum_ung_Erstelldatum_Anteil"] = res["Roh_Updatedatum_ung_Erstelldatum"] / res["DS"]
-
+        res["Roh_Erstelldatum_Anteil"] = res["Roh_Erstelldatum"] / res["Roh"]
+        res["Roh_Updatedatum_Anteil"] = res["Roh_Updatedatum"] / res["Roh"]
+        res["Roh_Updatedatum_ung_Erstelldatum_Anteil"] = res["Roh_Updatedatum_ung_Erstelldatum"] / res["Roh"]
+        res["Roh_validierbar_Anteil"] = res["Roh_validierbar"] / res["Roh"]
+        try:
+            res["Fehler_validierbar_Durchschnitt"] = mean([int(data["anzahlFehler"]) for data in roh
+                                                           if all([data["anzahlFehler"] != "None",
+                                                                  data["anzahlFehler"] is not None])])
+        except Exception:
+            traceback.print_exc()
+        if res["Roh_validierbar"] > 0:
+            res["Roh_Fehler_Zelle_Anteil"] = res["Roh_Fehler_Zelle"] / res["Roh_validierbar"]
+            res["Roh_Fehler_Reihe_Anteil"] = res["Roh_Fehler_Reihe"] / res["Roh_validierbar"]
+            res["Roh_Fehler_Label_Anteil"] = res["Roh_Fehler_Label"] / res["Roh_validierbar"]
+        if anz_fehler > 0:
+            res["Fehler_Zelle_Anteil"] = res["Fehler_Zelle"] / anz_fehler
+            res["Fehler_Reihe_Anteil"] = res["Fehler_Reihe"] / anz_fehler
+            res["Fehler_Label_Anteil"] = res["Fehler_Label"] / anz_fehler
+        groess = get_size_metr(roh)
+        for metr in groess:
+            res[metr] = groess[metr]
 
         for framew in [
             (genau, "gen_"),
@@ -234,7 +270,11 @@ def gen_csv_metrik(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehler,
                 if metr != "portalID":
                     res["".join([framew[1], metr])] = framew[0][metr]
 
-        print(res)
+        res["gesamt_score"] = sum([res["gen_gewScore"], res["vollst_gewScore"], res["akt_gewScore"],
+                                   res["abr_gewScore"], res["off_gewScore"], res["kon_gewScore"],
+                                   res["rue_gewScore"], res["val_gewScore"], res["div_gewScore"]
+                                   ])
+        res["gesamt_score_ebenen"] = sum([res["rohEbene_score"], res["metaEbene_score"], res["portalEbene_score"]])
 
     return res
 
@@ -250,5 +290,52 @@ def get_df_mean(roh):
 
     df = [len(df_counter[d]) for d in df_counter]
     res = mean(df)
+
+    return res
+
+
+def get_fehler_metr(roh, vollst_fehler, typ):
+    c = 0
+    for data in roh:
+        if all([data["fehler"] != "None", data["fehler"] is not None]):
+            fehler = set(literal_eval(data["fehler"]))
+
+            if fehler.intersection(vollst_fehler[typ]):
+                c += 1
+
+    return c
+
+
+def get_fehler_counts(roh, vollst_fehler, typ):
+    c = 0
+    for data in roh:
+        if all([data["fehler"] != "None", data["fehler"] is not None]):
+            fehlers = literal_eval(data["fehler"])
+
+            for fehler in fehlers:
+                if fehler in vollst_fehler[typ]:
+                    c += 1
+
+    return c
+
+
+def get_size_metr(roh):
+    res = {
+        "Dateigroesse_Durchschnitt": 0,
+        "Dateigroesse_min":0,
+        "Dateigroesse_max": 0,
+        "Dateigroesse_Summe": 0
+    }
+
+    groess = [data["dateiGrößeReal"] for data in roh
+              if all([data["dateiGrößeReal"] != "None",
+                      data["dateiGrößeReal"] != 0,
+                      data["dateiGrößeReal"] is not None])]
+
+    if groess:
+        res["Dateigroesse_Durchschnitt"] = mean(groess)
+        res["Dateigroesse_min"] = min(groess)
+        res["Dateigroesse_max"] = max(groess)
+        res["Dateigroesse_Summe"] = sum(groess)
 
     return res

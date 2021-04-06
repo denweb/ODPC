@@ -1,0 +1,43 @@
+Ebene,Dimension,Metrik,Punkte,Punkte Erklärung,Arbeiten,Beschreibung,Synonym,Notiz,
+Metadaten,,,,,,,,,
+,Genauigkeit & Verständlichkeit,Genauigkeit - syntaktisch (d. Metadaten),"0,5",,5,"Sind die angegebenen Werte valide für das Feld? (Email im Email-Feld, INT im Dateigrößenfeld...)",,Eventuell nutzen.,
+,Genauigkeit & Verständlichkeit,Informationsgehalt (d. Metadaten),?,,"2, 5?, 31",Wie relevant sind die angegeben Daten? Bsp. tf*idf berechnen.,,"Überprüfen, ob einfach zu implementieren. Aber nur sehr theretisch.",
+,Genauigkeit & Verständlichkeit,Angabe von Geodaten,"0,5",,8,"Falls geographischer Bezug gegeben ist, sollte der in den Metadaten angegeben werden.",,In gewichteter Vollständigkeit?,
+,Genauigkeit & Verständlichkeit,Zugänglichkeit,?,,2,Die Lesbarkeit d. Metadateninformationen. Kann nach Formel berechnet werden.,,,
+,Genauigkeit & Verständlichkeit,Anagabe Titel,5,,8,,,In gewichteter Vollständigkeit?,
+,Genauigkeit & Verständlichkeit,Angabe Beschreibung,3,,8,,,In gewichteter Vollständigkeit?,
+,Genauigkeit & Verständlichkeit,Angabe Tags,1,,,,,In gewichteter Vollständigkeit?,
+,Vollständigkeit,Gewichtete Vollständigkeit,7,,2,Gewichtet verschiedene Felder. Bspw. Titel > Beschreibung,,,
+,Aktualität,Updates verfügbar,"2,5",,"3, 10, 23, 26, 28, 29, 30, 31, 32",,,"Check, ob Update-Datum angegeben ist.",
+,Aktualität,Updates verfügbar,"2,5",,,,,,
+,Aktualität,Updatezyklus einhalten,"2,5",,"4, 8, 10, 23, 26, 28, 29, 30, 31, 32",,,"Check, ob letztes Update weniger lang her, als Updatezyklus",
+,Aktualität,Alter. d. Veröffentlichung,"2,5",,9,"Checkt, ob Veröffentlichung jünger als 30 Monate ist. Danach veraltet.",,"(30 Monate mit ""Jahresberichten"" begründet, aber trotzdem schwach irgendwie.)",
+,Abrufbarkeit,Rohdatenlink intern/extern,1,,3,Liegen die Rohdaten intern oder auf einem externen Portal?,,Sagt das etwas über die Portalqualität aus?,
+,Offenheit,Nutzung einer offenen Lizenz,4,,"5, 6, 8, 9, 10, 11, 12, 13, 16, 17, 26, 27, 28, 29, 30, 31",,,,
+,Offenheit,Nutzung von URIs,/,,"10, 11, 28",,,,
+,Offenheit,Verlinkung von Daten (Linked Data),/,,"10, 11",,,,
+,Abrufbarkeit,Rohdatenlink online,9,,"3, 5, 8, 9, 12, 13, 26, 27, 28, 30, 32",,,,
+,Kontaktierbarkeit,Valide Autoren-Informationen,5,,"5, 8",,,In gew. Vollständigkeit?,
+,Kontaktierbarkeit,Valide Verwalter-Informationen,5,,"5, 8",,,In gew. Vollständigkeit?,
+,Rückverfolgbarkeit,Angabe der Datenquelle,1,,6,,,"Wahrscheinlich nur über ""Organisation"" realisierbar",
+Portal,,,,,,,,,
+,Vollständigkeit,Anzahl Datensätze,-,,"1, 6, 27, 29",Anzahl der Datensätze im Portal,,,
+,Aktualität,Regelmäßige neue Datensätze,"2,5",,6,Wie regelmäßig gibt es neue Datensätze auf dem Portal?,,,
+,Diversität,Durchschnitt Endpunkte,2,,Falls > 2,,,,Durchschnittliche Anzahl Endpunkte pro Datensatz
+,Diversität,Stdver Endpunkte,1,,Falls < 10,,,,Standardabweichung der Endpunkte-Verteilung
+,Diversität,Durchschnitt Dateiformate,2,,Falls > 2,,,,Durchschnittliche Anzahl v. verschiedenen Dateiformaten pro Datensatz
+,Diversität,Stdver Dateiformate,1,,Falls < 10,,,,Standardabweichung der Dateiformats-Verteilung
+,Diversität,Durchschnitt Tags,2,,Falls > 2,,,,Durchschnittliche Anzahl v. Tags pro Datensatz
+,Diversität,Stdver Tags,1,,Falls < 10,,,,Standardabweichung der Häufigkeiten d. verschiedenen Tags
+,Diversität,Anteil einzelne Org.,"0,5",,"Falls > 0,1",,,,Anteil einzigartiger Organisationen gem. an Gesamtdatenmenge
+,Diversität,Stdver Org,"0,5",,Falls < 10,,,,Standardabweichung für das Vorkommen einzigartiger Organisationen.
+,Abrufbarkeit,Anteil Rohdatenlink online,9,,"3, 5, 8, 9, 12, 13, 26, 27, 28, 30, 32",,,,
+Rohdaten,,,,,,,,,
+,Vollständigkeit,Rohdaten Anzahl Felder,-,,6,,,,
+,Vollständigkeit,Rohdaten Vollständigkeit - Zellen,1,,"6, 7, 13, 23, 25",Anteil an leeren Feldern. ,,"Darauf verlassen, was frictionless als leeres Feld angibt.",
+,Vollständigkeit,Rohdaten Vollständigkeit - Reihen,1,,"7, 23, 25","Anteil an Reihen, die leere Felder enthalten. ",,"Darauf verlassen, was frictionless als leeres Feld angibt.",
+,Vollständigkeit,Rohdaten Vollständigkeit - Spalten,1,,23,"Anteil an Spalten, die leere Felder enthalten. ",,"Darauf verlassen, was frictionless als leeres Feld angibt.",
+,Offenheit,Dateiformat maschinenlesbar,4,,"3, 8, 9, 10, 11, 12, 13, 16, 17, 26, 27, 28, 29, 30, 31",,,,
+,Offenheit,Dateiformat nicht-proprietär,2,,"3, 5, 9, 11, 12, 13, 16, 26, 27, 29, 31",,,,
+,Validität / Nutzbarkeit,Rohdaten lesbar,5,"Vorraussetzung dafür, dass Validität geprüft werden kann.","6?, 9",,,,
+,Validität / Nutzbarkeit,Valide Rohdaten,4,,"6, 15, 16, 20, 23, 32",,,,

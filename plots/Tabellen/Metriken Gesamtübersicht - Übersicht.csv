@@ -1,0 +1,87 @@
+Nr,Dimension,Metrik,Ebene,Arbeiten,Beschreibung,Synonym,Notiz
+1,Genauigkeit,,,"1, 2, 3, 5, 6, 7, 8, 9(?), 16, 18, 20, 21, 23, 24",,Accuracy,
+,,Genauigkeit - semantisch (d. Metadaten),M,"2, 5",Wie nah sind die angegebenen Werte an der Realität. (Ist die Dateigröße richtig? Semantische relevanz d. Tags?),,
+,,Genauigkeit - syntaktisch (d. Metadaten),M,5,"Sind die angegebenen Werte valide für das Feld? (Email im Email-Feld, INT im Dateigrößenfeld...)",,
+,,Informationsgehalt (d. Metadaten),M,"2, 5?, 31",Wie relevant sind die angegeben Daten? Bsp. tf*idf berechnen.,,
+,,Anteil an akkuraten / korrekten Zellen / Daten,R,"7, 19, 20",Anteil an Zellen mit verifizierbar korrekten Werten. (Nicht wirklich automatisierbar.),,
+,,Genauigkeit v. Aggregierungen,R,7,"Genauigkeit von Aggregierungen, wenn Vergleichsdaten vorhanden sind. (Nicht wirklich automatisierbar.)",,
+,,Angabe von Geodaten,M,8,"Falls geographischer Bezug gegeben ist, sollte der in den Metadaten angegeben werden.",,
+2,Vollständigkeit,,,"1, 2, 3, 5, 6?, 7, 10, 13, 17, 18, 21, 23. 25, 26",,Completeness,
+,,Anzahl Datensätze,P,"1, 6, 27, 29",Anzahl der Datensätze im Portal,,
+,,Vollständigkeit (d. genutzten Metadaten),M,"2, 5, 6, 10, 13, 16, 27, 30, 31",Vollständigkeit der angegebenen Metadaten,,Wichtig: Was ist die Referenz? Portaltyp? Meine eigenes Format?
+,,Gewichtete Vollständigkeit,M,2,Gewichtet verschiedene Felder. Bspw. Titel > Beschreibung,,
+,,Angabe einer Lizenz,M,8,,,In gew. Vollständigkeit
+,,Angabe der Dateigröße,M,"6, 8",,,In gew. Vollständigkeit
+,,Rohdaten Anzahl Felder,R,6,,,
+,,Angabe Erstelldatum,M,"7, 8",,,In gew. Vollständigkeit
+,,Angabe Updatedatum,M,"7, 8",,,In gew. Vollständigkeit
+,,Rohdaten Vollständigkeit - Zellen,R,"6, 7, 13, 23, 25",Anteil an leeren Feldern. ,,(Dabei schwierig: Was sind leere Felder?)
+,,Rohdaten Vollständigkeit - Reihen,R,"7, 23, 25","Anteil an Reihen, die leere Felder enthalten. ",,(Dabei schwierig: Was sind leere Felder?)
+,,Anzahl n. vollständiger Spalten,R,23,,,
+,,Semantische Vollständigkeit d. Daten,M,25,Datensätze werden (auf unbestimmten Weg) semantisch auf Vollständigkeit geparsed. (Nicht nützlich f. diese Untersuchung.),,
+3,Konsistenz,,,"1, 18, 20, 21",,Consistency,Verwandt mit 1 und 2. Vll da inkooperieren.
+4,Aktualität,,,"1, 3, 4, 5?, 7, 9, 10, 13, 16, 18, 21, 23, 26",,"Timeliness, Currentness",
+,,Updates verfügbar,M,"3, 10, 23, 26, 28, 29, 30, 31, 32",,,
+,,Updatezyklus einhalten,M,"4, 8, 10, 23, 26, 28, 29, 30, 31, 32",,,
+,,Regelmäßige neue Datensätze,P,6,Wie regelmäßig gibt es neue Datensätze auf dem Portal?,,
+,,Aktualität der Werte in den Rohdaten,R,"7, 10, 16. 23","Gibt prozentuell an, wie viele der Rohdaten aktuelle Werte enthalten. (nicht automatisierbar?)",,
+,,Verzögerung Veröffentlichung,P,"7, 13, 23",Gibt einen Wert für die Verzögerung zwischen Veröffentlichung und Bezugswert der Rohdaten an. (Nicht automatisierbar?),,
+,,Alter. d. Veröffentlichung,M,9,"Checkt, ob Veröffentlichung jünger als 30 Monate ist. Danach veraltet.",,"(30 Monate mit ""Jahresberichten"" begründet, aber trotzdem schwach irgendwie.)"
+5,Abrufbarkeit,,,"5, 6, 9, 12, 13, 14, 16, 21, 26",,"Retrievability, availability, Accessability, Permanence",The extent to which dataset information and the listed resources in a portal can be retrieved by a human or software agent.
+,,Rohdatenlink online,M,"3, 5, 8, 9, 12, 13, 26, 27, 28, 30, 32",,,
+,,Anteil Rohdatenlink online,P,,,,
+,,Rohdatenlink intern/extern,M,3,Liegen die Rohdaten intern oder auf einem externen Portal?,,Sagt das etwas über die Portalqualität aus?
+,,Veröffentlicht,P/M,9,"Angabe, ob ein Datensatz wirklich veröffentlicht ist. ",,(Nicht relevant für diese Untersuchung.)
+,,Permanenz d. Daten,P/M,"14, 16",Die Datensätze sollten permanent errreichbar sein.,,
+6,Verwendung,,,5,,usage,The extent to which metadata keys are used to describe a dataset.
+,,Vollständigkeit (d. verfügbaren Metadaten),M,"5, 15",Wie viele der vom Standard vorgesehenen Metadaten-Feldern stehen zur Verfügung?,,"Da vom Portaltyp abhängig, schwierig für diese Arbeit."
+7,Offenheit,,,"5, 6, 9, 10, 11, 12, 13, 16, 17, 21, 24, 26, 27",,"Openness, Machine-Processable, Non-discriminatory",
+,,Dateiformat maschinenlesbar,R/M,"3, 8, 9, 10, 11, 12, 13, 16, 17, 26, 27, 28, 29, 30, 31",,,
+,,Dateiformat nicht-proprietär,R/M,"3, 5, 9, 11, 12, 13, 16, 26, 27, 29, 31",,,
+,,Nutzung einer offenen Lizenz,M,"5, 6, 8, 9, 10, 11, 12, 13, 16, 17, 26, 27, 28, 29, 30, 31",,,
+,,Barrierefrei abrufbar,P,"9, 13, 24, 26","Datensatz ist nutzbar ohne weitere Hürde, wie ein Formular o.Ä. ",,(Nicht relevant.)
+,,Kostenfreiheit,P,"9. 24, 26, 30",Datensatz ist ohne Kosten abrufbar/nutzbar. ,,(nicht relevant)
+,,Nutzung von URIs,M,"10, 11, 28",,,
+,,Verlinkung von Daten (Linked Data),M,"10, 11",,,
+8,Kontaktierbarkeit,,,5,,Contactability,The extent to which the data publisher provide useful contact information
+,,Valide Autoren-Informationen,M,"5, 8",,,
+,,Valide Verwalter-Informationen,M,"5, 8",,,
+9,Interoperabilität,,,5?,,Interoperability,
+10,Diversität,,,"1, 6",,,"Eigenkreation. Diversität des Angebotes (Formate, Kategorien,...)"
+,,Anzahl/Anteil Datensätze mit multiplen Dateiformat-Angeboten,P,6,,,
+,,Verteilung d. Bereitgestellten Dateiformate,P,"1, 29",,,
+,,Abdeckung/Verteilung d. genutzten Kategorien,P,"1, 6, 29",,,
+,,Anzahl d. Distributionen,P,27,,,
+,,Anzahl d. Distributionen / Datensatz,P,27,,,
+,,Anzahl d. Publisher,P,27,,,
+11,Rückverfolgbarkeit,,,"6, 7, 10, 16",,"Traceability, Transparenz",Rückverfolgbarkeit der Datensätze für Transparenz
+,,Angabe der Datenquelle,M,6,,,"Wahrscheinlich nur über ""Organisation"" realisierbar"
+12,Validität / Nutzbarkeit,,,6,,,
+,,Rohdaten lesbar,R,"6?, 9",,,
+,,Valide Rohdaten,R,"6, 15, 16, 20, 23, 32",,,
+,,Rohdaten Konsistent,R,,,,
+13,Verfall,,,7,,Expiration,Eigene Dimension? Kann wahrscheinlich zu 4.
+,,Verzögerung nach Verfall,P/M,7,Zeitraum zwischen neuer Version und verfall alter. (nicht automatisch?),,
+14,Konformität,,,"7, 15, 16, 24",,"Compliance, Standartization","Eigene Dimension? Wie überprüfen, wenn Standard-Schemata schon in 12 sind. Zusammenlegen?"
+,,Anteil an standartisierten Spalten,R,7,"Spalten, die einem Standard folgen sollten: Datum, Lokationen,.... ",,"Nicht sehr relevant, wenn standartisierte Portale überprüft werden."
+,,eGMS Konformität,M?,7,Konformität zum e-GMS-Stadard.,,
+,,5-Star-Konformität,M,"7, 11",Konformität zu den 5-Star-Anforderungen. (Ist schon in weiteren Metriken indirekt verarbeitet.),,
+15,Verständlichkeit,,,7,,Understandability,Eigene Dimension oder vereinbar mit anderen?
+,,Zugänglichkeit,M,2,Die Lesbarkeit d. Metadateninformationen. Kann nach Formel berechnet werden.,,
+,,Nutzbare Rohdaten - Feldnamen,M,"6, 20","Das Gleiche, wie drüber?",,"Nicht nützlich in dieser Arbeit, weil zu wenig Hintergrundinformationen für Automatisierung."
+,,Anteil an Spalten mit Metadaten,R,7,"Anteil der Spalten, über die Metadaten für einfaches Verständnis vorhanden sind. ",,(Nicht automatisierbar.)
+,,Anteil an Spalten mit (maschienen) nutzbaren Format,R,7,,,Nicht wirklich automatisierbar.
+,,Anagabe Titel,M,8,,,In gewichteter Vollständigkeit?
+,,Angabe Beschreibung,M,8,,,
+,,Angabe Tags,M,,,,
+,,Angabe von Visualisierungen,P/M,8,Visualisierungen sollten automatisiert gegeben werden. ,,(API liefert diese nicht.)
+16,Feedback,,,8,,,"Nicht direkt als Dimension angegeben, aber ergibt sich so."
+,,Angabe von Datensatzaufrufen,P/M,8,,,API liefert dies nicht.
+,,Angabe von Datensatzdownloads,P/M,8,,,API liefert dies nicht.
+,,Angabe von Nutzerbewertungen & Kommentaren,P/M,8,,,API liefert dies nicht.
+17,Granularität,,,"9, 13",,"Granularity, Primary",Vll mit 1 vereinbar?
+,,Granularität der Rohdaten,R,"9, 13",Wie primär / aggregiert sind die Daten? ,,(denke nicht automatisierbar)
+18,Verlässlichkeit,,,19,,Reliability,
+19,Nützlichkeit,,,21,,Usability,"21 sagt selber, dass das _sehr_ vage ist und eigentlich durch die anderen umfasst werden soll."
+20,Auffindbarkeit,,,26,,Findability,
+,,Aufdeckbarkeit / Page-Rank,P/M,27,,,

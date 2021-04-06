@@ -117,7 +117,7 @@ def gen_graphs_misc():
 
 
 def gen_graphs_ds_roh():
-    # get_titel_laenge_ds()
+    get_titel_laenge_ds()
 
     # Kontakte
     get_graphs([["DS_Autor_valide_Anteil", "DS_Verwalter_valide_Anteil"]],
@@ -179,8 +179,8 @@ def gen_graphs_ds_roh():
                name="Roh_valide", rot=10)
 
     # Roh Fehler
-    # get_graphs(["Fehler_Durchschnitt", "Fehler_validierbar_Durchschnitt", "Fehler_pro_Roh_Durchschnitt"],
-    #            name="Roh_Fehler_Durchschnitte", sub=True, draw=True)
+    get_graphs(["Fehler_Durchschnitt", "Fehler_validierbar_Durchschnitt", "Fehler_pro_Roh_Durchschnitt"],
+               name="Roh_Fehler_Durchschnitte", sub=True, draw=True)
     get_graphs([["Roh_Fehler_Zelle_Anteil",
                  "Roh_Fehler_Reihe_Anteil",
                  "Roh_Fehler_Label_Anteil"],
@@ -197,66 +197,66 @@ def gen_graphs_ds_roh():
 
 def gen_graphs_framew():
     # Genauigkeit
-    get_graphs([("gen_titel", 4),
-                ("gen_beschreibung", 3),
-                ("gen_tags", 1),
-                ("gen_geodaten", 1),
-                ("gen_metaValidität", 1),
-                ("gen_score", 10)],
-               name="Framework_Genauigkeit", sub=True, draw=True, ylim=True)
-
-    # Vollständigkeit
-    get_graphs([("vollst_gewVollst", 7),
-                ("vollst_rohZelle", 1),
-                ("vollst_rohReihe", 1),
-                ("vollst_rohLabel", 1),
-                ("vollst_score", 10)],
-               name="Framework_Vollständigkeit", sub=True, draw=True, ylim=True)
-
-    # Aktualität
-    get_graphs([("akt_updates", 3),
-                ("akt_erstellt", 3),
-                ("akt_neueDaten", 2),
-                ("akt_alterDaten", 2),
-                ("akt_score", 10)],
-               name="Framework_Aktualität", sub=True, draw=True, ylim=True)
-
-    # Abrufbarkeit
-    get_graphs([("abr_linkOnline", 9),
-                ("abr_linkIntern", 1),
-                ("abr_score", 10)],
-               name="Framework_Abrufbarkeit", sub=True, draw=True, ylim=True)
-
-    # Offenheit
-    get_graphs([("off_dfML", 3),
-                ("off_dfOffen", 2),
-                ("off_lizenzOffen", 3),
-                ("off_score", 10)],
-               name="Framework_Offenheit", sub=True, draw=True, ylim=True)
-
-    # Kontaktierbarkeit
-    get_graphs([("kon_autorValide", 5),
-                ("kon_verwalterValide", 5),
-                ("kon_score", 10)],
-               name="Framework_Kontaktierbarkeit", sub=True, draw=True, ylim=True)
-
-    # Rückverfolgbarkeit
-    get_graphs([("rue_quelle", 10),
-                ("rue_score", 10)],
-               name="Framework_Rückverfolgbarkeit", sub=True, draw=True, ylim=True)
-
-    # Validität
-    get_graphs([("val_rdLesbar", 5),
-                ("val_rdValide", 5),
-                ("val_score", 10)],
-               name="Framework_Validität", sub=True, draw=True, ylim=True)
-
-    # Diversität
-    get_graphs([("div_durchEndp", 2),
-                ("div_stdevEndp", 1),
-                ("div_durchDF", 2),
-                ("div_stdevDF", 1)],
-               name="Framework_Diversität_1", sub=True, draw=True, ylim=True)
+    # get_graphs([("gen_titel", 4),
+    #             ("gen_beschreibung", 3),
+    #             ("gen_tags", 1),
+    #             ("gen_geodaten", 1),
+    #             ("gen_metaValidität", 1),
+    #             ("gen_score", 10)],
+    #            name="Framework_Genauigkeit", sub=True, draw=True, ylim=True)
+    #
+    # # Vollständigkeit
+    # get_graphs([("vollst_gewVollst", 7),
+    #             ("vollst_rohZelle", 1),
+    #             ("vollst_rohReihe", 1),
+    #             ("vollst_rohLabel", 1),
+    #             ("vollst_score", 10)],
+    #            name="Framework_Vollständigkeit", sub=True, draw=True, ylim=True)
+    #
+    # # Aktualität
+    # get_graphs([("akt_updates", 3),
+    #             ("akt_erstellt", 3),
+    #             ("akt_neueDaten", 2),
+    #             ("akt_alterDaten", 2),
+    #             ("akt_score", 10)],
+    #            name="Framework_Aktualität", sub=True, draw=True, ylim=True)
+    #
+    # # Abrufbarkeit
+    # get_graphs([("abr_linkOnline", 9),
+    #             ("abr_linkIntern", 1),
+    #             ("abr_score", 10)],
+    #            name="Framework_Abrufbarkeit", sub=True, draw=True, ylim=True)
+    #
+    # # Offenheit
+    # get_graphs([("off_dfML", 4),
+    #             ("off_dfOffen", 2),
+    #             ("off_lizenzOffen", 4),
+    #             ("off_score", 10)],
+    #            name="Framework_Offenheit", sub=True, draw=True, ylim=True)
+    #
+    # # Kontaktierbarkeit
+    # get_graphs([("kon_autorValide", 5),
+    #             ("kon_verwalterValide", 5),
+    #             ("kon_score", 10)],
+    #            name="Framework_Kontaktierbarkeit", sub=True, draw=True, ylim=True)
+    #
+    # # Rückverfolgbarkeit
+    # get_graphs([("rue_quelle", 10),
+    #             ("rue_score", 10)],
+    #            name="Framework_Rückverfolgbarkeit", sub=True, draw=True, ylim=True)
+    #
+    # # Validität
+    # get_graphs([("val_rdLesbar", 5),
+    #             ("val_rdValide", 5),
+    #             ("val_score", 10)],
+    #            name="Framework_Validität", sub=True, draw=True, ylim=True)
+    #
+    # # Diversität
+    # get_graphs([("div_durchEndp", 2),
+    #             ("div_stdevEndp", 1),
+    #             ("div_durchDF", 2),
+    #             ("div_stdevDF", 1)],
+    #            name="Framework_Diversität_1", sub=True, draw=True, ylim=True)
 
     get_graphs([("div_durchTags", 2),
                 ("div_stdevTags", 1),
@@ -388,5 +388,10 @@ def get_graphs_framew_scores():
 
 if __name__ == '__main__':
     df = pd.read_csv("results.csv", dtype=np.float32, encoding="iso-8859-1")
+    df["Portal"] = df["Portal"].astype(int)
+    df["DS"] = df["DS"].astype(int)
 
-    gen_graphs_misc()
+    # gen_graphs_misc()
+    # gen_graphs_ds_roh()
+    # gen_graphs_framew()
+    # get_graphs_framew_scores()

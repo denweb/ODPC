@@ -4,12 +4,22 @@ import traceback
 
 
 class DBConnection (object):
+    """
+    Klasse zur einheitlichen Verwaltung von einzelnen Datenabankverbindungen.
+    Inklusive einer Sammlung an Hilfsmethoden für die Interaktion.
+    """
+
     def __init__(self, dbname):
         self.dbname = dbname
         self.connection = sqlite3.connect("database/{0}".format(dbname))
         self.cursor = self.connection.cursor()
 
     def create_portal(self, portal_data):
+        """
+        Erstellt einen Datensatz in der portal-Tabelle
+        :param portal_data: Portaldaten
+        :return: ID des erstellten Eintrags.
+        """
         portalTypID = self.get_id("portalTyp", portal_data["portalTyp"])
         betreiberTypID = self.get_id("betreiberTyp", portal_data["betreiberTyp"])
         elternInstanzID = self.get_id("elternInstanz", portal_data["elternInstanz"])
@@ -35,6 +45,11 @@ class DBConnection (object):
         return portal_id
 
     def create_metadatensatz(self, meta_data):
+        """
+        Erstellt einen Datensatz inklusive in der Metadatensatz-Tabelle
+        :param meta_data: Metadaten-Daten
+        :return: ID des erstellten Eintrags
+        """
         kategorien_ids = [self.get_id("kategorie", kategorie) for kategorie in meta_data["kategorien"]]
         tags_ids = [self.get_id("tag", tag) for tag in meta_data["tags"]]
         erstelldatum_id = self.get_id("datum", meta_data["erstellDatum"])
@@ -74,6 +89,11 @@ class DBConnection (object):
         return meta_data_id
 
     def create_rohdaten(self, roh_data):
+        """
+        Erstellt einen Datensatz in der Rohdaten-Tabelle
+        :param roh_data: Rohdaten-Daten
+        :return: Die ID des erstellten Eintrags.
+        """
         erstelldatum_id = self.get_id("datum", roh_data["erstellDatum"])
         updatedatum_id = self.get_id("datum", roh_data["updateDatum"])
         dateityp_id = self.get_id("dateiTyp", roh_data["dateiTyp"])
@@ -105,9 +125,14 @@ class DBConnection (object):
 
     # Todo: Eventuell auch aufwändigere Felder vereinheitlichen?
     def get_id(self, table, values):
-
+        """
+        Prüft ob Daten bereits in Hilfstabellen gespeichert sind oder erstellt diesen Eintrag und liefert jeweils
+        die ID.
+        :param table: Name der Hilfstabelle
+        :param values: Identifizierende Werte
+        :return: ID des Eintrags
+        """
         try:
-            # Todo: Testen, ob die jeweiligen Felder der richtige Abgeleich sind. Ggf verfeinern / anpassen.
             # case: table is lizenz
             if table == "lizenz":
                 exists = self.check_exist(table, "lizenzTitel", values["lizenzTitel"])
@@ -168,7 +193,6 @@ class DBConnection (object):
         return result
 
     def create_attr(self, table, value):
-
         sql = "INSERT INTO {0} " \
               "({0}) " \
               "VALUES('{1}')".format(table, value)
@@ -179,7 +203,6 @@ class DBConnection (object):
         return attr_id
 
     def create_attr_lizenz(self, values):
-
         sql = "INSERT INTO lizenz " \
               "(lizenzTitel, lizenzUrl) " \
               "VALUES('{0}', '{1}')".format(values["lizenzTitel"], values["lizenzUrl"])
@@ -190,7 +213,6 @@ class DBConnection (object):
         return attr_id
 
     def create_attr_kontakt(self, values):
-
         sql = "INSERT INTO kontakt " \
               "(kontaktName, kontaktEmail) " \
               "VALUES('{0}', '{1}')".format(values["kontaktName"], values["kontaktEmail"])
@@ -201,7 +223,6 @@ class DBConnection (object):
         return attr_id
 
     def create_attr_gruppe(self, values):
-
         sql = "INSERT INTO gruppe " \
               "(gruppeName, gruppeTitel, gruppeBeschreibung, gruppeExtra) " \
               "VALUES('{0}', '{1}', '{2}', '{3}')".format(values["gruppeName"],
@@ -215,7 +236,6 @@ class DBConnection (object):
         return attr_id
 
     def create_attr_organisation(self, values):
-
         kontakt_id = self.get_id("kontakt", values["organisationKontakt"])
 
         sql = "INSERT INTO organisation " \
@@ -234,7 +254,6 @@ class DBConnection (object):
         return attr_id
 
     def create_attr_fehler(self, data_id, values):
-
         sql = "INSERT INTO fehler " \
               "(rohDatensatzID, fehlerCode, fehlerNachricht, fehlerTags, fehlerExtras) " \
               "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}')".format(data_id,
@@ -249,7 +268,6 @@ class DBConnection (object):
         return attr_id
 
     def get_rawdata_links(self):
-
         sql = "SELECT rohDatensatzID, link " \
               "FROM rohDatensatz;"
 
@@ -411,20 +429,23 @@ class DBConnection (object):
         return res
 
     def create_framework(self, sql):
-
+        """
+        Füllt die einzelnen Dimensions-Tabellen in der Framework.db
+        :param sql: Fertigen SQL-Code um Dimensions-Tabellen in der Framework.db zu befüllen.
+        :return: ID des erstellten Eintrags
+        """
         try:
             self.cursor.execute(sql)
 
-            roh_data_id = self.cursor.lastrowid
+            fr_id = self.cursor.lastrowid
         except:
             traceback.print_exc()
-            roh_data_id = 9999999
+            fr_id = 9999999
 
-        return roh_data_id
-
-
+        return fr_id
 
 
+"""
 dummy_portal = {
     "titel": "TestPortal1",
     "url": "www.testportal1.de",
@@ -502,7 +523,6 @@ dummy_rohdaten = {
     "extras": "Ne"
 }
 
-"""
 # Todo: Später, wenn Zeit.
 
 def create_db(dbname):

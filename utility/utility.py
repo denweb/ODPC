@@ -34,10 +34,10 @@ def set_limit_and_offset(argv):
 
 def get_connection(url, open_conn=False):
     """
-    Establishes a streamed connection to a given URL.
-    :param url:
-    :param open_conn:
-    :return: A Response-Object with
+    Establishes a (streamed) connection to a given URL.
+    :param url: URL to connect to (String)
+    :param open_conn: Option to have an open connection (Boolean)
+    :return: A Response-Object of the established connection
     """
     try:
         if not open_conn:
@@ -56,6 +56,13 @@ def get_connection(url, open_conn=False):
 
 
 def create_modlink(link, portal):
+    """
+    Generiert aus der URL eines OGD-Portals und dessen detektierten Portalsoftwaretypen
+    den String für die weitere Nutzung der API
+    :param link: URL des OGD-Portals (String)
+    :param portal: Portalsoftwaretyp (String)
+    :return: Modifizierbarer String zur Endpunkt-Abfrage
+    """
     modlink = ""
 
     if portal == "cdkan":

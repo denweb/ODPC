@@ -3,6 +3,11 @@ import goodtables
 
 
 def get_valid(file):
+    """
+    Validiert eine Rohdatendatei, falls diese die Kriterien erfüllt und liefert ein standardisiertes Ergebnis
+    :param file: Name der Rohdatendatei (String)
+    :return: Ein Dictionary mit den Validierungsergebnissen
+    """
     ftype = file.split(".")[-1].lower()
 
     try:
@@ -29,6 +34,12 @@ def get_valid(file):
 
 
 def reformat_result(result, lib):
+    """
+    Überführt die verschiedenen Ergebnis-Formate der Bibliotheken in einen Standard.
+    :param result: Validierungsergebnisse (Dictionary)
+    :param lib: Verwendete Bibliothek (String)
+    :return: Eine standardisierte Form des Ergebnisses (Dictionary)
+    """
     new_result = {
         "valide": 0,
         "fehler": [],
@@ -76,6 +87,11 @@ def reformat_result(result, lib):
 
 
 def gen_extras(fehler):
+    """
+    Fügt noch nicht genutzte Informationen in ein 'Extra' Feld für jeden Fehler.
+    :param fehler: Eine Fehler-Information der Validierung
+    :return: Ein String mit allen bisher nicht genutzten Informationen im Dictionary-Format.
+    """
     felder = ["fieldName, fieldNumber, fieldPosition, labels, cells, rowNumber, rowPosition, notes"]
     extras = {}
 

@@ -4,6 +4,10 @@ from framework.utility.scores import calc_score
 
 
 def get_lesbar(data, se_fehler):
+    """
+    Überprüft, ob eine Rohdatendatei, welche einen einen validierbaren Dateityp hat,
+    tatsächlich erfolgreich validiert wurde.
+    """
     res = 0
     try:
         fehler = set(literal_eval(data["fehler"]))
@@ -19,6 +23,9 @@ def get_lesbar(data, se_fehler):
 
 
 def get_valide(data):
+    """
+    Überprüft, ob eine Rohdatendatei validiert wurde und ob dies null Fehler ergeben hat.
+    """
     res = 0
 
     # Anzahl, weil "valide" aktuell noch unzuverlässig mit unbestimmter Fehlerquelle. Todo für später.
@@ -29,6 +36,13 @@ def get_valide(data):
 
 
 def get_val(roh, se_fehler, portal):
+    """
+    Berechnet die Werte der Metriken in der Dimension Validität.
+    :param roh: Rohdateninformationen eines OGD-Portals
+    :param se_fehler: IDs von 'system-error'-Fehlern in der DB
+    :param portal: Portal-ID
+    :return: Die bestimmten Metrik-Werte der Dimension in einem Dictionary
+    """
     res = {
         "rdLesbar": 0,
         "rdValide": 0,

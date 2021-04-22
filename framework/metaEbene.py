@@ -1,6 +1,6 @@
 from framework.utility.scores import calc_score
 
-
+# Aktuell nicht gebraucht.
 def get_meta_metriken(portal, genau, vollst, akt, abr, off, kon, rue):
 
     res = {

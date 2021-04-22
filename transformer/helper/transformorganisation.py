@@ -1,6 +1,10 @@
-
-
 def transform_organisation(portal, org):
+    """
+    Transformiert die Organisationsdaten in ein standardisiertes Format.
+    :param portal: Der Portalsoftwaretyp (String)
+    :param org: Die Organisationsdaten (Dictionary | String)
+    :return: Die Organisationsdaten im standardisierten Format
+    """
     titel = None
     name = None
     beschreibung = None

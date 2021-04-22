@@ -2,8 +2,13 @@ import dateparser
 import datetime
 
 
-# Todo: Anderes Datenformat
 def transform_date(date, portal=None):
+    """
+    Standardisiert Daten-Strings der einzelnen Portalsoftwaretypen
+    :param date: Das zu standardisierende Datum (String)
+    :param portal: Der Portalsoftwaretyp (String)
+    :return: Der standardisierte Datenstring
+    """
     res = None
 
     if date:

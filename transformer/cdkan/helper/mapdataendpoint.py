@@ -3,6 +3,11 @@ from transformer.helper.transformdate import transform_date
 
 
 def map_dataendpoint(endpoint):
+    """
+    Transformiert die Metadaten zu den Rohdaten eines CKAN oder DKAN-Datensatzes in das standardisierte Format.
+    :param endpoint: Die Metadaten des Rohdatensatzes (Dictionary)
+    :return: Die transformierten Metadaten (Dictionary)
+    """
 
     # check for missing values in input
     endpoint_checklist = ["hash", "description", "format", "name", "resource_type", "mimetype", "mimetype_inner",

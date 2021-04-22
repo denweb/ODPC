@@ -4,6 +4,9 @@ from framework.utility.scores import calc_score
 
 
 def check_metadata(metadaten):
+    """
+    Überprüft das Vorhandensein von Titel, Beschreibung, Tags und Geodaten in den Metadaten.
+    """
     res = {
         "titel": 0,
         "beschreibung": 0,
@@ -24,26 +27,37 @@ def check_metadata(metadaten):
 
 
 def check_valid_metadata(metadaten, kontakte):
+    """
+    Überprüft, ob die angegebenen Metadaten eines Datensatzes syntaktisch valide sind.
+    """
     res = 0
 
-    # check einzelne felder.
+    # check einzelne felder für Kontakte
     for kontakt in [metadaten["autor"], metadaten["verwalter"]]:
         if kontakt in kontakte["beide"]:
             res += 1
         elif kontakt in kontakte["name"] or kontakt in kontakte["email"]:
             res += 0.5
 
+    # check URL
     url_parse = urlparse(metadaten["url"])
     if all([url_parse.scheme, url_parse.netloc]):
         res += 1
 
-    res = res/5
+    res = res/3
     return res
 
 
 # Todo: Weitere Felder auf Existenz / Validität prüfen.
 # Todo: Informationsgehalt? Lesbarkeit?
 def get_genau(meta, kontakte, portal):
+    """
+    Berechnet die Werte der Metriken in der Dimension Genauigkeit.
+    :param meta: Metadaten eines OGD-Portals
+    :param kontakte: IDs von validen Kontakten in der DB
+    :param portal: Portal-ID
+    :return: Die bestimmten Metrik-Werte der Dimension in einem Dictionary
+    """
     res = {
         "titel": 0,
         "beschreibung": 0,

@@ -2,6 +2,12 @@ from database.dbcon import DBConnection
 
 
 def upload(data, instance_type):
+    """
+    Lädt transformierte Metadatensätze oder Portalinformationen in die Daten-DB
+    :param data: Ein transformierter Metadaten (Dictionary)
+    :param instance_type: Angabe, ob ein Metadatensatz oder Portalinformationen, geladen werden sollen (String)
+    :return: Die ID des erstellten Datenbankeintrags
+    """
 
     db = DBConnection("testdb.db")
 

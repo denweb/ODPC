@@ -1,8 +1,11 @@
-
-
-# Transformiert die Informationen der Gruppen der jeweiligen Portale
-# und führt sie in das benötigte Format für die DB um.
 def transform_group(group, portal):
+    """
+    Transformiert die Informationen der Gruppen der jeweiligen Portale
+    und führt sie in das benötigte Format für die DB um.
+    :param group: Die zu transformierenden Gruppen-Daten (Dictionary)
+    :param portal: Der Portalsoftwaretyp (String)
+    :return: Die Gruppen-Daten im standardisierten Format (Dictionary)
+    """
     gruppe = None
 
     # Todo: Gruppe für Kategorien nutzen
@@ -26,10 +29,6 @@ def transform_group(group, portal):
 
             # Todo: Problem, wenn None gesetzt wird. Schauen, wie das zu lösen ist.
             extra = None
-            #extra = ", ".join([
-            #    group["display_name"],
-            #    group["image_display_url"]
-            #])
         else:
             return None
 

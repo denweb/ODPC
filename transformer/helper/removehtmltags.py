@@ -2,7 +2,11 @@ import re
 
 
 def remove_html_tags(text):
-    """Remove html tags from a string"""
+    """
+    Entfernt HTML-Reste aus einem String
+    :param text: Der zu reinigende String
+    :return: Der bereinigte String
+    """
     res = None
     if text:
         clean = re.compile('<.*?>')

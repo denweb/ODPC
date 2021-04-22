@@ -1,6 +1,6 @@
 from framework.utility.scores import calc_score
 
-
+# Aktuell nicht gebraucht.
 def get_roh_metriken(portal, vollst, off, val):
 
     res = {

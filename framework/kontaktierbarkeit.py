@@ -3,6 +3,9 @@ from framework.utility.scores import calc_score
 
 
 def check_kontakt_valide(kontakt, val_kontakte):
+    """
+    Überprüft, ob syntaktisch valide Informationen zum Autor und Verwalter eines Datensatzes angegeben wurden.
+    """
     res = 0
 
     if kontakt in val_kontakte["beide"]:
@@ -14,6 +17,13 @@ def check_kontakt_valide(kontakt, val_kontakte):
 
 
 def get_kon(meta, kontakte, portal):
+    """
+    Berechnet die Werte der Metriken in der Dimension Kontaktierbarkeit.
+    :param meta: Metadaten eines OGD-Portals
+    :param kontakte: IDs von validen Kontakten in der DB
+    :param portal: Portal-ID
+    :return: Die bestimmten Metrik-Werte der Dimension in einem Dictionary
+    """
     res = {
         "autorValide": mean([check_kontakt_valide(datensatz["autor"], kontakte) for datensatz in meta]),
         "verwalterValide": mean([check_kontakt_valide(datensatz["verwalter"], kontakte) for datensatz in meta])

@@ -130,6 +130,12 @@ def get_size(response):
 
 
 def check_all(response):
+    """
+    Untersucht einen Link (bzw. eine Response-Instance zu diesem) auf deren online-Status, einen möglicherweise
+    detektierten Dateityp mit entsprechenden MIME-Type und die Dateigröße.
+    :param response: Response-Instanz zur zu untersuchenden URL
+    :return: Ein Dictionary mit den ermittelten Werten
+    """
 
     try:
         url_status = check_url(response)

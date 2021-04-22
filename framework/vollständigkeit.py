@@ -4,6 +4,11 @@ from framework.utility.scores import calc_score
 
 
 def get_gew_vollst(metadaten):
+    """
+    überprüft ob in den Metadaten eines Datensatzes Angaben zu Titel, Beschreibung, Autor, Verwalter,
+    Geo-Bezug, Organisation, Erstelldatum, Updatedatum, zugeordneten Gruppen, Tags,
+    und einer Lizenz gemacht sind.
+    """
     res = 0
 
     if metadaten["titel"] and metadaten["titel"] != "None":
@@ -76,9 +81,15 @@ def get_roh_fehler(roh, vollst_fehler):
     return res
 
 
-# Todo: Warum gew. Vollständigkeit?
-#  Nicht sinnvoller, einach vollständigkeit & gew. in Genauigkeit - wegen Informationsgehalt?
 def get_vollst(meta, roh, vollst_fehler, portal):
+    """
+    Berechnet die Werte der Metriken in der Dimension Vollständigkeit.
+    :param meta: Metadaten eines OGD-Portals
+    :param roh: Rohdateninformationen eines OGD-Portals
+    :param vollst_fehler: IDs von Fehlern, die die Vollständigkeit betreffen, in der DB
+    :param portal: Portal-ID
+    :return: Die bestimmten Metrik-Werte der Dimension in einem Dictionary
+    """
     res = {
         "gewVollst": mean([get_gew_vollst(metadaten) for metadaten in meta]) * 7 / 20,
         "rohZelle": 0,

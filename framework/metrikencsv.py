@@ -18,9 +18,11 @@ from ast import literal_eval
 import traceback
 
 
-
 # Todo: Fix Anteile > 1
 def gen_csv_metrik(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehler, vollst_fehler):
+    """
+    Für die Erstellung der Framework-Metriken in einer Übersichts-CSV. Internes Hilfsmittel für die Visualisierung.
+    """
     res = None
 
     meta_ids = get_metadataids(db, portal)
@@ -52,7 +54,10 @@ def gen_csv_metrik(db, portal, kontakte, akt_daten, dateiformate_ids, se_fehler,
 
         anz_fehler = 0
         try:
-            anz_fehler = sum([len(literal_eval(data["fehler"])) for data in roh if data["fehler"] != "None"])
+            anz_fehler = sum([int(data["anzahlFehler"]) for data in roh
+                              if all([data["anzahlFehler"] != "None",
+                                      data["anzahlFehler"] != 0,
+                                      data["anzahlFehler"] is not None])])
         except Exception:
             pass
 

@@ -3,7 +3,7 @@ import json
 
 def get_dataitems(website_data, portal):
     """
-    Returns the a list of the JSON-representation of every data-item of the ARCGIS-Website - if possible.
+    Returns the a list of the JSON-representation of every data-item of the OGD-Portal - if possible.
     :param website_data: Dictionary of the crawled JSON data.
     :param portal: String containing the kind of portal to be crawled.
     :return: A List with the JSON-representation of every data-Item.

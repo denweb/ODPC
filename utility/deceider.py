@@ -6,6 +6,12 @@ import requests
 
 
 def get_link_portal(link):
+    """
+    Testet, ob die Domain eines Links auf eine Auswahl an Affix- und Suffix-Kombinationen,
+    die typische API-Endpunkte bilden, anspringt, um so deren zugehörigen Portalsoftwaretypen zu ermitteln.
+    :param link: Der zu untersuchende Link (String)
+    :return: Das Ergebnis dieser Untersuchung (String)
+    """
     if isinstance(link, str):
         pre = ["data.", "daten.", "transparenz.", "suche.", "cdkan."]
         post = ["/dataset", "/data", "/daten"]
@@ -54,7 +60,11 @@ def get_link_portal(link):
 
 # Todo: Make prettier / better
 def assign(link):
-
+    """
+    Bestimmt, ob ein Angebot mit einer Portalsoftware betrieben wird und wenn ja, welcher.
+    :param link: Link des OGD-Angebotes (String)
+    :return: Der detektierte Portalsoftwaretyp (String)
+    """
     # check for arcgis
     if "arcgis" in link:
         return "arcgis"

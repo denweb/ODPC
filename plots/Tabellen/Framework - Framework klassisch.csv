@@ -1,16 +1,12 @@
 Nr,Dimension,Metrik,Ebene,Punkte,Punkte Erklärung,Arbeiten,Beschreibung,Synonym,Notiz
 1,Genauigkeit & Verständlichkeit,,,10 (10),,"1, 2, 3, 5, 6, 7, 8, 9(?), 16, 18, 20, 21, 23, 24",,Accuracy,"Viele Punkte, weil nötig für die Auffindbarkeit -> Nutzen"
-,,Genauigkeit - syntaktisch (d. Metadaten),M,1,,5,"Sind die angegebenen Werte valide für das Feld? (Email im Email-Feld, INT im Dateigrößenfeld...)",,Eventuell nutzen.
-,,Informationsgehalt (d. Metadaten),M,,,"2, 5?, 31",Wie relevant sind die angegeben Daten? Bsp. tf*idf berechnen.,,"Überprüfen, ob einfach zu implementieren. Aber nur sehr theretisch."
 ,,Angabe von Geodaten,M,1,,8,"Falls geographischer Bezug gegeben ist, sollte der in den Metadaten angegeben werden.",,In gewichteter Vollständigkeit?
-,,Zugänglichkeit,M,,,2,Die Lesbarkeit d. Metadateninformationen. Kann nach Formel berechnet werden.,,
 ,,Anagabe Titel,M,4,,8,,,In gewichteter Vollständigkeit?
 ,,Angabe Beschreibung,M,3,,8,,,In gewichteter Vollständigkeit?
 ,,Angabe Tags,M,1,,,,,In gewichteter Vollständigkeit?
+,,Meta Validität,M,1,,5,"Sind die angegebenen Werte valide für das Feld? (Email im Email-Feld, INT im Dateigrößenfeld...)",,Eventuell nutzen.
 2,Vollständigkeit,,,10 (10),,"1, 2, 3, 5, 6?, 7, 10, 13, 17, 18, 21, 23. 25, 26",,Completeness,
-,,Anzahl Datensätze,P,-,,"1, 6, 27, 29",Anzahl der Datensätze im Portal,,
 ,,Gewichtete Vollständigkeit,M,7,,2,Gewichtet verschiedene Felder. Bspw. Titel > Beschreibung,,
-,,Rohdaten Anzahl Felder,R,-,,6,,,
 ,,Rohdaten Vollständigkeit - Zellen,R,1,,"6, 7, 13, 23, 25",Anteil an leeren Feldern. ,,"Darauf verlassen, was frictionless als leeres Feld angibt."
 ,,Rohdaten Vollständigkeit - Reihen,R,1,,"7, 23, 25","Anteil an Reihen, die leere Felder enthalten. ",,"Darauf verlassen, was frictionless als leeres Feld angibt."
 ,,Rohdaten Vollständigkeit - Spalten,R,1,,23,"Anteil an Spalten, die leere Felder enthalten. ",,"Darauf verlassen, was frictionless als leeres Feld angibt."
@@ -18,35 +14,32 @@ Nr,Dimension,Metrik,Ebene,Punkte,Punkte Erklärung,Arbeiten,Beschreibung,Synonym
 4,Aktualität,,,10 (7),,"1, 3, 4, 5?, 7, 9, 10, 13, 16, 18, 21, 23, 26",,"Timeliness, Currentness",
 ,,Updates verfügbar,M,"2,5",,"3, 10, 23, 26, 28, 29, 30, 31, 32",,,"Check, ob Update-Datum angegeben ist."
 ,,Datum verfügbar,M,"2,5",,,,,"Check, ob Erstell-Datum angegeben ist"
-,,Updatezyklus einhalten,M,,,"4, 8, 10, 23, 26, 28, 29, 30, 31, 32",,,"Check, ob letztes Update weniger lang her, als Updatezyklus"
 ,,Regelmäßige neue Datensätze,P,"2,5",,6,"Checkt, ob es innerhalb der letzten 2 Jahreszahlen neue Daten gab.",,
-,,Alter. d. Veröffentlichung,M,?,,9,"Checkt, ob Veröffentlichung jünger als 30 Monate ist. Danach veraltet.",,"(30 Monate mit ""Jahresberichten"" begründet, aber trotzdem schwach irgendwie.)"
+,,Alter der Veröffentlichung,M,"2,5",,9,"Checkt, ob Veröffentlichung jünger als 30 Monate ist. Danach veraltet.",,"(30 Monate mit ""Jahresberichten"" begründet, aber trotzdem schwach irgendwie.)"
 5,Abrufbarkeit,,,10 (10),,"5, 6, 9, 12, 13, 14, 16, 21, 26",,"Retrievability, availability, Accessability, Permanence",The extent to which dataset information and the listed resources in a portal can be retrieved by a human or software agent.
-,,Rohdatenlink online,P/M,9,,"3, 5, 8, 9, 12, 13, 26, 27, 28, 30, 32",,,
+,,Rohdatenlink online,M,9,,"3, 5, 8, 9, 12, 13, 26, 27, 28, 30, 32",,,
 ,,Rohdatenlink intern/extern,M,1,,3,Liegen die Rohdaten intern oder auf einem externen Portal?,,Sagt das etwas über die Portalqualität aus?
 6,Verwendung,,,,,5,,usage,The extent to which metadata keys are used to describe a dataset.
 7,Offenheit,,,10 (8),,"5, 6, 9, 10, 11, 12, 13, 16, 17, 21, 24, 26, 27",,"Openness, Machine-Processable, Non-discriminatory",
-,,Dateiformat maschinenlesbar,R,4,,"3, 8, 9, 10, 11, 12, 13, 16, 17, 26, 27, 28, 29, 30, 31",,,
-,,Dateiformat nicht-proprietär,R,2,,"3, 5, 9, 11, 12, 13, 16, 26, 27, 29, 31",,,
+,,Dateityp maschinenlesbar,R,4,,"3, 8, 9, 10, 11, 12, 13, 16, 17, 26, 27, 28, 29, 30, 31",,,
+,,Dateityp nicht-proprietär,R,2,,"3, 5, 9, 11, 12, 13, 16, 26, 27, 29, 31",,,
 ,,Nutzung einer offenen Lizenz,M,4,,"5, 6, 8, 9, 10, 11, 12, 13, 16, 17, 26, 27, 28, 29, 30, 31",,,
-,,Nutzung von URIs,M,/,,"10, 11, 28",,,
-,,Verlinkung von Daten (Linked Data),M,/,,"10, 11",,,
 8,Kontaktierbarkeit,,,10 (3),,5,,Contactability,The extent to which the data publisher provide useful contact information
 ,,Valide Autoren-Informationen,M,5,,"5, 8",,,In gew. Vollständigkeit?
 ,,Valide Verwalter-Informationen,M,5,,"5, 8",,,In gew. Vollständigkeit?
 9,Interoperabilität,,,,,5?,,Interoperability,
-10,,,,10 (5),,"1, 6",,,"Eigenkreation. Diversität des Angebotes (Formate, Kategorien,...)"
+10,Diversität,,,10 (5),,"1, 6",,,"Eigenkreation. Diversität des Angebotes (Formate, Kategorien,...)"
 ,,Durchschnitt Endpunkte,P,2,Falls > 2,,,,Durchschnittliche Anzahl Endpunkte pro Datensatz
-,,Stdver Endpunkte,P,1,Falls < 10,,,,Standardabweichung der Endpunkte-Verteilung
-,,Durchschnitt Dateiformate,P,2,Falls > 2,,,,Durchschnittliche Anzahl v. verschiedenen Dateiformaten pro Datensatz
-,,Stdver Dateiformate,P,1,Falls < 10,,,,Standardabweichung der Dateiformats-Verteilung
+,,Standardabweichung Endpunkte,P,1,Falls < 10,,,,Standardabweichung der Endpunkte-Verteilung
+,,Durchschnitt Dateitype,P,2,Falls > 2,,,,Durchschnittliche Anzahl v. verschiedenen Dateitypen pro Datensatz
+,,Standardabweichung Dateitype,P,1,Falls < 10,,,,Standardabweichung der Dateityps-Verteilung
 ,,Durchschnitt Tags,P,2,Falls > 2,,,,Durchschnittliche Anzahl v. Tags pro Datensatz
-,,Stdver Tags,P,1,Falls < 10,,,,Standardabweichung der Häufigkeiten d. verschiedenen Tags
+,,Standardabweichung Tags,P,1,Falls < 10,,,,Standardabweichung der Häufigkeiten d. verschiedenen Tags
 ,,Anteil einzelne Org.,P,"0,5","Falls > 0,1",,,,Anteil einzigartiger Organisationen gem. an Gesamtdatenmenge
-,,Stdver Org,P,"0,5",Falls < 10,,,,Standardabweichung für das Vorkommen einzigartiger Organisationen.
-11,,,,10 (3),,"6, 7, 10, 16",,"Traceability, Transparenz",Rückverfolgbarkeit der Datensätze für Transparenz
+,,Standardabweichung Org,P,"0,5",Falls < 10,,,,Standardabweichung für das Vorkommen einzigartiger Organisationen.
+11,Rückverfolgbarkeit,,,10 (3),,"6, 7, 10, 16",,"Traceability, Transparenz",Rückverfolgbarkeit der Datensätze für Transparenz
 ,,Angabe der Datenquelle,M,1,,6,,,"Wahrscheinlich nur über ""Organisation"" realisierbar"
-12,,,,10 (10),,6,,,
+12,Validität,,,10 (10),,6,,,
 ,,Rohdaten lesbar,R,5,"Vorraussetzung dafür, dass Validität geprüft werden kann.","6?, 9",,,
 ,,Valide Rohdaten,R,5,,"6, 15, 16, 20, 23, 32",,,
 ,,,,,,,,,

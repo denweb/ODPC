@@ -1,17 +1,17 @@
-from transformer.helper.mapcategories import remap_categories
-from transformer.helper.getdomain import get_domain
 from transformer.helper.removehtmltags import remove_html_tags
 from transformer.arcgis.helper.mapdataendpoint import map_dataendpoint
 from transformer.helper.transformkeywords import transform_keywords
-from transformer.helper.transormgarbage import transform_garbage
-from transformer.helper.transformmail import transform_mail
-from transformer.helper.getid import get_id
 from transformer.helper.transformorganisation import transform_organisation
 from transformer.helper.transformdate import transform_date
-from transformer.helper.transformgroup import transform_group
 
 
 def remap(dataitem, portal_id):
+    """
+    Transformiert die Metadaten eines gesamten Datensatzes im Arcgis-Format in das standardisierte Format dieser Arbeit.
+    :param dataitem: Die Metadaten zum Datensatz (Dictionary)
+    :param portal_id: Die ID des Portals in der Daten-DB
+    :return: Der transformierte Datensatz (Dictionary)
+    """
 
     # check for missing values in dataitem
     checklist = ['title', 'identifier', 'issued', 'modified', 'publisher',

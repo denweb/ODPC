@@ -4,12 +4,16 @@ from urllib3 import disable_warnings
 from utility.utility import set_limit_and_offset
 from crawlers.crawler import Crawler
 from rawDataValidation import validate_raw_data_links
+from qualityAnalyzer import analyze
 import sys
 import csv
 
 if __name__ == '__main__':
+    """
+    Führt eine komplette Analyse auf die in der 'portale_gesamt_sortiert.csv' enthaltenen Portale aus
+    und speichert die Ergebnisse wie in der Arbeit beschrieben in den Datenbanken.
+    """
 
-    # initialise logging
     timestamp = datetime.now().strftime("%Y-%m-%d %H-%M-%S")
     logging.basicConfig(filename="logs/%s.log" % timestamp,
                         level=logging.INFO,
@@ -18,7 +22,6 @@ if __name__ == '__main__':
 
     disable_warnings()
 
-    # check if a download-limit or an offset is given and set the variables accordingly. No specification = 0
     if len(sys.argv) < 2:
         download_limit = 0
         offset = 0
@@ -35,6 +38,7 @@ if __name__ == '__main__':
     logging.info("{} portals extracted from portal list".format(len(portals_info)))
     i = 0
 
+    # Führt für jedes Portal in der angegebenen CSV Datei den Crawl Vorgang in die DB durch.
     for portal in portals_info:
         logging.info("Processing link: {}".format(portal["URL"]))
         i += 1
@@ -48,8 +52,19 @@ if __name__ == '__main__':
         logging.info("%s Dataitems loaded of this link" % len(c.uploaded_ids))
         logging.info("\n")
     logging.info("Crawler done")
+
+    # Validiert alle Rohdaten-Links in der Datenbank
     logging.info("Starting raw data validation")
-
     validate_raw_data_links()
+    logging.info("Raw data validation done.")
 
-    logging.info("Raw data validation down.")
+    logging.info("Starting Framework Analysis")
+
+    # Untersucht alle bisher ermittelten Daten mithilfe des DQ Frameworks
+    # und speichert die Ergebnisse in der Frameowk.db
+    analyze()
+
+    logging.info("Framework Analysis done.")
+
+
+

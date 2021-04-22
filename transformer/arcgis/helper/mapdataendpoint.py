@@ -1,12 +1,14 @@
-from transformer.helper.getid import get_id
-import requests
 from transformer.helper.removehtmltags import remove_html_tags
-from utility.websiteInfo import check_all
-from utility.utility import get_connection
 from transformer.helper.transformdate import transform_date
 
 
 def map_dataendpoint(endpoint, input):
+    """
+    Transformiert die Metadaten zu den Rohdaten eines Arcgis-Datensatzes in das standardisierte Format.
+    :param endpoint: Die Metadaten des Rohdatensatzes (Dictionary)
+    :param input: Die Metadateniformationen des beinhaltenden Datensatzes (Dictionary)
+    :return: Die transformierten Metadaten (Dictionary)
+    """
 
     # check for missing values in input
     endpoint_checklist = ["title", "format", "mediaType", "size"]

@@ -1,4 +1,10 @@
+# Todo: Erstetzen durch Funktion in urllib
 def get_domain(url_raw):
+    """
+    Extrahier die Domain aus einer URL
+    :param url_raw: Zu untersuchende URL (String)
+    :return: Extrahierte Domain (String)
+    """
     try:
         url_split = url_raw.split("/")
 

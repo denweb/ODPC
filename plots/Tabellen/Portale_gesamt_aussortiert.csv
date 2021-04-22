@@ -1,239 +1,121 @@
-Titel,URL,Notizen
-Geoportal der Bundesregierung,Geoportal.de,"Geodaten. Hat über  Kontaktstellen noch die einzelnen Geoportale der Länder aufgelistet. Aber weil Geodaten, eher nicht interessant."
-GeoNet.MRN e.V.,http://daten.geonet-mrn.de,CKAN
-Landkreis Mecklenburgische Seenplatte,http://geoport-lk-mse.de/geoportal/index.php,Geodatenportal.
-Niedersachsen,http://geoportal.geodaten.niedersachsen.de,Portalsoftware. Aber welche? Scheint das einzige eigene Portal für open data von Niedersachsen zu sein. Geodaten!
-Hochwasser Nachrichtenzentrale Thüringen,http://hnz.thueringen.de/hw2.0/datenladen.html,Keine Portalsoftware. Geodaten.
-Hessen Mobil - Straßen- und Verkehrsmanagement,http://info.data-run.info/,"Keine Portalsoftware. Kein passendet Datenauftritt. Verlinkt auch sonst nach https://www.mdm-portal.de/ mit eigenem Marktplatz, aber kein Zugriff."
-IPM Group s.r.o,http://ipm-geonet.com/,Keine Portalsoftware. Keine Daten an sich. Privat?
-RWTH Aachen Institut für Straßenwesen,http://publications.rwth-aachen.de/,Portalsoftware. Aber selbst erstellt (?). Uni-Publikationsdaten etc.
-Transparenzportal Hamburg,http://transparenz.hamburg.de/,
-DBFZ Deutsches Biomasseforschungszentrum gemeinnützige GmbH,http://webapp.dbfz.de/resources/?lang=de,Keine Portalsoftware. DB-Query
-Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung,http://www.bmz.de/de/ministerium/zahlen_fakten/index.html,"Keine Portalsoftware. Bieten ein paar Zahlen/Statistiken im Rohformat an, aber kein Portal dahinter. Keine Unterquellen"
-Fachstelle für Geoinformationen Süd beim WSA Regensburg (FGS),http://www.fgs.wsv.de/,Keine Portalsoftware. Kein Datenportal. Daten bei https://atlas.wsv.bund.de/geokat/csw/CSWStartup
-Unternehmensdaten-bank der Wirtschaftsförderung Sachsen,http://www.firmen.saxony.de/KWISweb-Companies/CompanyList.aspx,Offline
-Fisch-DB - die Fischdatenbank,http://www.fischdb.de/,"Keine direkte Portalsoftware, die Metadaten verwaltet. Direkter Datenbank-Zugriff."
-Moritz Müller-Navarra,http://www.mforecast.com/,Existiert nicht mehr. Privat.
-Sortenliste OCED,http://www.oecd.org/agriculture/seeds/varieties/,"Keine Portalsoftware. EU-Portal. Eher ""weiterführender Link"""
-PortalU und Umweltdaten-kataloge,http://www.portalu.sachsen.de/,Offline
-"Ministerium für Arbeit, Gesundheit und Soziales des Landes NRW",http://www.sozialberichte.nrw.de,Keine Portalsoftware
-"Thüringer Landesamt für Umwelt, Bergbau und Naturschutz",http://www.tlug-jena.de/luftaktuell/index.php,Keine Portalsoftware. Geodaten.
-Terra Concordia gGmbH,https://baumcloud.org/#/,Keine Portalsoftware. Kein Datenportal. Privat?
-Bundeslebensmittelschlüssel,https://blsdb.de/,"Zugang zur Datenbank. Scheint aber nicht online abrufbar zu sein, sondern muss extra geordert werden."
-DB Netz AG,https://data.deutschebahn.com,CKAN. Aber privates Unternehmen!
-Berlin Open Data,https://daten.berlin.de/,Über erweiterte Suche lassen sich die bereitsteller finden. Scheinen aber keine eigenen Auftritte zu haben
-Open-Government-Data-Portal Rheinland-Pfalz,https://daten.rlp.de/,Nur Geodaten vom geoportal rlp
-Open Data Darmstadt,https://datenplattform.darmstadt.de/verkehr/apps/opendata/#/,Keine Portalsoftware
-Baden Württemberg,https://datentest.service-bw.de/,DKAN? CKAN? Datenanbieter dort unterhalb aufgelistet.
-EU-Sortenkataloge,https://ec.europa.eu/food/plant/plant_propagation_material/plant_variety_catalogues_databases_en,"Keine Portalsoftware. EU-Portal. Eher ""weiterführender Link"""
-52°North - Initiative for Geospatial Open Source Software GmbH,https://envirocar.org/api/stable/,Keine Portalsoftware. Rohdaten über API verfügbar. Citizen Science Projekt.
-Esri Deutschland GmbH,https://esri-de.maps.arcgis.com/home/index.html,"Arcigs, aber Geodaten & Privat."
-"OpenData Berlin: Senatsverwaltung für Umwelt, Verkehr und Klimaschutz Berlin",https://fbinter.stadt-berlin.de/,Keine Portalsoftware. Reiner Datenserver.
-FixMyBerlin,https://fixmyberlin.de/,Keine Portalsoftware. Geodaten über API/Maps abrufbar. Bürgerinitiative
-Geodatenkatelog des Bundes,https://gdk.gdi-de.org/gdi-de/srv/ger/catalog.search#/home,
-Osnabrück,https://geo.osnabrueck.de/geodatenportal/?p=metadaten,"Verlinkt im Endeffekt nur weiter auf Geoportal Niedersachsen. Portal, aber unbekannt."
-Geoportal der Hanse- und Universitätsstadt Rostock,https://geo.sv.rostock.de,s.o.
-Kreis Pinneberg,https://geodienste.hamburg.de,Kein Portal
-GeoMIS.Sachsen,https://geomis.sachsen.de,"Geoportal. Metadaten, aber eigtl. Kartenanwendung"
-Bundesanstalt für Gewässerkunde,https://geoportal.bafg.de,Portal für Geodaten. Scheint aber selber nur metadaten anzubieten. Keine API direkt auffindbar (?). Bieten auch ArcGIS an über: https://geoportal.bafg.de/arcportal/home/index.html
-Land Brandenburg,https://geoportal.brandenburg.de/startseite/,Reines Geodatenportal. Keine Portalsoftware. Verweist auch zig weitere regionale Geoportale.
-Stadt Freiburg i. Br. - Garten- und Tiefbauamt,https://geoportal.freiburg.de/freigis/,Geoportal
-Saarland,https://geoportal.saarland.de/,Portalsoftware. Aber welche? Scheint das einzige eigene Portal für open data von Saarland zu sein. Geodaten!
-Geoportal Sachsen,https://geoportal.sachsen.de,Geoportal
-DLR - Deutsches Zentrum für Luft- und Raumfahrt e.V. - Geoservice,https://geoservice.dlr.de/web/,Geodaten. Portalsoftware?
-Geoportal der SBV,https://geoviewer.sachsen.de/mapviewer2/index.html?app=geoportal-sbv&lang=de,Geoportal
-Hochsauerlandkreis,https://gis.hochsauerlandkreis.de/arcgis6/rest/services,"Arcgis. Aber mal schauen, ob sie wirklich nen richtiges Portal dazu haben."
-Technische Universität Chemnitz,https://gitlab.hrz.tu-chemnitz.de/opener/opener-app,Keine Portalsoftware. Kein Datenportal. Privat?
-Universität Hamburg - Integrated Climate Data Center (ICDC),https://icdc.cen.uni-hamburg.de/all-data.html,Keine Portalsoftware
-ILS – Institut für Landes- und Stadtentwicklungsforschung,https://ils-geomonitoring.de/documents,Portalsoftware. Aber welche? Geodaten?
-Landesamt für Umwelt Brandenburg (LfU),https://lfu.brandenburg.de,Kein Datenportal. Stellt Daten über https://geoportal.brandenburg.de bereit.
-"Stadt Frankfurt am Main, Straßenverkehrsamt Verkehrsmanagement",https://mainziel.de/,Keine Portalsoftware. Bieten Geodaten über karten an. Ansonsten noch auf dem https://service.mdm-portal.de
-MKP GmbH,https://marxkrontal.com/de/,Keine Portalsoftware. Kein Datenportal. Daten bei mcloud. Privat.
-Technische Universität Hamburg (TUHH),https://mdi-de.baw.de/easygsh/,Veröffentlicht durch das Portal. Sieht nach reinen Geodaten aus.
-MechLab Engineering UG,https://mechlab-engineering.de/,Keine Portalsoftware. Kein Datenportal. Nur 1 Datensatz auf Github zu 1 Projekt. Privat.
-Bundesamt für Kartographie und Geodäsie (BKG),https://mis.bkg.bund.de/portal/,"Datenportal, aber unbekannter Typ. API?"
-"Brandenburg - Ministerium für Landwirtschaft, Umwelt und Klimaschutz (MLUK)",https://mluk.brandenburg.de/mluk/de/,Keine Portalsoftware
-Bundesanstalt für Materialforschung und -prüfung,https://netzwerke.bam.de/Netzwerke/Navigation/DE/Home/home.html,Keine Portalsoftware. Aber Suchfunktion + ein paar Metadaten für eigenes Angebot. Nur Querverweise darauf bei govdata von anderen Portalen
-Stadt Hennef (Sieg),https://nextcloud.stadt-hennef.de/index.php/login,Keine Portalsoftware
-Offene Daten Köln,https://offenedaten-koeln.de/,"DKAN. Hat wiederum einige Datenbereitsteller, die aber keine Portale zu haben scheinen."
-Open Data Portal Aachen,https://offenedaten.aachen.de,"CKAN. Hat wiederum einige Datenbereitsteller, die aber keine Portale zu haben scheinen."
-Offene Daten kdvz Rhein-Erft-Rur,https://offenedaten.kdvz-frechen.de,"DKAN. Hat wiederum einige Datenbereitsteller, die aber keine Portale zu haben scheinen."
-Offene Daten Bielefeld,https://open-data.bielefeld.de/,DKAN. Keine weitere Quelle.
-Bundesanstalt für Landwirtschaft und Ernährung,https://open-data.ble.de/dataset,Datenportal von ble.de . Keine weiteren Quellen.
-Das Open-Government-Portal in NRW,https://open.nrw/,
-Open Data Duisburg,https://opendata-duisburg.de/,"DKAN. Hat wiederum einige Datenbereitsteller, die aber keine Portale zu haben scheinen."
-Bundesanstalt für Straßenwesen (BASt),https://opendata.bast.de,Keine Portalsoftware. Reine Datenablage. unter www.bast.de auch eine Portalsoftware / Daten
-Bayern,https://opendata.bayern.de,CKAN. Datenquellen nur über einzelne Datensätze findbar. Bei Stichproben kein Portal.
-Offene Daten Bonn,https://opendata.bonn.de/,"DKAN. Hat wiederum einige Datenbereitsteller, die aber keine Portale zu haben scheinen."
-Open Data Portal der Stadt Dormagen,https://opendata.dormagen.de,"Portalsoftware. API vorhanden. Muss herausgefunden werden, welche."
-Offene Daten für Dortmund,https://opendata.dortmund.de,Portal? Aber nichts bekanntes
-Offene Daten für Dresden,https://opendata.dresden.de/,Portalsoftware. Hat Informationen über CKAN. Nicht genauer bestimmt.
-Open Data Düsseldorf,https://opendata.duesseldorf.de,"DKAN. Hat wiederum einige Datenbereitsteller, die aber keine Portale zu haben scheinen."
-Deutscher Wetterdienst,https://opendata.dwd.de/,"Keine Portalsoftware. Stellen einiges an Daten, auch über GIS-Anwendung, aber nicht über einheitliches Portal."
-Offene Daten Essen,https://opendata.essen.de,DKAN. Keine weitere Quelle.
-Offene Daten Gelsenkirchen,https://opendata.gelsenkirchen.de/,"DKAN. Hat wiederum einige Datenbereitsteller, die aber keine Portale zu haben scheinen."
-Offene Daten der Stadt Leipzig,https://opendata.leipzig.de/,"CKAN. Hat wiederum einige Datenbereitsteller, die aber keine Portale zu haben scheinen."
-Open-Data-Portal der Stadt Meerbusch,https://opendata.meerbusch.de,CKAN. Keine weiteren Datenbereitsteller
-Open Data Rhein-Kreis Neuss,https://opendata.rhein-kreis-neuss.de,"Portalsoftware. API vorhanden. Muss herausgefunden werden, welche."
-Open-Data-Portal des Rhein-Neckar-Verkehrs (RNV),https://opendata.rnv-online.de/search/type/dataset,DKAN
-Regionalverband Ruhr,https://opendata.ruhr/,"CKAN. Datenbereitsteller haben teils eigene Portale, aber die sind schon abgedeckt (z.B. Duisburg)"
-OpenData Schleswig-Holstein,https://opendata.schleswig-holstein.de,vorhanden
-Offene Daten Münster,https://opendata.stadt-muenster.de/,"DKAN. Hat wiederum einige Datenbereitsteller, die aber keine Portale zu haben scheinen."
-VAG Verkehrs-Aktiengesellschaft Nürnberg,https://opendata.vag.de/,"CKAN, aber privates unternehmen?"
-Stadt Würzburg,https://opendata.wuerzburg.de/pages/erkunden/,Portalsoftware. Welche?
-Zentrales IT-Management Schleswig-Holstein,https://opendata.zitsh.de,Kein Portal
-Heidelberg Institute for Geoinformation Technology,https://openrouteservice.org/,Keine Portalsoftware. Geodaten über div. Schnittstellen. Eigener Dienst.
-Fraunhofer-Center für Maritime Logistik und Dienstleistungen CML,https://owncloud.fraunhofer.de/,Keine Portalsoftware. Privat. Nicht offen einsehbar. Daten bei mcloud.
-Polizei NRW,https://polizei.nrw/,Keine Portalsoftware
-Open Data Portal der Stadt Chemnitz,https://portal-chemnitz.opendata.arcgis.com/,Arcgis
-Deutsche Nationalbibliothek,https://portal.dnb.de/,"Keine weiteren Bezugsquellen. Daten nur auf den Bibliotheksbestand bezogen. Weiß nicht, ob crawlbar."
-Universität Rostock - Agrar- und Umweltwissenschaftliche Fakultät Professur für Geodäsie und Geoinformatik,https://portal.opengeoedu.de/,Geodaten Aggregationsportal. Software?
-Karlsruher Institut für Technologie (KIT),https://primo.bibliothek.kit.edu/primo_library/libweb/action/search.do,Portalsoftware. Aber selbst erstellt (?). Uni-Publikationsdaten etc.
-Hessen,https://prototyp.geoportal.hessen.de/,Portalsoftware. Aber welche? Scheint das einzige eigene Portal für open data von Hessen zu sein. Geodaten!
-Raumplanungsinformationssystem (Rapis),https://rapis.sachsen.de/,Keine Portalsoftware
-Deutsches Patent- und Markenamt,https://register.dpma.de/DPMAregister/Uebersicht?lang=de,"Keine Portalsoftware. Keine Verwaltungsdaten. Govdata hat ein paar Berichte von denen, die aber so nicht in einem Portal zu finden sind."
-Regionales Klimainformations-system (ReKIS),https://rekis.hydro.tu-dresden.de/,Geoportal
-Verkehrsverbund Rhein-Sieg GmbH,https://sevas.nrw.de/,Keine Portalsoftware
-Smart City System GmbH,https://smart-city-system.com/,Keine Portalsoftware. Kein Datenportal. Daten bei mcloud. Privat.
-Wassertourismus Schleswig-Hosteil e.V.,https://surfen-sh.de,Kein Portal
-TU Dresden,https://tu-dresden.de/,Keine Portalsoftware. Kein Datenportal. Nur 1 Datensatz auf Github zu 1 Projekt. Privat?
-Viscan Solutions GmbH,https://viscan.de/,Keine Portalsoftware. Kein Datenportal. Daten bei mcloud. Privat.
-Institut für Systemoptimierung des Karlsruhe Institute of Technology,https://vision-mfund.de/?page_id=441,Keine Portalsoftware. Aber Daten vorhanden. Über mcloud?
-Verkehrs Management Zentrale Bremen,https://vmz.bremen.de,Keine Portalsoftware. Aktuelle Verkehrsdaten. Auch Datensätze über mdm-portal.de
-Sozialhelden e.V.: Wheelmap.org,https://wheelmap.org/,Keine Portalsoftware. Anwendung für Geodaten. API dafür.
-4traffic GbR,https://www.4traffic.de/,Keine Portalsoftware. Kein Datenportal. Daten bei mcloud. Privat.
-Stadt Arnsberg,https://www.arnsberg.de/,Keine Portalsoftware
-Auswärtiges Amt,https://www.auswaertiges-amt.de/de/open-data-schnittstelle/736118,"Keine Portalsoftware. Haben eine ""Schnittstelle"" für Offene Daten. Aber nur begrenzt und extern einsehbar. Keine Unterqullen o.ä. erkennbar dabei."
-Bundesausgleichsamt,https://www.badv.bund.de/DE/Bundesaemter/BAA/Aufgaben/start.html,Keine Portalsoftware. Keine Daten. Kein Portal. Auf govdata nur alte Berichte
-Bundesamt für Wirtschaft und Ausfuhrkontrolle,https://www.bafa.de/SiteGlobals/Forms/Suche/Infothek/Infothek_Sucheinstieg_Open-data_Formular.html?nn=8451890&sortOrder.HASH=e91a2973f36b2d31a59b&documentType_=type_open_data&sortOrder=dateOfIssue_dt+desc,Mini-Open-Data-Abteilung / Portal. API? Ansonsten nur Flyer/Anträge etc. Keine Unterquellen
-"Bundesanstalt für Gewässerkunde, Referat Geodäsie",https://www.bafg.de/DE,Keine Portalsoftware. Kein Datenportal. Daten bei https://atlas.wsv.bund.de/geokat/csw/CSWStartup
-Bundesamt für Güterverkehr (BAG),https://www.bag.bund.de/DE/Home/home_node.html,Keine Portalsoftware. Kein Datenportal.
-Automatische Zählstellen,https://www.bast.de/BASt_2017/DE/Verkehrstechnik/Fachthemen/v2-verkehrszaehlung/Daten/2014_1/Jawe2014.html?cms_filter=true&cms_jahr=Jawe2006&cms_land=14&cms_map=1,Keine Portalsoftware
-Universität Siegen - Forschungsinstitut Wasser und Umwelt,https://www.bau.uni-siegen.de/fwu/,Keine Portalsoftware. Kein Datenportal. Datenportal über mde-de.org
-Bundesanstalt für Arbeitsschutz und Arbeitsmedizin,https://www.baua.de,Keine Portalsoftware.Nur einzelne Dokumente per Suche auffindbar.Keine weiteren Unterquellen.
-"Die Senatorin für Klimaschutz, Umwelt, Mobilität, Stadtentwicklung und Wohnungsbau",https://www.bauumwelt.bremen.de/,Keine Portalsoftware
-Bundesanstalt für Wasserbau (BAW),https://www.baw.de,"Kein Datenportal. Die eigentlichen Datensätze verlinken auch zu anderen (geo) Portalen, die unter weitere Funde gespeichert sind."
-"Bayerisches Staatsministerium des Innern, für Bau und Verkehr (Oberste Baubehörde)",https://www.baysis.bayern.de,Keine Portalsoftware. Aber haben eine ArcGIS installation hier: https://www.baysis.bayern.de/gis/rest/services
-"Bundesinstitut für Bau-, Stadt- und Raumforschung (BBSR) im Bundesamt für Bauwesen und Raumordnung (BBR)",https://www.bbsr.bund.de,Kein Datenportal. Nur Berichte. Keine Unterquellen
-Bezirksregierung Arnsberg,https://www.bezreg-arnsberg.nrw.de/,Keine Portalsoftware
-Die Bundesbeauftragte für den Datenschutz und die Informationsfreiheit,https://www.bfdi.bund.de/,"Keine Portalsoftware. Keine Verwaltungsdaten. Govdata hat ein paar Berichte von denen, die aber so nicht in einem Portal zu finden sind."
-Bundesstelle für Flugunfalluntersuchung BFU,https://www.bfu-web.de/DE/Home/homepage_node.html,Keine Portalsoftware. Kein Datenportal.
-Bundesministerium für Arbeit und Soziales,https://www.bmas.de,Keine Portalsoftware. Kein Datenportal. Nur vereinzelt berichte in Rohform an Artikel angehängt. Dann auf Govdata veröffentlicht.
-Bundesministerium des Innern,https://www.bmi.bund.de,Kein Datenportal. Verweisen nur auf govdata
-Bundesministerium der Verteidigung,https://www.bmvg.de/de/service/open-data,Keine Portalsoftware. Einzelne alte Dateien.  Keine Unterquellen.
-Bundesministerium für Verkehr und digitale Infrastruktur (BMVI),https://www.bmvi.de,Keine Portalsoftware. Bzw. mcloud ist deren Portal.
-Bundesministerium für Wirtschaft und Energie,https://www.bmwi.de/Redaktion/DE/Artikel/Service/open-data.html,"Keine Portalsoftware. Nur einzelne, veraltete Auswertungen direkt auf der Seite verlinkt. Wahrscheinlich durch govdata dann."
-Bottled Software GmbH,https://www.bottledsoftware.de/,Keine Portalsoftware. Kein Datenportal. Daten bei mcloud. Privat.
-Bundesstelle für Seeunfalluntersuchung (BSU),https://www.bsu-bund.de,Keine Portalsoftware. Daten auf mcloud
-Bundesversicherungsamt,https://www.bundesamtsozialesicherung.de/de/service/downloadcenter/,Keine Portalsoftware. Vereinzelte Datensätze zu Anträgen etc. Kein Datenportal per se. Keine Quellen.
-Bundesarchiv,https://www.bundesarchiv.de,"Stellt einiges an Daten offen. Aber keine kl. Verwaltungsdaten. Außerdem keine Portalsoftware in dem Sinne. Verlink auf https://invenio.bundesarchiv.de/ --> ""Rechercheanwendung"" aber Login benötigt."
-Bundesministerium der Finanzen,https://www.bundesfinanzministerium.de/Datenportal/start.html,Scheint eine Portalsoftware zu sein. Welche? Keine Sub-Portale.
-Bundesamt für Justiz,https://www.bundesjustizamt.de,Kein Datenportal. Google sagt ansonsten nur govdata. Hosten aber selber.
-Die Beauftragte der Bundesregierung für Kultur und Medien,https://www.bundesregierung.de/breg-de/bundesregierung/staatsministerin-fuer-kultur-und-medien,"Keine Portalsoftware. Flyer und Info-Artikel zum Download, aber kein Datenportal. Keine Unterqullen"
-Bundessortenamt,https://www.bundessortenamt.de/bsa/sorten/datenbanken/,Keine Portalsoftware. Bietet einige Datenbanken. Diese Aufnehmen. Aber keine Portalsoftware.
-Bundesverwaltungsamt,https://www.bva.bund.de/DE/Services/Behoerden/Beratung/Beratungszentrum/OpenData/opendata_node.html,Keine Portalsoftware. Keine Daten auf der Seite. Open Data nur als Service für andere Behörden.
-Bundesamt für Verbraucherschutz und Lebensmittelsicherheit,https://www.bvl.bund.de,"Keine Portalsoftware. Flyer und Info-Artikel zum Download, aber kein Datenportal. Keine Unterqullen"
-Bundeszentralamt für Steuern,https://www.bzst.de/DE/Home/home_node.html,Keine Portalsoftware. Vereinzelte Datensätze zu Anträgen etc. Kein Datenportal per se. Keine Quellen.
-Cyface GmbH,https://www.cyface.de/,Keine Portalsoftware. Daten auf mcloud. Privatunternehmen
-"Bundesministerium für Familie, Senioren, Frauen und Jugend",https://www.daten.bmfsfj.de/,"Hat 3 Datenquellen, aber keine weiteren Links. Alles selber gehostet."
-Bundesministerium für Bildung und Forschung,https://www.datenportal.bmbf.de/portal/de/index.html,Keine Portalsoftware. Eher Suchmaske für Datenbank. Ansonsten auch Verweis auf Govdata.
-DBI - Gastechnologisches Institut gGmbH,https://www.dbi-gti.de,Privatunternehmen. Kein Portal. Daten über mcloud.
-Statistisches Bundesamt,https://www.destatis.de,Scheint keine weiteren Quellen anzugeben
-Deutsches Forschungszentrum für Künstliche Intelligenz GmbH,https://www.dfki.de/web/,Keine Portalsoftware. Kein Datenportal. Nur 1 Datensatz auf Github zu 1 Projekt. Privat?
-DFS Deutsche Flugsicherung GmbH,https://www.dfs.de/dfs_homepage/de/,Keine Portalsoftware. Daten anders gehostet. Ebenfalls kein Portal.
-Deutsches Klimarechenzentrum GmbH (DKRZ),https://www.dkrz.de/webvis/,Keine Portalsoftware. Generell kaum Datenportal. Daten bei mcloud selbst gespeichert zuteils.
-DTV Verkehrsconsult GmbH,https://www.dtv-verkehrsconsult.de/,Keine Portalsoftware. Kein Datenportal. Daten bei mcloud. Privat.
-Eisenbahn-Bundesamt,https://www.eba.bund.de/,Keine Portalsoftware. Hat eine Geoanwendung (Lärmarke) unter: http://laermkartierung1.eisenbahn-bundesamt.de/
-Bundesstelle für Eisenbahnunfalluntersuchung (BEU),https://www.eisenbahn-unfalluntersuchung.de,Keine Portalsoftware. Kein Datenportal.
-"Wasser- und Schifffahrtsdirektionen Mitte, West, Südwest, Süd und Ost Dienstsitz Mainz",https://www.elwis.de/DE/Startseite/Startseite-node.html,Keine Portalsoftware. Kein Datenportal
-Emsland,https://www.emsland.com/service-im-emsland/partner/datenbank/,Kein Datenportal
-"Fachhochschule der Wirtschaft Nordrhein-Westfalen gGmbH, Paderborn",https://www.fhdw.de/,Keine Portalsoftware. Kein Datenportal. Daten bei mcloud. Privat?
-Der Senator für Finanzen,https://www.finanzen.bremen.de/,Keine Portalsoftware
-Friedrich-Loeffler-Institut,https://www.fli.de/de/service/informationssysteme-und-datenbanken/,Keine Portalsoftware. Bieten vereinzelte Artikel an. Und weiterführende Links zu anderen DBs / Datentools. Evtl diese Aufnehmen. Anonsten keine Quellen.
-Geodateninfrastruktur Deutschland,https://www.gdi-de.org/,
-Informationstechnikzentrum Bund,https://www.gdws.wsv.bund.de/DE/startseite/startseite_node.html,Keine Portalsoftware. Ansonsten werden Daten über pegelstandonline.de bereitgestellt. Aber das sijnd geodaten + vorhanden
-Initiative für sicherere Straßen UG haftungsbeschränkt,https://www.gefahrenstellen.de/,Keine Portalsoftware. Anwendung für Geodaten. API?
-Sachsen Geologischer Dienst,https://www.geologie.sachsen.de/,Keine Portalsoftware
-Geodatenportal BW,https://www.geoportal-bw.de/,Geoportal. Datenportal.
-Mecklenburg-Vorpommern Geoportal,https://www.geoportal-mv.de/portal/#extended=false,Geoportal. Keine bekannte Portalsoftware. 
-Thüringen,https://www.geoportal-th.de/de-de/,Geoportal. Keine bekannte Portalsoftware. 
-GEOportal.NRW,https://www.geoportal.nrw,Geodaten. Aggregiert auch wiederum von kommunalen Unterportalen.
-Rheinland-Pfalz Datenportal,https://www.geoportal.rlp.de,Geodaten. Nur link zum Geoportal RLP
-Bundesamt für Seeschifffahrt und Hydrographie (BSH),https://www.geoseaportal.de,Geoportal
-"Die Senatorin für Gesundheit, Frauen und Verbraucherschutz",https://www.gesundheit.bremen.de/,Keine Portalsoftware
-Hannover,https://www.hannover.de/Leben-in-der-Region-Hannover/Verwaltungen-Kommunen/Die-Verwaltung-der-Landeshauptstadt-Hannover/Dezernate-und-Fachbereiche-der-LHH/Baudezernat/Fachbereich-Planen-und-Stadtentwicklung/Geoinformation/Open-GeoData,"Haben versch. Geodaten mit Metadaten versehen, aber kein direktes Portal. Auch keine Suche."
-Ministerium der Finanzen des Landes NRW,https://www.haushalt.fm.nrw.de/,Keine Portalsoftware
-Fraunhofer Institut für Intelligente Analyse- und Informationssysteme IAIS,https://www.iais.fraunhofer.de/,Keine Portalsoftware. Kein Datenportal. Nur 1 Datensatz auf Github zu 1 Projekt. Privat?
-ifak e.V.,https://www.ifak.eu/de,Keine Portalsoftware. Kein Datenportal. Daten in deren Cloud - nicht offen einsehbar.
-Ministerium des Innern des Landes NRW,https://www.im.nrw/,Keine Portalsoftware
-Leibniz-Institut für ökologische Raumentwicklung (IÖR),https://www.ioer.de/home/,Kein Datenportal. Wenn dann nur Geodaten (Maps)
-ITZ-Bund,https://www.itzbund.de/DE/Home/home_node.html,Keine Portalsoftware. Keine Daten auf der Seite. Auf govdata nur wegen pegelonline.de
-Fraunhofer-Institut für Verkehrs- und Infrastruktursysteme IVI,https://www.ivi.fraunhofer.de/,Keine Portalsoftware. Kein Datenportal. Daten bei mcloud. Privat?
-Stadt Kassel,https://www.kassel.de/,Keine Portalsoftware. Ansonsten noch auf dem https://service.mdm-portal.de
-Kraftfahrt-Bundesamt (KBA),https://www.kba.de,Keine Portalsoftware. Aber einige Statistiken zum Download.
-Landeshauptstadt Kiel,https://www.kiel.de/opendata,Kein richtiges Portal. Aber Metadaten zu _allen_ Dateien gibts hier: https://www.kiel.de/de/kiel_zukunft/statistik_kieler_zahlen/open_data/Kiel_open_data.json (Format scheint CKAN oder so)
-,https://www.kreis-offenbach.de/B%C3%BCrgerservice/Online-Dienste/Offene-Daten,Keine Portalsoftware
-Kreis Recklinghausen,https://www.kreis-re.de,Keine Portalsoftware
-Zentrales Datenmanagement der WSD Nord im Wasserstraßen- und Schifffahrtsamt Hamburg Sachbereich 4 Neubau,https://www.kuestendaten.de/DE/Startseite/Startseite_Kuestendaten_node.html,Geodatenportal. AUch auf https://atlas.wsv.bund.de/geokat/csw/CSWStartup
-Staatskanzlei des Landes NRW,https://www.land.nrw/de/landesregierung/ministerpraesident/staatskanzlei,Keine Portalsoftware
-Landesdatenbank NRW,https://www.landesdatenbank.nrw.de,"Portal, aber keine bekannte Software. Eher DB Schnittstelle"
-Agrarmeteorologischer Dienst,https://www.landwirtschaft.sachsen.de/Wetter09/asp/inhalt.asp?seite=uebersicht,Keine Portalsoftware
-LGL Baden-Württemberg,https://www.lgl-bw.de/unsere-themen/Produkte/Open-Data/,Keine Portalsoftware. Bietet Links zu anderen Datenportal (e.g. Geoportal.) und tlws. Kauflinks für Daten.
-Landesinstitut für Arbeitsgestaltung NRW,https://www.lia.nrw.de/,Keine Portalsoftware
-LISt GmbH,https://www.list.sachsen.de/,"Keine Portalsoftware. Teilweise wird auch auf https://geomis.sachsen.de verlinkt: Geoportal, schon vorhanden."
-Messwerte der Talsperrenverwaltung,https://www.ltv.sachsen.de/tmz/uebersicht.html,Geoportal
-Sachsen-Anhalt,https://www.lvermgeo.sachsen-anhalt.de/de/dienste__download/dienste-und-download.html,Geodienste
-Landeszentrum Gesundheit NRW,https://www.lzg.nrw.de/,Keine Portalsoftware
-Materna Information & Communications SE,https://www.materna.de,Keine Portalsoftware. Kein Datenportal. Privat.
-Das offene Datenportal des BMVI,https://www.mcloud.de/,Scheint nur zu aggregieren. BMVI = Bundesministerium für Verkehr und  digitale Infrastruktur.
-plan-GIS GmbH,https://www.mdi-de.org,Privatunternehmen
-"Ministerium für Heimat, Kommunales, Bau und Gleichstellung des Landes NRW",https://www.mhkbg.nrw/,Keine Portalsoftware
-"Ministerium für Kinder, Familie, Flüchtlinge und Integration des Landes NRW",https://www.mkffi.nrw/,Keine Portalsoftware.
-Ministerium für Kultur und Wissenschaft des Landes NRW,https://www.mkw.nrw/,Keine Portalsoftware
-Baden-Württemberg Mobidata,https://www.mobidata-bw.de/dataset,CKAN. Verkehrsverbund. Privat?
-"Ministerium für Wirtschaft, Innovation, Digitalisierung und Energie des Landes NRW",https://www.mpanrw.de/,Keine Portalsoftware
-Max Rubner-Institut,https://www.mri.bund.de/de/service/datenbanken/,"Verlinken zu diversen Datenbanken, aber keine kl. Daten. Nur Datenbanken. Aber diese DBs aufnehmen in Liste!"
-TSC Beratende Ingenieure für Verkehrswesen GmbH & Co. KG,https://www.mvup.de/,Keine Portalsoftware. Kein Datenportal. Daten bei mcloud. Privat.
-Naturschutzdaten,https://www.natur.sachsen.de/karten-wms-wfs-dienste-und-gis-daten-zum-fachthema-natur-und-biologische-vielfalt-7036.html,Keine Portalsoftware
-Stadt Ennigerloh,https://www.o-sp.de/ennigerloh/,Keine Portalsoftware
-Offene Daten Wuppertal,https://www.offenedaten-wuppertal.de/,"CKAN. Hat wiederum einige Datenbereitsteller, die aber keine Portale zu haben scheinen."
-Offenesdatenportal,https://www.offenesdatenportal.de/,"CKAN. Hat wiederum einige Datenbereitsteller, die aber keine Portale zu haben scheinen. Hostet Daten für viele kleinere Gemeinden."
-Publikationsserver OPEN AGRAR,https://www.openagrar.de/content/index.xml,"Ergebnisliste sieht nach Portalsoftware aus. Aber welche? MyCore? API? Überhaupt interessant, da ""nur"" Publikationsliste von/für Insititut."
-Open Data Rostock,https://www.opendata-hro.de/,
-Freistaat Sachsen,https://www.opendata.sachsen.de/Daten_finden.htm,Über  Daten suchen  (?) Lassen sich die einzelnen Unterportale finden.
-Open NRW: Geoportal,https://www.opengeodata.nrw.de/,Keine bekannte Portalsoftware. Scheint ein Metadatenverzeichnis für geoportal.nrw.de zu sein.
-München,https://www.opengov-muenchen.de/,CKAN. Datenquellen nur über einzelne Datensätze findbar. Bei Stichproben kein Portal.
-Prof. Schaller UmweltConsult GmbH,https://www.psu-schaller.de/,Keine Portalsoftware. Kein Datenportal. Daten bei mcloud. Privat.
-Qualitäts- und UnterstützungsAgentur - Landesinstitut für Schule NRW,https://www.qua-lis.nrw.de/,Keine Portalsoftware
-Statistische Ämter des Bundes und der Länder,https://www.regionalstatistik.de/,Online Datenbank mit Abfrage. Scheint keine Metadaten zu haben.
-S-Bahn Hamburg GmbH,https://www.s-bahn-hamburg.de/s_hamburg/view/index.shtml,Keine Portalsoftware. Kein Datenportal. Bieten Daten über DB open data an.
-S-Bahn Stuttgart,https://www.s-bahn-stuttgart.de/s-stuttgart,Keine Portalsoftware. Kein Datenportal. Bieten Daten über DB open data an.
-FGIS Services,https://www.sbs.sachsen.de/,Staatsbetrieb Sachsenforst. Keine Portalsoftware
-Schleswig-Holstein Webseite,https://www.schleswig-holstein.de,Keine Portalsoftware.Kein Datenportal. Auch Datensätze über mdm-portal.de
-Ministerium für Schule und Bildung des Landes NRW,https://www.schulministerium.nrw.de/,Keine Portalsoftware
-smile consult GmbH (smile),https://www.smileconsult.de/,Keine Portalsoftware. Als Quelle ist auch eigentlich MDI-DE angegeben.
-Stadt Soest,https://www.soest.de,Keine Portalsoftware
-"Die Senatorin für Soziales, Jugend, Integration und Sport",https://www.soziales.bremen.de/,Keine Portalsoftware
-Statistisches Amt für Hamburg und Schleswig-Holstein - Anstalt des öffentlichen Rechts - (Statistikamt Nord) ,https://www.statistik-nord.de,Keine Portalsoftware
-Statistisches Landesamt Bremen,https://www.statistik.bremen.de/,"Keine Portalsoftware, aber Daten"
-Sachsen Regionalstatistik Portal,https://www.statistik.sachsen.de/,Keine Portalsoftware
-Strassen Nordrhein-Westfalen,https://www.strassen.nrw.de,Keine Portalsoftware
-Succow Stiftung,https://www.succow-stiftung.de/,Keine Portalsoftware. Kein Datenportal. Daten bei mcloud. Privat.
-Der Tagesspiegel,https://www.tagesspiegel.de/,Keine Portalsoftware. Kein Datenportal. Nur 1 Datensatz auf Github zu 1 Projekt. Privat.
-Telefónica Germany NEXT GmbH,https://www.telefonica.de/analytics.html,Keine Portalsoftware. Kein Datenportal. Daten in mcloud. Privat.
-Transparenzportal Bremen,https://www.transparenz.bremen.de/,Aggregiert von ner Menge sub-Portale. Muss genauer geschaut werden.
-Technische Universität Braunschweig - Institut für Flugführung,https://www.tu-braunschweig.de/iff,Keine Portalsoftware. Kein Datenportal. Daten in eigener Cloud. Privat?
-Technische Universität Hamburg-Harburg (TUHH) - Institut für Wasserbau,https://www.tuhh.de/wb/home.html,Keine Portalsoftware. Kein Datenportal
-Technische Universität München,https://www.tum.de/,Keine Portalsoftware. Kein Datenportal. Privat?
-UBIMET GmbH,https://www.ubimet.com/,Keine Portalsoftware. Kein Datenportal. Nicht offen. Bieten nur einzelne Daten direkt über mcloud an. Privat
-Urban Software Institute GmbH,https://www.ui.city/,Keine Portalsoftware. Kein Datenportal. Daten bei mcloud. Privat.
-Sachsen Umweltportal,https://www.umwelt.sachsen.de,Geoportal
-"Schleßwig-Holtstein Landesamt für Landwirtschaft, Umwelt und ländliche Räume (LLUR)",https://www.umweltdaten.landsh.de,Kein Portal. Leitet nur zu s-h.de weiter
-Umweltportal Thüringen,https://www.umweltportal.thueringen.de/opendata,Keine Portalsoftware.
-Universität Duisburg-Essen,https://www.uni-due.de/,Keine Portalsoftware. Kein Datenportal. Daten bei mcloud. Privat?
-Sächsisches Staatsministerium für Regionalentwicklung,https://www.verwaltungsatlas.sachsen.de/,Keine Portalsoftware. Geodaten über Karten.
-Ministerium für Verkehr des Landes NRW,https://www.vm.nrw.de/,Keine Portalsoftware
-VRS - Verkehrsverbund Rhein-Sieg GmbH,https://www.vrs.de/fahren/fahrplanauskunft/opendata-/-openservice,Keine Portalsoftware. Daten nur per API.
-Wahlen und Abstimmungen,https://www.wahlen.sachsen.de/,Keine Portalsoftware
-xapix.io Software GmbH,https://www.xapix.io/landing/de,Keine Portalsoftware. Kein Datenportal. Daten bei mcloud. Privat.
-Generalzolldirektion,https://www.zoll.de,Keine Portalsoftware. Einzelne Berichte. Keine Unterquellen
+Titel,URL,Titel,URL
+Geoportal der Bundesregierung,http://geoportal.de,Bundesstelle für Flugunfalluntersuchung BFU,https://www.bfu-web.de/DE/Home/homepage_node.html
+GeoNet.MRN e.V.,http://daten.geonet-mrn.de,Bundesministerium für Arbeit und Soziales,https://www.bmas.de
+Landkreis Mecklenburgische Seenplatte,http://geoport-lk-mse.de/geoportal/index.php,Bundesministerium des Innern,https://www.bmi.bund.de
+Niedersachsen,http://geoportal.geodaten.niedersachsen.de,Bundesministerium der Verteidigung,https://www.bmvg.de/de/service/open-data
+Hochwasser Nachrichtenzentrale Thüringen,http://hnz.thueringen.de/hw2.0/datenladen.html,Bundesministerium für Verkehr und digitale Infrastruktur (BMVI),https://www.bmvi.de
+Hessen Mobil - Straßen- und Verkehrsmanagement,http://info.data-run.info/,Bundesministerium für Wirtschaft und Energie,https://www.bmwi.de/Redaktion/DE/Artikel/Service/open-data.html
+IPM Group s.r.o,http://ipm-geonet.com/,Bottled Software GmbH,https://www.bottledsoftware.de/
+RWTH Aachen Institut für Straßenwesen,http://publications.rwth-aachen.de/,Bundesstelle für Seeunfalluntersuchung (BSU),https://www.bsu-bund.de
+Transparenzportal Hamburg,http://transparenz.hamburg.de/,Bundesversicherungsamt,https://www.bundesamtsozialesicherung.de/de/service/downloadcenter/
+DBFZ Deutsches Biomasseforschungszentrum gemeinnützige GmbH,http://webapp.dbfz.de/resources/?lang=de,Bundesarchiv,https://www.bundesarchiv.de
+Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung,http://www.bmz.de/de/ministerium/zahlen_fakten/index.html,Bundesministerium der Finanzen,https://www.bundesfinanzministerium.de/Datenportal/start.html
+Fachstelle für Geoinformationen Süd beim WSA Regensburg (FGS),http://www.fgs.wsv.de/,Bundesamt für Justiz,https://www.bundesjustizamt.de
+Unternehmensdaten-bank der Wirtschaftsförderung Sachsen,http://www.firmen.saxony.de/KWISweb-Companies/CompanyList.aspx,Die Beauftragte der Bundesregierung für Kultur und Medien,https://www.bundesregierung.de/breg-de/bundesregierung/staatsministerin-fuer-kultur-und-medien
+Fisch-DB - die Fischdatenbank,http://www.fischdb.de/,Bundessortenamt,https://www.bundessortenamt.de/bsa/sorten/datenbanken/
+Moritz Müller-Navarra,http://www.mforecast.com/,Bundesverwaltungsamt,https://www.bva.bund.de
+Sortenliste OCED,http://www.oecd.org/agriculture/seeds/varieties/,Bundesamt für Verbraucherschutz und Lebensmittelsicherheit,https://www.bvl.bund.de
+PortalU und Umweltdaten-kataloge,http://www.portalu.sachsen.de/,Bundeszentralamt für Steuern,https://www.bzst.de/DE/Home/home_node.html
+"Ministerium für Arbeit, Gesundheit und Soziales des Landes NRW",http://www.sozialberichte.nrw.de,Cyface GmbH,https://www.cyface.de/
+"Thüringer Landesamt für Umwelt, Bergbau und Naturschutz",http://www.tlug-jena.de/luftaktuell/index.php,"Bundesministerium für Familie, Senioren, Frauen und Jugend",https://www.daten.bmfsfj.de/
+Terra Concordia gGmbH,https://baumcloud.org/#/,Bundesministerium für Bildung und Forschung,https://www.datenportal.bmbf.de/portal/de/index.html
+Bundeslebensmittelschlüssel,https://blsdb.de/,DBI - Gastechnologisches Institut gGmbH,https://www.dbi-gti.de
+DB Netz AG,https://data.deutschebahn.com,Statistisches Bundesamt,https://www.destatis.de
+Berlin Open Data,https://daten.berlin.de/,Deutsches Forschungszentrum für Künstliche Intelligenz GmbH,https://www.dfki.de/web/
+Open-Government-Data-Portal Rheinland-Pfalz,https://daten.rlp.de/,DFS Deutsche Flugsicherung GmbH,https://www.dfs.de/dfs_homepage/de/
+Open Data Darmstadt,https://datenplattform.darmstadt.de/verkehr/apps/opendata/#/,Deutsches Klimarechenzentrum GmbH (DKRZ),https://www.dkrz.de/webvis/
+Baden Württemberg,https://datentest.service-bw.de/,DTV Verkehrsconsult GmbH,https://www.dtv-verkehrsconsult.de/
+EU-Sortenkataloge,https://ec.europa.eu/food/plant/plant_propagation_material,Eisenbahn-Bundesamt,https://www.eba.bund.de/
+52°North - Initiative for Geospatial Open Source Software GmbH,https://envirocar.org/api/stable/,Bundesstelle für Eisenbahnunfalluntersuchung (BEU),https://www.eisenbahn-unfalluntersuchung.de
+Esri Deutschland GmbH,https://esri-de.maps.arcgis.com/home/index.html,"Wasser- und Schifffahrtsdirektionen Mitte, West, Südwest, Süd und Ost Dienstsitz Mainz",https://www.elwis.de/DE/Startseite/Startseite-node.html
+"OpenData Berlin: Senatsverwaltung für Umwelt, Verkehr und Klimaschutz Berlin",https://fbinter.stadt-berlin.de/,Emsland,https://www.emsland.com/service-im-emsland/partner/datenbank/
+FixMyBerlin,https://fixmyberlin.de/,"Fachhochschule der Wirtschaft Nordrhein-Westfalen gGmbH, Paderborn",https://www.fhdw.de/
+Geodatenkatelog des Bundes,https://gdk.gdi-de.org/gdi-de/srv/ger/catalog.search#/home,Der Senator für Finanzen,https://www.finanzen.bremen.de/
+Osnabrück,https://geo.osnabrueck.de/geodatenportal/?p=metadaten,Friedrich-Loeffler-Institut,https://www.fli.de/de/service/informationssysteme-und-datenbanken/
+Geoportal der Hanse- und Universitätsstadt Rostock,https://geo.sv.rostock.de,Geodateninfrastruktur Deutschland,https://www.gdi-de.org/
+Kreis Pinneberg,https://geodienste.hamburg.de,Informationstechnikzentrum Bund,https://www.gdws.wsv.bund.de/DE/startseite/startseite_node.html
+GeoMIS.Sachsen,https://geomis.sachsen.de,Initiative für sicherere Straßen UG haftungsbeschränkt,https://www.gefahrenstellen.de/
+Bundesanstalt für Gewässerkunde,https://geoportal.bafg.de,Sachsen Geologischer Dienst,https://www.geologie.sachsen.de/
+Land Brandenburg,https://geoportal.brandenburg.de/startseite/,Geodatenportal BW,https://www.geoportal-bw.de/
+Stadt Freiburg i. Br. - Garten- und Tiefbauamt,https://geoportal.freiburg.de/freigis/,Mecklenburg-Vorpommern Geoportal,https://www.geoportal-mv.de/portal/#extended=false
+Saarland,https://geoportal.saarland.de/,Thüringen,https://www.geoportal-th.de/de-de/
+Geoportal Sachsen,https://geoportal.sachsen.de,GEOportal.NRW,https://www.geoportal.nrw
+DLR - Deutsches Zentrum für Luft- und Raumfahrt e.V. - Geoservice,https://geoservice.dlr.de/web/,Rheinland-Pfalz Datenportal,https://www.geoportal.rlp.de
+Geoportal der SBV,https://geoviewer.sachsen.de/mapviewer2/index.html?app=geoportal-sbv&lang=de,Bundesamt für Seeschifffahrt und Hydrographie (BSH),https://www.geoseaportal.de
+Hochsauerlandkreis,https://gis.hochsauerlandkreis.de/arcgis6/rest/services,"Die Senatorin für Gesundheit, Frauen und Verbraucherschutz",https://www.gesundheit.bremen.de/
+Technische Universität Chemnitz,https://gitlab.hrz.tu-chemnitz.de/opener/opener-app,Hannover,https://www.hannover.de/
+Universität Hamburg - Integrated Climate Data Center (ICDC),https://icdc.cen.uni-hamburg.de/all-data.html,Ministerium der Finanzen des Landes NRW,https://www.haushalt.fm.nrw.de/
+ILS – Institut für Landes- und Stadtentwicklungsforschung,https://ils-geomonitoring.de/documents,Fraunhofer Institut für Intelligente Analyse- und Informationssysteme IAIS,https://www.iais.fraunhofer.de/
+Landesamt für Umwelt Brandenburg (LfU),https://lfu.brandenburg.de,ifak e.V.,https://www.ifak.eu/de
+"Stadt Frankfurt am Main, Straßenverkehrsamt Verkehrsmanagement",https://mainziel.de/,Ministerium des Innern des Landes NRW,https://www.im.nrw/
+MKP GmbH,https://marxkrontal.com/de/,Leibniz-Institut für ökologische Raumentwicklung (IÖR),https://www.ioer.de/home/
+Technische Universität Hamburg (TUHH),https://mdi-de.baw.de/easygsh/,ITZ-Bund,https://www.itzbund.de/DE/Home/home_node.html
+MechLab Engineering UG,https://mechlab-engineering.de/,Fraunhofer-Institut für Verkehrs- und Infrastruktursysteme IVI,https://www.ivi.fraunhofer.de/
+Bundesamt für Kartographie und Geodäsie (BKG),https://mis.bkg.bund.de/portal/,Stadt Kassel,https://www.kassel.de/
+"Brandenburg - Ministerium für Landwirtschaft, Umwelt und Klimaschutz (MLUK)",https://mluk.brandenburg.de/mluk/de/,Kraftfahrt-Bundesamt (KBA),https://www.kba.de
+Bundesanstalt für Materialforschung und -prüfung,https://netzwerke.bam.de/Netzwerke/Navigation/DE/Home/home.html,Landeshauptstadt Kiel,https://www.kiel.de/opendata
+Stadt Hennef (Sieg),https://nextcloud.stadt-hennef.de/index.php/login,,https://www.kreis-offenbach.de/B%C3%BCrgerservice/Online-Dienste/Offene-Daten
+Offene Daten Köln,https://offenedaten-koeln.de/,Kreis Recklinghausen,https://www.kreis-re.de
+Open Data Portal Aachen,https://offenedaten.aachen.de,Zentrales Datenmanagement der WSD Nord im Wasserstraßen- und Schifffahrtsamt Hamburg Sachbereich 4 Neubau,https://www.kuestendaten.de/DE/Startseite/Startseite_Kuestendaten_node.html
+Offene Daten kdvz Rhein-Erft-Rur,https://offenedaten.kdvz-frechen.de,Staatskanzlei des Landes NRW,https://www.land.nrw/de/landesregierung/ministerpraesident/staatskanzlei
+Offene Daten Bielefeld,https://open-data.bielefeld.de/,Landesdatenbank NRW,https://www.landesdatenbank.nrw.de
+Bundesanstalt für Landwirtschaft und Ernährung,https://open-data.ble.de/dataset,Agrarmeteorologischer Dienst,https://www.landwirtschaft.sachsen.de/Wetter09/asp/inhalt.asp?seite=uebersicht
+Das Open-Government-Portal in NRW,https://open.nrw/,LGL Baden-Württemberg,https://www.lgl-bw.de/unsere-themen/Produkte/Open-Data/
+Open Data Duisburg,https://opendata-duisburg.de/,Landesinstitut für Arbeitsgestaltung NRW,https://www.lia.nrw.de/
+Bundesanstalt für Straßenwesen (BASt),https://opendata.bast.de,LISt GmbH,https://www.list.sachsen.de/
+Bayern,https://opendata.bayern.de,Messwerte der Talsperrenverwaltung,https://www.ltv.sachsen.de/tmz/uebersicht.html
+Offene Daten Bonn,https://opendata.bonn.de/,Sachsen-Anhalt,https://www.lvermgeo.sachsen-anhalt.de/de/dienste__download/dienste-und-download.html
+Open Data Portal der Stadt Dormagen,https://opendata.dormagen.de,Landeszentrum Gesundheit NRW,https://www.lzg.nrw.de/
+Offene Daten für Dortmund,https://opendata.dortmund.de,Materna Information & Communications SE,https://www.materna.de
+Offene Daten für Dresden,https://opendata.dresden.de/,Das offene Datenportal des BMVI,https://www.mcloud.de/
+Open Data Düsseldorf,https://opendata.duesseldorf.de,plan-GIS GmbH,https://www.mdi-de.org
+Deutscher Wetterdienst,https://opendata.dwd.de/,"Ministerium für Heimat, Kommunales, Bau und Gleichstellung des Landes NRW",https://www.mhkbg.nrw/
+Offene Daten Essen,https://opendata.essen.de,"Ministerium für Kinder, Familie, Flüchtlinge und Integration des Landes NRW",https://www.mkffi.nrw/
+Offene Daten Gelsenkirchen,https://opendata.gelsenkirchen.de/,Ministerium für Kultur und Wissenschaft des Landes NRW,https://www.mkw.nrw/
+Offene Daten der Stadt Leipzig,https://opendata.leipzig.de/,Baden-Württemberg Mobidata,https://www.mobidata-bw.de/dataset
+Open-Data-Portal der Stadt Meerbusch,https://opendata.meerbusch.de,"Ministerium für Wirtschaft, Innovation, Digitalisierung und Energie des Landes NRW",https://www.mpanrw.de/
+Open Data Rhein-Kreis Neuss,https://opendata.rhein-kreis-neuss.de,Max Rubner-Institut,https://www.mri.bund.de/de/service/datenbanken/
+Open-Data-Portal des Rhein-Neckar-Verkehrs (RNV),https://opendata.rnv-online.de/search/type/dataset,TSC Beratende Ingenieure für Verkehrswesen GmbH & Co. KG,https://www.mvup.de/
+Regionalverband Ruhr,https://opendata.ruhr/,Naturschutzdaten,https://www.natur.sachsen.de
+OpenData Schleswig-Holstein,https://opendata.schleswig-holstein.de,Stadt Ennigerloh,https://www.o-sp.de/ennigerloh/
+Offene Daten Münster,https://opendata.stadt-muenster.de/,Offene Daten Wuppertal,https://www.offenedaten-wuppertal.de/
+VAG Verkehrs-Aktiengesellschaft Nürnberg,https://opendata.vag.de/,Offenesdatenportal,https://www.offenesdatenportal.de/
+Stadt Würzburg,https://opendata.wuerzburg.de/pages/erkunden/,Publikationsserver OPEN AGRAR,https://www.openagrar.de/content/index.xml
+Zentrales IT-Management Schleswig-Holstein,https://opendata.zitsh.de,Open Data Rostock,https://www.opendata-hro.de/
+Heidelberg Institute for Geoinformation Technology,https://openrouteservice.org/,Freistaat Sachsen,https://www.opendata.sachsen.de/Daten_finden.htm
+Fraunhofer-Center für Maritime Logistik und Dienstleistungen CML,https://owncloud.fraunhofer.de/,Open NRW: Geoportal,https://www.opengeodata.nrw.de/
+Polizei NRW,https://polizei.nrw/,München,https://www.opengov-muenchen.de/
+Open Data Portal der Stadt Chemnitz,https://portal-chemnitz.opendata.arcgis.com/,Prof. Schaller UmweltConsult GmbH,https://www.psu-schaller.de/
+Deutsche Nationalbibliothek,https://portal.dnb.de/,Qualitäts- und UnterstützungsAgentur - Landesinstitut für Schule NRW,https://www.qua-lis.nrw.de/
+Universität Rostock - Agrar- und Umweltwissenschaftliche Fakultät Professur für Geodäsie und Geoinformatik,https://portal.opengeoedu.de/,Statistische Ämter des Bundes und der Länder,https://www.regionalstatistik.de/
+Karlsruher Institut für Technologie (KIT),https://primo.bibliothek.kit.edu/primo_library/libweb/action/search.do,S-Bahn Hamburg GmbH,https://www.s-bahn-hamburg.de/s_hamburg/view/index.shtml
+Hessen,https://prototyp.geoportal.hessen.de/,S-Bahn Stuttgart,https://www.s-bahn-stuttgart.de/s-stuttgart
+Raumplanungsinformationssystem (Rapis),https://rapis.sachsen.de/,FGIS Services,https://www.sbs.sachsen.de/
+Deutsches Patent- und Markenamt,https://register.dpma.de/DPMAregister/Uebersicht?lang=de,Schleswig-Holstein Webseite,https://www.schleswig-holstein.de
+Regionales Klimainformations-system (ReKIS),https://rekis.hydro.tu-dresden.de/,Ministerium für Schule und Bildung des Landes NRW,https://www.schulministerium.nrw.de/
+Verkehrsverbund Rhein-Sieg GmbH,https://sevas.nrw.de/,smile consult GmbH (smile),https://www.smileconsult.de/
+Smart City System GmbH,https://smart-city-system.com/,Stadt Soest,https://www.soest.de
+Wassertourismus Schleswig-Hosteil e.V.,https://surfen-sh.de,"Die Senatorin für Soziales, Jugend, Integration und Sport",https://www.soziales.bremen.de/
+TU Dresden,https://tu-dresden.de/,Statistisches Amt für Hamburg und Schleswig-Holstein - Anstalt des öffentlichen Rechts - (Statistikamt Nord) ,https://www.statistik-nord.de
+Viscan Solutions GmbH,https://viscan.de/,Statistisches Landesamt Bremen,https://www.statistik.bremen.de/
+Institut für Systemoptimierung des Karlsruhe Institute of Technology,https://vision-mfund.de/?page_id=441,Sachsen Regionalstatistik Portal,https://www.statistik.sachsen.de/
+Verkehrs Management Zentrale Bremen,https://vmz.bremen.de,Strassen Nordrhein-Westfalen,https://www.strassen.nrw.de
+Sozialhelden e.V.: Wheelmap.org,https://wheelmap.org/,Succow Stiftung,https://www.succow-stiftung.de/
+4traffic GbR,https://www.4traffic.de/,Der Tagesspiegel,https://www.tagesspiegel.de/
+Stadt Arnsberg,https://www.arnsberg.de/,Telefónica Germany NEXT GmbH,https://www.telefonica.de/analytics.html
+Auswärtiges Amt,https://www.auswaertiges-amt.de/de/open-data-schnittstelle/736118,Transparenzportal Bremen,https://www.transparenz.bremen.de/
+Bundesausgleichsamt,https://www.badv.bund.de/DE/Bundesaemter/BAA/Aufgaben/start.html,Technische Universität Braunschweig - Institut für Flugführung,https://www.tu-braunschweig.de/iff
+Bundesamt für Wirtschaft und Ausfuhrkontrolle,https://www.bafa.de/SiteGlobals/Forms/Suche/Infothek/,Technische Universität Hamburg-Harburg (TUHH) - Institut für Wasserbau,https://www.tuhh.de/wb/home.html
+"Bundesanstalt für Gewässerkunde, Referat Geodäsie",https://www.bafg.de/DE,Technische Universität München,https://www.tum.de/
+Bundesamt für Güterverkehr (BAG),https://www.bag.bund.de/DE/Home/home_node.html,UBIMET GmbH,https://www.ubimet.com/
+Automatische Zählstellen,https://www.bast.de/BASt_2017/DE/,Urban Software Institute GmbH,https://www.ui.city/
+Universität Siegen - Forschungsinstitut Wasser und Umwelt,https://www.bau.uni-siegen.de/fwu/,Sachsen Umweltportal,https://www.umwelt.sachsen.de
+Bundesanstalt für Arbeitsschutz und Arbeitsmedizin,https://www.baua.de,"Schleßwig-Holtstein Landesamt für Landwirtschaft, Umwelt und ländliche Räume (LLUR)",https://www.umweltdaten.landsh.de
+"Die Senatorin für Klimaschutz, Umwelt, Mobilität, Stadtentwicklung und Wohnungsbau",https://www.bauumwelt.bremen.de/,Umweltportal Thüringen,https://www.umweltportal.thueringen.de/opendata
+Bundesanstalt für Wasserbau (BAW),https://www.baw.de,Universität Duisburg-Essen,https://www.uni-due.de/
+"Bayerisches Staatsministerium des Innern, für Bau und Verkehr (Oberste Baubehörde)",https://www.baysis.bayern.de,Sächsisches Staatsministerium für Regionalentwicklung,https://www.verwaltungsatlas.sachsen.de/
+"Bundesinstitut für Bau-, Stadt- und Raumforschung (BBSR) im Bundesamt für Bauwesen und Raumordnung (BBR)",https://www.bbsr.bund.de,Ministerium für Verkehr des Landes NRW,https://www.vm.nrw.de/
+Bezirksregierung Arnsberg,https://www.bezreg-arnsberg.nrw.de/,VRS - Verkehrsverbund Rhein-Sieg GmbH,https://www.vrs.de/fahren/fahrplanauskunft/opendata-/-openservice
+Die Bundesbeauftragte für den Datenschutz und die Informationsfreiheit,https://www.bfdi.bund.de/,Wahlen und Abstimmungen,https://www.wahlen.sachsen.de/
+,,xapix.io Software GmbH,https://www.xapix.io/landing/de
+,,Generalzolldirektion,https://www.zoll.de

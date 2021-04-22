@@ -14,6 +14,11 @@ from utility.deceider import get_link_portal
 
 
 class Crawler (object):
+    """
+    Beinhaltet den kompletten Crawl-Prozess für den Datenbestand eines Datenportals.
+    Aus einer alten Arbeit übernommen. Die anderen Teile sollten in Zukunft ähnlich aufgebaut werden.
+    """
+
     def __init__(self, portal, limit, offset):
         self.portal_info = portal
         self.orig_link = portal["URL"]
@@ -30,7 +35,10 @@ class Crawler (object):
         self.threads = settings.threads
 
     def crawl(self):
-
+        """
+        Initiiert den Crawl-Prozess für den Datenbestand eines OGD-Portals in die DB.
+        Überprüft in diesem Schritt, ob es sich um eine Portalsoftware handelt und ob Datensätze vorhanden sind.
+        """
         # Initiating necessary variables
         self.link, self.portal_type = get_link_portal(self.orig_link)
         logging.info("For {0} detected portal: {1}".format(self.link, self.portal_type))
@@ -46,7 +54,7 @@ class Crawler (object):
                 logging.info("Initial check passed.")
                 logging.info("Total number of data items on this link: {}".format(self.number_items_overall))
 
-                # portal decides in which way to paginate through the site.
+                # Aktuell nicht genutzt
                 if self.portal_type == "european":
                     if self.limit == 0:
                         self.limit = self.number_items_overall
@@ -56,6 +64,7 @@ class Crawler (object):
 
                         self.extract_and_process_website(url_current)
 
+                # CKAN und DKAN gleich behandeln, da sie das gleiche Metadatenschema nutzen.
                 elif self.portal_type == "cdkan":
                     if self.limit == 0:
                         self.limit = self.number_items_overall
@@ -68,6 +77,7 @@ class Crawler (object):
                 elif self.portal_type == "dkan":
                     self.extract_and_process_website(self.modlink)
 
+                # Aktuell nicht verfügbar
                 elif self.portal_type == "opendatasoft":
                     url_current = self.modlink.format(self.number_items_overall)
 
@@ -80,7 +90,7 @@ class Crawler (object):
 
     def initial_check(self):
         """
-        Checks if the crawled website is online and has data items.
+        Überprüft, ob ein OGD-Portal erreichbar ist und Datensätzesätze enthält.
         :return: Boolean True or False
         """
         proceed = False
@@ -121,6 +131,10 @@ class Crawler (object):
         return proceed
 
     def extract_and_process_website(self, url_current):
+        """
+        Extrahiert den die Datensätze eines OGD-Portals und übergibt sie an die Transformation.
+        :param url_current: URL des OGD-Portals
+        """
         logging.info("Extraction for url {}".format(url_current))
 
         # get the actual data
@@ -143,6 +157,10 @@ class Crawler (object):
             logging.info("Connection failed to {}".format(url_current))
 
     def process_website_data(self, website_data):
+        """
+        Initiiert Threads für den Transformationsprozess der einzelnen Datensätze
+        :param website_data: Extrahiert Datensätze eines OGD-Portals
+        """
         dataitems = get_dataitems(website_data, self.portal_type)
 
         # transforming and loading
@@ -159,6 +177,11 @@ class Crawler (object):
 
     @staticmethod
     def put_dataitems_in_queue(dataitems):
+        """
+        Lädt die Datensätze für die Verarbeitung in den Threads in eine Queue.
+        :param dataitems: Extrahierte Datensätze eines OGD-Portals.
+        :return: Eine Queue mit den Datensätzen.
+        """
         q = Queue(maxsize=0)
 
         # put dataitems in the queue
@@ -168,13 +191,21 @@ class Crawler (object):
         return q
 
     def start_threads(self, q):
+        """
+        Startet die Threads, welche die Datensätze in der Queue transformieren.
+        :param q: Eine Queue mit den extrahierten Datensätzen
+        """
         for i in range(self.threads):
             t = Thread(target=self.transform_and_upload,
                        args=(q,))
             t.start()
 
     def transform_and_upload(self, q):
-
+        """
+        Funtkion eines Threads, die den einen Datensatz aus der Q nimmt, diesen entsprechend des Portalsoftwaretypens
+        transformiert und das Ergebnis in die DB lädt.
+        :param q: Eine Queue mit den extrahierten Datensätzen
+        """
         while not q.empty():
             dataitem = q.get()
 
@@ -189,16 +220,12 @@ class Crawler (object):
             else:
                 remapped = None
 
-            # print(remapped)
-
             logging.debug("Remapping done")
 
             # checks if the transformation was successfull. Otherwise skips the rest
-
             if remapped is not None:
 
                 if settings.upload:
-                    # Todo: get results for each data item and add to DB.
 
                     upload(remapped, "meta")
 
@@ -208,7 +235,10 @@ class Crawler (object):
             q.task_done()
 
     def upload_portal(self):
-
+        """
+        Lädt die grundlegenden Infos zum OGD-Portal in die DB.
+        :return: Statuscode des Uploadergebnisses.
+        """
         portal_data = {
             "titel": self.portal_info["Titel"],
             "url": self.link,

@@ -1,4 +1,10 @@
 def transform_keywords(keywords, portal):
+    """
+    Transformiert die Tags eines Datensatzes in ein standardisiertes Format.
+    :param keywords: Die Tag-Daten wie im Datensatz angegeben (List)
+    :param portal: Der Portalsoftwaretyp (String)
+    :return: Eine Liste mit den extrahierten und standardisierten Tags
+    """
     if keywords is not None:
 
         if portal in ["european", "cdkan"]:

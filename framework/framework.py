@@ -15,18 +15,23 @@ from framework.utility.db_helfer import gen_sql
 
 
 def get_metadataids(db, portal):
+    """
+    Liefert die IDs aller Metadaten-Einträge eines Portals in der Daten-DB.
+    """
     return tuple(meta[0] for meta in db.get_meta_ids(portal))
 
 
-def get_rohdataids_meta(db, meta):
-    return tuple(roh[0] for roh in db.get_roh_ids_single(meta))
-
-
 def get_rohdataids_list(db, meta):
+    """
+    Liefert die IDs aller Rohdaten-Einträge eines Metadaten-Eintrags in der Daten-DB.
+    """
     return tuple(roh[0] for roh in db.get_roh_ids_list(meta))
 
 
-def get_datum_ids(db, meta):
+def get_datum_ids(meta):
+    """
+    Liefert die IDs der Erstell- und Update-Daten jedes Metadatensatzes eines Datenportals. (Aus der Daten DB.)
+    """
     nested_daten = [(datensatz["erstellDatum"], datensatz["updateDatum"]) for datensatz in meta]
     datum_ids = set(datum for element in nested_daten for datum in element if datum != 3)
 
@@ -34,6 +39,18 @@ def get_datum_ids(db, meta):
 
 
 def get_portal_scores(db, framework_db, portal, kontakte, akt_daten, dateiformate_ids, se_fehler, vollst_fehler):
+    """
+    Berechnet für ein OGD-Portal in der DB die Qualitätswerte, wie sie im Framework definiert sind
+    und lädt diese Ergebnisse in die framework.db
+    :param db: Die Verbindung zur Daten-Datenbank (DBConnection Instanz)
+    :param framework_db: Die Verbindung zur Framework-Datenbank (DBConnection Instanz)
+    :param portal: DB ID des zu untersuchenden Portals (INT)
+    :param kontakte: IDs von validen Kontakten in der Daten-DB (Dict)
+    :param akt_daten: IDs von Datums-Einträgen aus den Jahren '20 und '21 in der Daten-DB (Set)
+    :param dateiformate_ids: IDs von maschinenlesbaren und nicht-proprietären Dateitypen in der Daten-DB (Dict)
+    :param se_fehler: IDs von 'system-error'-Fehlern in der Daten-DB (Set)
+    :param vollst_fehler: IDs von Fehlern, die die Vollständigkeit betreffen, in der Daten-DB (Dict)
+    """
     meta_ids = get_metadataids(db, portal)
     roh_ids = get_rohdataids_list(db, meta_ids)
 
@@ -41,7 +58,7 @@ def get_portal_scores(db, framework_db, portal, kontakte, akt_daten, dateiformat
     roh = tuple(db.get_tables_dict_by_condition_list("rohDatensatz", "rohDatensatzID", roh_ids))
     portal_domain = urlparse(db.get_attr_single("portal", "url", "portalID", portal)[0]["url"]).netloc
 
-    datum_ids = get_datum_ids(db, meta)
+    datum_ids = get_datum_ids(meta)
 
     if meta:
         genau = get_genau(meta, kontakte, portal)

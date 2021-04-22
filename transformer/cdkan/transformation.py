@@ -1,10 +1,6 @@
-from transformer.helper.mapcategories import remap_categories
-from transformer.cdkan.helper.maplicense import remap_license
 from transformer.helper.removehtmltags import remove_html_tags
 from transformer.helper.transformkeywords import transform_keywords
 from transformer.helper.transormgarbage import transform_garbage
-from transformer.helper.transformmail import transform_mail
-from transformer.helper.getdomain import get_domain
 from transformer.cdkan.helper.mapdataendpoint import map_dataendpoint
 from transformer.helper.transformorganisation import transform_organisation
 from transformer.helper.transformdate import transform_date
@@ -13,10 +9,11 @@ from transformer.helper.transformgroup import transform_group
 
 def remap(dataitem, portal_id):
     """
-    Takes the metadata-information of a dataitem in cdkan-format and remaps it to the advaneo-format. Directly checks
-    for url-statuts and returns None, if the dataitem has neither title, id now dataendpoints.
-    :param dataitem: A dictionary representing a dataitem in cdkan-format
-    :return: A dictionary representing a dataitem in advaneo-format. Or None if the requirements are not met.
+    Transformiert die Metadaten eines gesamten Datensatzes im CKAN und DKAN-Format
+    in das standardisierte Format dieser Arbeit.
+    :param dataitem: Die Metadaten zum Datensatz (Dictionary)
+    :param portal_id: Die ID des Portals in der Daten-DB
+    :return: Der transformierte Datensatz (Dictionary)
     """
     # check for missing values in dataitem
     checklist = ["title", "author", "author_email", "maintainer", "maintainer_email", "license_id", "license_title", "license_url",
@@ -51,7 +48,7 @@ def remap(dataitem, portal_id):
     else:
         dataEndpoints = []
 
-    # Todo: Kategorie, extras (+ fixen!)
+    # Todo: Kategorie, extras
     output = {
         "titel": remove_html_tags(dataitem["title"]),
         "beschreibung": remove_html_tags(dataitem["notes"]),

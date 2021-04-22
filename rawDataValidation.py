@@ -11,6 +11,10 @@ import urllib3
 
 
 def get_links():
+    """
+    Extrahiert alle Rohdatenlinks aus allen Metadaten, die in der Daten-DB enthalten sind.
+    :return: Die extrahierten Rohdatenlinks in einer Liste
+    """
     db = DBConnection("testdb.db")
     res = [{"id": entry[0], "link": entry[1]} for entry in db.get_rawdata_links()]
 
@@ -21,6 +25,12 @@ def get_links():
 
 # Todo: Evtl. Connection in Thread-Funktion legen?
 def update_dataitem(id, res):
+    """
+    Updated den Datenbankeintrag eines Rohdatensatzes (mit den Validierungsergebnissen)
+    :param id: ID des Rohdatensatzes (Int)
+    :param res: Standardisierte Validierungsergebnisse (Dictionary)
+    :return: ID des geupdateten Eintrags (Int)
+    """
     db = DBConnection("testdb.db")
 
     res = db.update_rawdata(id, res)
@@ -57,6 +67,12 @@ def get_filename(response, url, ext):
 
 
 def validate_link(q):
+    """
+    Arbeitet eine Queue mit Rohdatenlinks ab. Überprüft ob ein Links online ist und ob eine Rohdatendatei ermittelt
+    werden kann. Ist dies der Fall und hat die Datei einen validen Dateityp, kann sie heruntergeladen
+    validiert werden. Anschließend werden alle gesammelten Ergebnisse in die Daten-DB geladen.
+    :param q: Eine Queue mit den Rohdatenlinks
+    """
     while not q.empty():
         link_info = q.get()
         link = link_info["link"]
@@ -141,6 +157,10 @@ def validate_link(q):
 
 
 def validate_raw_data_links():
+    """
+    Initiiert die Überprüfung und Validierung aller Rohdatenlinks in der Daten-DB.
+    Extrahiert dazu die Links und verarbeitet diese parallel in Threads.
+    """
     urllib3.disable_warnings()
 
     links = get_links()
@@ -154,11 +174,3 @@ def validate_raw_data_links():
         t.start()
 
     q.join()
-
-# put links in list (csv?) for better control in case of error
-# put links in q ?
-
-# res = update_dataitem(1, "Yo")
-# res = get_links()
-
-# print(res)

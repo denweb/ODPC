@@ -184,6 +184,9 @@ class DBConnection (object):
         return attr_id
 
     def check_exist(self, table, att_name, value):
+        """
+        Prüft, ob ein Attribut schon in der Datenbank exisitert. Liefert dessen ID, falls ja.
+        """
         sql = "SELECT {0}ID " \
               "FROM {0} " \
               "WHERE {1}='{2}'".format(table, att_name, value)
@@ -193,6 +196,9 @@ class DBConnection (object):
         return result
 
     def create_attr(self, table, value):
+        """
+        Erstellt einen Attribut-Eintrag in der DB. Liefert dessen ID.
+        """
         sql = "INSERT INTO {0} " \
               "({0}) " \
               "VALUES('{1}')".format(table, value)
@@ -203,6 +209,9 @@ class DBConnection (object):
         return attr_id
 
     def create_attr_lizenz(self, values):
+        """
+        Generiert einen Lizenz-Eintrag in der vorgesehenen Tabelle in der DB.
+        """
         sql = "INSERT INTO lizenz " \
               "(lizenzTitel, lizenzUrl) " \
               "VALUES('{0}', '{1}')".format(values["lizenzTitel"], values["lizenzUrl"])
@@ -213,6 +222,9 @@ class DBConnection (object):
         return attr_id
 
     def create_attr_kontakt(self, values):
+        """
+        Generiert einen Kontakt-Eintrag in der vorgesehenen Tabelle in der DB.
+        """
         sql = "INSERT INTO kontakt " \
               "(kontaktName, kontaktEmail) " \
               "VALUES('{0}', '{1}')".format(values["kontaktName"], values["kontaktEmail"])
@@ -223,6 +235,9 @@ class DBConnection (object):
         return attr_id
 
     def create_attr_gruppe(self, values):
+        """
+        Generiert einen Gruppen-Eintrag in der vorgesehenen Tabelle in der DB.
+        """
         sql = "INSERT INTO gruppe " \
               "(gruppeName, gruppeTitel, gruppeBeschreibung, gruppeExtra) " \
               "VALUES('{0}', '{1}', '{2}', '{3}')".format(values["gruppeName"],
@@ -236,6 +251,9 @@ class DBConnection (object):
         return attr_id
 
     def create_attr_organisation(self, values):
+        """
+        Generiert einen Organisations-Eintrag in der vorgesehenen Tabelle in der DB.
+        """
         kontakt_id = self.get_id("kontakt", values["organisationKontakt"])
 
         sql = "INSERT INTO organisation " \
@@ -254,6 +272,9 @@ class DBConnection (object):
         return attr_id
 
     def create_attr_fehler(self, data_id, values):
+        """
+        Generiert einen Fehler-Eintrag in der vorgesehenen Tabelle in der DB.
+        """
         sql = "INSERT INTO fehler " \
               "(rohDatensatzID, fehlerCode, fehlerNachricht, fehlerTags, fehlerExtras) " \
               "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}')".format(data_id,
@@ -268,6 +289,9 @@ class DBConnection (object):
         return attr_id
 
     def get_rawdata_links(self):
+        """
+        Liefert die Links aller Rohdaten-Einträge in der DB.
+        """
         sql = "SELECT rohDatensatzID, link " \
               "FROM rohDatensatz;"
 
@@ -278,6 +302,9 @@ class DBConnection (object):
         return res
 
     def get_portals_software(self):
+        """
+        Liefert die IDs aller Portale in der DB, die mit einer analysierbaren Portalsoftware betrieben werden.
+        """
         sql = "SELECT portalID " \
               "FROM portal " \
               "WHERE portalTyp='2' or portalTyp='3' or portalTyp='4';"
@@ -289,6 +316,9 @@ class DBConnection (object):
         return res
 
     def get_meta_ids(self, portal):
+        """
+        Liefert alle metaDaten-IDs eines bestimmten Portals in der DB.
+        """
         sql = "SELECT metaDatensatzID " \
               "FROM metaDatensatz " \
               "WHERE portal='{}';".format(portal)
@@ -299,18 +329,10 @@ class DBConnection (object):
 
         return res
 
-    def get_roh_ids_single(self, meta):
-        sql = "SELECT rohDatensatzID " \
-              "FROM rohDatensatz " \
-              "WHERE metaDatensatz='{}';".format(meta)
-
-        self.cursor.execute(sql)
-
-        res = self.cursor.fetchall()
-
-        return res
-
     def get_roh_ids_list(self, meta):
+        """
+        Liefert die IDs aller Rohdaten zu einem gegebenen Metadatensatz in der DB.
+        """
         sql = "SELECT rohDatensatzID " \
               "FROM rohDatensatz " \
               "WHERE metaDatensatz IN {};".format(tuple(meta))
@@ -322,6 +344,9 @@ class DBConnection (object):
         return res
 
     def get_attr_single(self, table_name, attr, condition, value):
+        """
+        Liefert ein bestimmtes Feld einer Tabelle nach einer einzelnen angegebenen Bedinung.
+        """
         sql = "SELECT {0} " \
               "FROM {1} " \
               "WHERE {2} = '{3}';".format(attr, table_name, condition, value)
@@ -332,18 +357,10 @@ class DBConnection (object):
 
         return res
 
-    def get_attr_list(self, table_name, attr, condition, values):
-        sql = "SELECT {0} " \
-              "FROM {1} " \
-              "WHERE {2} IN {3};".format(attr, table_name, condition, tuple(values))
-
-        self.cursor.execute(sql)
-
-        res = self.cursor.fetchall()
-
-        return res
-
     def get_attr_where(self, table_name, attr, condition):
+        """
+        Liefert ein bestimmtes Feld einer Tabelle nach einer WHERE-Bedingung.
+        """
         sql = "SELECT {0} " \
               "FROM {1} " \
               "WHERE {2};".format(attr, table_name, condition)
@@ -354,21 +371,10 @@ class DBConnection (object):
 
         return res
 
-    def get_tables_dict_by_condition_single(self, tablename, col, value):
-        sql = "SELECT * " \
-              "FROM {0} " \
-              "WHERE {1} = '{2}';".format(tablename, col, value)
-
-        cursor = self.cursor
-        cursor.row_factory = sqlite3.Row
-
-        self.cursor.execute(sql)
-
-        res = self.cursor.fetchall()
-
-        return res
-
     def get_tables_dict_by_condition_list(self, tablename, col, values):
+        """
+        Liefert alle Felder Tabelle als Dictionary nach einer IN-Bedingung.
+        """
         sql = "SELECT * " \
               "FROM {0} " \
               "WHERE {1} in {2};".format(tablename, col, tuple(values))
@@ -383,6 +389,9 @@ class DBConnection (object):
         return res
 
     def get_tables_dict(self, tablename):
+        """
+        Liefert alle Felder einer Tabelle als Dictionary.
+        """
         sql = "SELECT * " \
               "FROM {0};".format(tablename)
 
@@ -396,6 +405,12 @@ class DBConnection (object):
         return res
 
     def update_rawdata(self, id, data):
+        """
+        Updated einen rohDaten-Satz in ein der DB nach den angegebenen Validierungsergebnissen
+        :param id: ID des zu updatenden Rohdatensatzes (Int)
+        :param data: Die zu updatenden Validierungsergebnisse im standardisierten Format (Dictionary)
+        :return: Die ID des upgedateten Rohdatensatzes
+        """
         res = True
         if data["fehler"]:
             fehler = [self.create_attr_fehler(id, fehler) for fehler in data["fehler"]]

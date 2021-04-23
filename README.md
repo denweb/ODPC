@@ -25,4 +25,4 @@ häufiger zwischen Englisch und Deutsch. Vor allem in den Beschreibungen.
 * Dadurch kommt es zu unterschiedlichen Stilen in der Umsetzung und in der Projektstruktur. Für frisch entstandene Teile wurde zumeist
 aus Zeitgründen die erste funktionierende Version genommen und wenig optimiert.
 * Es gibt eine Menge Todos :)
-
+* Die testdb.db ist zu groß zum Uploaden. Kann auf Wunsch gerne bei mir angefragt werden.
